@@ -1,0 +1,1951 @@
+Apache Maven 3.3.9 (bb52d8502b132ec0a5a3f4c09453c07478323dc5; 2015-11-10T17:41:47+01:00)
+Maven home: /raid/work/tools/maven
+Java version: 1.8.0_71, vendor: Oracle Corporation
+Java home: /usr/java/jdk1.8.0_71/jre
+Default locale: de_DE, platform encoding: UTF-8
+OS name: "linux", version: "4.1.27-27-default", arch: "amd64", family: "unix"
+[DEBUG] Created new class realm maven.api
+[DEBUG] Importing foreign packages into class realm maven.api
+[DEBUG]   Imported: javax.enterprise.inject.* < plexus.core
+[DEBUG]   Imported: javax.enterprise.util.* < plexus.core
+[DEBUG]   Imported: javax.inject.* < plexus.core
+[DEBUG]   Imported: org.apache.maven.* < plexus.core
+[DEBUG]   Imported: org.apache.maven.artifact < plexus.core
+[DEBUG]   Imported: org.apache.maven.classrealm < plexus.core
+[DEBUG]   Imported: org.apache.maven.cli < plexus.core
+[DEBUG]   Imported: org.apache.maven.configuration < plexus.core
+[DEBUG]   Imported: org.apache.maven.exception < plexus.core
+[DEBUG]   Imported: org.apache.maven.execution < plexus.core
+[DEBUG]   Imported: org.apache.maven.execution.scope < plexus.core
+[DEBUG]   Imported: org.apache.maven.lifecycle < plexus.core
+[DEBUG]   Imported: org.apache.maven.model < plexus.core
+[DEBUG]   Imported: org.apache.maven.monitor < plexus.core
+[DEBUG]   Imported: org.apache.maven.plugin < plexus.core
+[DEBUG]   Imported: org.apache.maven.profiles < plexus.core
+[DEBUG]   Imported: org.apache.maven.project < plexus.core
+[DEBUG]   Imported: org.apache.maven.reporting < plexus.core
+[DEBUG]   Imported: org.apache.maven.repository < plexus.core
+[DEBUG]   Imported: org.apache.maven.rtinfo < plexus.core
+[DEBUG]   Imported: org.apache.maven.settings < plexus.core
+[DEBUG]   Imported: org.apache.maven.toolchain < plexus.core
+[DEBUG]   Imported: org.apache.maven.usability < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.* < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.authentication < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.authorization < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.events < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.observers < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.proxy < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.repository < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.resource < plexus.core
+[DEBUG]   Imported: org.codehaus.classworlds < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.* < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.classworlds < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.component < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.configuration < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.container < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.context < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.lifecycle < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.logging < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.personality < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.util.xml.Xpp3Dom < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.util.xml.pull.XmlPullParser < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.util.xml.pull.XmlPullParserException < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.util.xml.pull.XmlSerializer < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.* < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.artifact < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.collection < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.deployment < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.graph < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.impl < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.installation < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.internal.impl < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.metadata < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.repository < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.resolution < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.spi < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.transfer < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.version < plexus.core
+[DEBUG]   Imported: org.slf4j.* < plexus.core
+[DEBUG]   Imported: org.slf4j.helpers.* < plexus.core
+[DEBUG]   Imported: org.slf4j.spi.* < plexus.core
+[DEBUG] Populating class realm maven.api
+[INFO] Error stacktraces are turned on.
+[DEBUG] Reading global settings from /raid/work/tools/maven/conf/settings.xml
+[DEBUG] Reading user settings from /home/thomas/.m2/settings.xml
+[DEBUG] Reading global toolchains from /raid/work/tools/maven/conf/toolchains.xml
+[DEBUG] Reading user toolchains from /home/thomas/.m2/toolchains.xml
+[DEBUG] Using local repository at /home/thomas/.m2/repository
+[DEBUG] Using manager EnhancedLocalRepositoryManager with priority 10.0 for /home/thomas/.m2/repository
+[INFO] Scanning for projects...
+[DEBUG] Extension realms for project at.tfr.sec:security:jar:1.0-SNAPSHOT: (none)
+[DEBUG] Looking up lifecyle mappings for packaging jar from ClassRealm[plexus.core, parent: null]
+[DEBUG] === REACTOR BUILD PLAN ================================================
+[DEBUG] Project: at.tfr.sec:security:jar:1.0-SNAPSHOT
+[DEBUG] Tasks:   [clean, test]
+[DEBUG] Style:   Regular
+[DEBUG] =======================================================================
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building security 1.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] === PROJECT BUILD PLAN ================================================
+[DEBUG] Project:       at.tfr.sec:security:1.0-SNAPSHOT
+[DEBUG] Dependencies (collect): []
+[DEBUG] Dependencies (resolve): [compile, test]
+[DEBUG] Repositories (dependencies): [maven2 (http://repo1.maven.org/maven2/, default, releases+snapshots), jboss-snapshots-repository-group (https://repository.jboss.org/nexus/content/repositories/snapshots/, default, snapshots), jboss-public-repository-group (https://repository.jboss.org/nexus/content/groups/public/, default, releases), central (https://repo.maven.apache.org/maven2, default, releases)]
+[DEBUG] Repositories (plugins)     : [maven2 (http://repo1.maven.org/maven2/, default, releases+snapshots), jboss-snapshots-repository-group (https://repository.jboss.org/nexus/content/repositories/snapshots/, default, snapshots), jboss-public-repository-group (https://repository.jboss.org/nexus/content/groups/public/, default, releases), central (https://repo.maven.apache.org/maven2, default, releases)]
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.apache.maven.plugins:maven-clean-plugin:2.5:clean (default-clean)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <directory default-value="${project.build.directory}"/>
+  <excludeDefaultDirectories default-value="false">${clean.excludeDefaultDirectories}</excludeDefaultDirectories>
+  <failOnError default-value="true">${maven.clean.failOnError}</failOnError>
+  <followSymLinks default-value="false">${clean.followSymLinks}</followSymLinks>
+  <outputDirectory default-value="${project.build.outputDirectory}"/>
+  <reportDirectory default-value="${project.reporting.outputDirectory}"/>
+  <retryOnError default-value="true">${maven.clean.retryOnError}</retryOnError>
+  <skip default-value="false">${clean.skip}</skip>
+  <testOutputDirectory default-value="${project.build.testOutputDirectory}"/>
+  <verbose>${clean.verbose}</verbose>
+</configuration>
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.apache.maven.plugins:maven-resources-plugin:2.6:resources (default-resources)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <buildFilters default-value="${project.build.filters}"/>
+  <encoding default-value="${project.build.sourceEncoding}">${encoding}</encoding>
+  <escapeString>${maven.resources.escapeString}</escapeString>
+  <escapeWindowsPaths default-value="true">${maven.resources.escapeWindowsPaths}</escapeWindowsPaths>
+  <includeEmptyDirs default-value="false">${maven.resources.includeEmptyDirs}</includeEmptyDirs>
+  <outputDirectory default-value="${project.build.outputDirectory}"/>
+  <overwrite default-value="false">${maven.resources.overwrite}</overwrite>
+  <project default-value="${project}"/>
+  <resources default-value="${project.resources}"/>
+  <session default-value="${session}"/>
+  <supportMultiLineFiltering default-value="false">${maven.resources.supportMultiLineFiltering}</supportMultiLineFiltering>
+  <useBuildFilters default-value="true"/>
+  <useDefaultDelimiters default-value="true"/>
+</configuration>
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.apache.maven.plugins:maven-compiler-plugin:3.1:compile (default-compile)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <basedir default-value="${basedir}"/>
+  <buildDirectory default-value="${project.build.directory}"/>
+  <classpathElements default-value="${project.compileClasspathElements}"/>
+  <compileSourceRoots default-value="${project.compileSourceRoots}"/>
+  <compilerId default-value="javac">${maven.compiler.compilerId}</compilerId>
+  <compilerReuseStrategy default-value="${reuseCreated}">${maven.compiler.compilerReuseStrategy}</compilerReuseStrategy>
+  <compilerVersion>${maven.compiler.compilerVersion}</compilerVersion>
+  <debug default-value="true">${maven.compiler.debug}</debug>
+  <debuglevel>${maven.compiler.debuglevel}</debuglevel>
+  <encoding default-value="${project.build.sourceEncoding}">${encoding}</encoding>
+  <executable>${maven.compiler.executable}</executable>
+  <failOnError default-value="true">${maven.compiler.failOnError}</failOnError>
+  <forceJavacCompilerUse default-value="false">${maven.compiler.forceJavacCompilerUse}</forceJavacCompilerUse>
+  <fork default-value="false">${maven.compiler.fork}</fork>
+  <generatedSourcesDirectory default-value="${project.build.directory}/generated-sources/annotations"/>
+  <maxmem>${maven.compiler.maxmem}</maxmem>
+  <meminitial>${maven.compiler.meminitial}</meminitial>
+  <mojoExecution>${mojoExecution}</mojoExecution>
+  <optimize default-value="false">${maven.compiler.optimize}</optimize>
+  <outputDirectory default-value="${project.build.outputDirectory}"/>
+  <projectArtifact default-value="${project.artifact}"/>
+  <showDeprecation default-value="false">${maven.compiler.showDeprecation}</showDeprecation>
+  <showWarnings default-value="false">${maven.compiler.showWarnings}</showWarnings>
+  <skipMain>${maven.main.skip}</skipMain>
+  <skipMultiThreadWarning default-value="false">${maven.compiler.skipMultiThreadWarning}</skipMultiThreadWarning>
+  <source default-value="1.5">${maven.compiler.source}</source>
+  <staleMillis default-value="0">${lastModGranularityMs}</staleMillis>
+  <target default-value="1.5">${maven.compiler.target}</target>
+  <useIncrementalCompilation default-value="true">${maven.compiler.useIncrementalCompilation}</useIncrementalCompilation>
+  <verbose default-value="false">${maven.compiler.verbose}</verbose>
+  <mavenSession default-value="${session}"/>
+  <session default-value="${session}"/>
+</configuration>
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.apache.maven.plugins:maven-resources-plugin:2.6:testResources (default-testResources)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <buildFilters default-value="${project.build.filters}"/>
+  <encoding default-value="${project.build.sourceEncoding}">${encoding}</encoding>
+  <escapeString>${maven.resources.escapeString}</escapeString>
+  <escapeWindowsPaths default-value="true">${maven.resources.escapeWindowsPaths}</escapeWindowsPaths>
+  <includeEmptyDirs default-value="false">${maven.resources.includeEmptyDirs}</includeEmptyDirs>
+  <outputDirectory default-value="${project.build.testOutputDirectory}"/>
+  <overwrite default-value="false">${maven.resources.overwrite}</overwrite>
+  <project default-value="${project}"/>
+  <resources default-value="${project.testResources}"/>
+  <session default-value="${session}"/>
+  <skip>${maven.test.skip}</skip>
+  <supportMultiLineFiltering default-value="false">${maven.resources.supportMultiLineFiltering}</supportMultiLineFiltering>
+  <useBuildFilters default-value="true"/>
+  <useDefaultDelimiters default-value="true"/>
+</configuration>
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.apache.maven.plugins:maven-compiler-plugin:3.1:testCompile (default-testCompile)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <basedir default-value="${basedir}"/>
+  <buildDirectory default-value="${project.build.directory}"/>
+  <classpathElements default-value="${project.testClasspathElements}"/>
+  <compileSourceRoots default-value="${project.testCompileSourceRoots}"/>
+  <compilerId default-value="javac">${maven.compiler.compilerId}</compilerId>
+  <compilerReuseStrategy default-value="${reuseCreated}">${maven.compiler.compilerReuseStrategy}</compilerReuseStrategy>
+  <compilerVersion>${maven.compiler.compilerVersion}</compilerVersion>
+  <debug default-value="true">${maven.compiler.debug}</debug>
+  <debuglevel>${maven.compiler.debuglevel}</debuglevel>
+  <encoding default-value="${project.build.sourceEncoding}">${encoding}</encoding>
+  <executable>${maven.compiler.executable}</executable>
+  <failOnError default-value="true">${maven.compiler.failOnError}</failOnError>
+  <forceJavacCompilerUse default-value="false">${maven.compiler.forceJavacCompilerUse}</forceJavacCompilerUse>
+  <fork default-value="false">${maven.compiler.fork}</fork>
+  <generatedTestSourcesDirectory default-value="${project.build.directory}/generated-test-sources/test-annotations"/>
+  <maxmem>${maven.compiler.maxmem}</maxmem>
+  <meminitial>${maven.compiler.meminitial}</meminitial>
+  <mojoExecution>${mojoExecution}</mojoExecution>
+  <optimize default-value="false">${maven.compiler.optimize}</optimize>
+  <outputDirectory default-value="${project.build.testOutputDirectory}"/>
+  <showDeprecation default-value="false">${maven.compiler.showDeprecation}</showDeprecation>
+  <showWarnings default-value="false">${maven.compiler.showWarnings}</showWarnings>
+  <skip>${maven.test.skip}</skip>
+  <skipMultiThreadWarning default-value="false">${maven.compiler.skipMultiThreadWarning}</skipMultiThreadWarning>
+  <source default-value="1.5">${maven.compiler.source}</source>
+  <staleMillis default-value="0">${lastModGranularityMs}</staleMillis>
+  <target default-value="1.5">${maven.compiler.target}</target>
+  <testSource>${maven.compiler.testSource}</testSource>
+  <testTarget>${maven.compiler.testTarget}</testTarget>
+  <useIncrementalCompilation default-value="true">${maven.compiler.useIncrementalCompilation}</useIncrementalCompilation>
+  <verbose default-value="false">${maven.compiler.verbose}</verbose>
+  <mavenSession default-value="${session}"/>
+  <session default-value="${session}"/>
+</configuration>
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.apache.maven.plugins:maven-surefire-plugin:2.19.1:test (default-test)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <additionalClasspathElements>${maven.test.additionalClasspath}</additionalClasspathElements>
+  <argLine>-Djava.security.debug=all -Djava.security.policy=/raid/home/thomas/workspace-sec/security/target/test-classes/read-all-java.policy</argLine>
+  <basedir default-value="${basedir}"/>
+  <childDelegation default-value="false">${childDelegation}</childDelegation>
+  <classesDirectory default-value="${project.build.outputDirectory}"/>
+  <classpathDependencyExcludes>${maven.test.dependency.excludes}</classpathDependencyExcludes>
+  <debugForkedProcess>${maven.surefire.debug}</debugForkedProcess>
+  <dependenciesToScan>${dependenciesToScan}</dependenciesToScan>
+  <disableXmlReport default-value="false">${disableXmlReport}</disableXmlReport>
+  <enableAssertions default-value="true">${enableAssertions}</enableAssertions>
+  <excludedGroups>${excludedGroups}</excludedGroups>
+  <excludesFile>${surefire.excludesFile}</excludesFile>
+  <failIfNoSpecifiedTests>${surefire.failIfNoSpecifiedTests}</failIfNoSpecifiedTests>
+  <failIfNoTests>${failIfNoTests}</failIfNoTests>
+  <forkCount default-value="1">${forkCount}</forkCount>
+  <forkMode default-value="once">${forkMode}</forkMode>
+  <forkedProcessTimeoutInSeconds>${surefire.timeout}</forkedProcessTimeoutInSeconds>
+  <groups>${groups}</groups>
+  <includesFile>${surefire.includesFile}</includesFile>
+  <junitArtifactName default-value="junit:junit">${junitArtifactName}</junitArtifactName>
+  <jvm>${jvm}</jvm>
+  <localRepository default-value="${localRepository}"/>
+  <objectFactory>${objectFactory}</objectFactory>
+  <parallel>${parallel}</parallel>
+  <parallelMavenExecution default-value="${session.parallel}"/>
+  <parallelOptimized default-value="true">${parallelOptimized}</parallelOptimized>
+  <parallelTestsTimeoutForcedInSeconds>${surefire.parallel.forcedTimeout}</parallelTestsTimeoutForcedInSeconds>
+  <parallelTestsTimeoutInSeconds>${surefire.parallel.timeout}</parallelTestsTimeoutInSeconds>
+  <perCoreThreadCount default-value="true">${perCoreThreadCount}</perCoreThreadCount>
+  <pluginArtifactMap>${plugin.artifactMap}</pluginArtifactMap>
+  <pluginDescriptor default-value="${plugin}"/>
+  <printSummary default-value="true">${surefire.printSummary}</printSummary>
+  <projectArtifactMap>${project.artifactMap}</projectArtifactMap>
+  <redirectTestOutputToFile default-value="false">${maven.test.redirectTestOutputToFile}</redirectTestOutputToFile>
+  <remoteRepositories default-value="${project.pluginArtifactRepositories}"/>
+  <reportFormat default-value="brief">${surefire.reportFormat}</reportFormat>
+  <reportNameSuffix default-value="">${surefire.reportNameSuffix}</reportNameSuffix>
+  <reportsDirectory default-value="${project.build.directory}/surefire-reports"/>
+  <rerunFailingTestsCount default-value="0">${surefire.rerunFailingTestsCount}</rerunFailingTestsCount>
+  <reuseForks default-value="true">${reuseForks}</reuseForks>
+  <runOrder default-value="filesystem">${surefire.runOrder}</runOrder>
+  <shutdown default-value="testset">${surefire.shutdown}</shutdown>
+  <skip default-value="false">${maven.test.skip}</skip>
+  <skipAfterFailureCount default-value="0">${surefire.skipAfterFailureCount}</skipAfterFailureCount>
+  <skipExec>${maven.test.skip.exec}</skipExec>
+  <skipTests default-value="false">${skipTests}</skipTests>
+  <suiteXmlFiles>${surefire.suiteXmlFiles}</suiteXmlFiles>
+  <systemProperties>
+    <property>
+      <name>java.security.debug</name>
+      <value>all</value>
+    </property>
+  </systemProperties>
+  <test>${test}</test>
+  <testClassesDirectory default-value="${project.build.testOutputDirectory}"/>
+  <testFailureIgnore default-value="false">${maven.test.failure.ignore}</testFailureIgnore>
+  <testNGArtifactName default-value="org.testng:testng">${testNGArtifactName}</testNGArtifactName>
+  <testSourceDirectory default-value="${project.build.testSourceDirectory}"/>
+  <threadCount>${threadCount}</threadCount>
+  <threadCountClasses default-value="0">${threadCountClasses}</threadCountClasses>
+  <threadCountMethods default-value="0">${threadCountMethods}</threadCountMethods>
+  <threadCountSuites default-value="0">${threadCountSuites}</threadCountSuites>
+  <trimStackTrace default-value="true">${trimStackTrace}</trimStackTrace>
+  <useFile default-value="true">${surefire.useFile}</useFile>
+  <useManifestOnlyJar default-value="true">${surefire.useManifestOnlyJar}</useManifestOnlyJar>
+  <useSystemClassLoader default-value="true">${surefire.useSystemClassLoader}</useSystemClassLoader>
+  <useUnlimitedThreads default-value="false">${useUnlimitedThreads}</useUnlimitedThreads>
+  <workingDirectory>${basedir}</workingDirectory>
+  <project default-value="${project}"/>
+  <session default-value="${session}"/>
+</configuration>
+[DEBUG] =======================================================================
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=0, ConflictMarker.markTime=1, ConflictMarker.nodeCount=5, ConflictIdSorter.graphTime=0, ConflictIdSorter.topsortTime=0, ConflictIdSorter.conflictIdCount=4, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=3, ConflictResolver.conflictItemCount=4, DefaultDependencyCollector.collectTime=43, DefaultDependencyCollector.transformTime=7}
+[DEBUG] at.tfr.sec:security:jar:1.0-SNAPSHOT
+[DEBUG]    org.wildfly.security:wildfly-security-manager:jar:1.1.2.Final:compile
+[DEBUG]    org.jboss.modules:jboss-modules:jar:1.3.3.Final:compile
+[DEBUG]    junit:junit:jar:4.12:test
+[DEBUG]       org.hamcrest:hamcrest-core:jar:1.3:test
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ security ---
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=0, ConflictMarker.markTime=0, ConflictMarker.nodeCount=3, ConflictIdSorter.graphTime=0, ConflictIdSorter.topsortTime=0, ConflictIdSorter.conflictIdCount=3, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=0, ConflictResolver.conflictItemCount=3, DefaultDependencyCollector.collectTime=15, DefaultDependencyCollector.transformTime=0}
+[DEBUG] org.apache.maven.plugins:maven-clean-plugin:jar:2.5:
+[DEBUG]    org.apache.maven:maven-plugin-api:jar:2.0.6:compile
+[DEBUG]    org.codehaus.plexus:plexus-utils:jar:3.0:compile
+[DEBUG] Created new class realm plugin>org.apache.maven.plugins:maven-clean-plugin:2.5
+[DEBUG] Importing foreign packages into class realm plugin>org.apache.maven.plugins:maven-clean-plugin:2.5
+[DEBUG]   Imported:  < maven.api
+[DEBUG] Populating class realm plugin>org.apache.maven.plugins:maven-clean-plugin:2.5
+[DEBUG]   Included: org.apache.maven.plugins:maven-clean-plugin:jar:2.5
+[DEBUG]   Included: org.codehaus.plexus:plexus-utils:jar:3.0
+[DEBUG] Configuring mojo org.apache.maven.plugins:maven-clean-plugin:2.5:clean from plugin realm ClassRealm[plugin>org.apache.maven.plugins:maven-clean-plugin:2.5, parent: sun.misc.Launcher$AppClassLoader@70dea4e]
+[DEBUG] Configuring mojo 'org.apache.maven.plugins:maven-clean-plugin:2.5:clean' with basic configurator -->
+[DEBUG]   (f) directory = /raid/home/thomas/workspace-sec/security/target
+[DEBUG]   (f) excludeDefaultDirectories = false
+[DEBUG]   (f) failOnError = true
+[DEBUG]   (f) followSymLinks = false
+[DEBUG]   (f) outputDirectory = /raid/home/thomas/workspace-sec/security/target/classes
+[DEBUG]   (f) reportDirectory = /raid/home/thomas/workspace-sec/security/target/site
+[DEBUG]   (f) retryOnError = true
+[DEBUG]   (f) skip = false
+[DEBUG]   (f) testOutputDirectory = /raid/home/thomas/workspace-sec/security/target/test-classes
+[DEBUG] -- end configuration --
+[INFO] Deleting /raid/home/thomas/workspace-sec/security/target
+[INFO] Deleting file /raid/home/thomas/workspace-sec/security/target/test-classes/read-all-java.policy
+[INFO] Deleting file /raid/home/thomas/workspace-sec/security/target/test-classes/at/tfr/sec/TestNashornSecurityWithWildflySecurityManager.class
+[INFO] Deleting file /raid/home/thomas/workspace-sec/security/target/test-classes/at/tfr/sec/TestNashornSecurity$1.class
+[INFO] Deleting file /raid/home/thomas/workspace-sec/security/target/test-classes/at/tfr/sec/TestNashornSecurity$2.class
+[INFO] Deleting file /raid/home/thomas/workspace-sec/security/target/test-classes/at/tfr/sec/TestNashornSecurity$3.class
+[INFO] Deleting file /raid/home/thomas/workspace-sec/security/target/test-classes/at/tfr/sec/TestNashornSecurity.class
+[INFO] Deleting file /raid/home/thomas/workspace-sec/security/target/test-classes/at/tfr/sec/TestNashornSecurity$4.class
+[INFO] Deleting directory /raid/home/thomas/workspace-sec/security/target/test-classes/at/tfr/sec
+[INFO] Deleting directory /raid/home/thomas/workspace-sec/security/target/test-classes/at/tfr
+[INFO] Deleting directory /raid/home/thomas/workspace-sec/security/target/test-classes/at
+[INFO] Deleting directory /raid/home/thomas/workspace-sec/security/target/test-classes
+[INFO] Deleting file /raid/home/thomas/workspace-sec/security/target/classes/at/tfr/sec/StringHolder.class
+[INFO] Deleting directory /raid/home/thomas/workspace-sec/security/target/classes/at/tfr/sec
+[INFO] Deleting directory /raid/home/thomas/workspace-sec/security/target/classes/at/tfr
+[INFO] Deleting directory /raid/home/thomas/workspace-sec/security/target/classes/at
+[INFO] Deleting directory /raid/home/thomas/workspace-sec/security/target/classes
+[INFO] Deleting file /raid/home/thomas/workspace-sec/security/target/surefire/surefire6284834053900004248tmp
+[INFO] Deleting file /raid/home/thomas/workspace-sec/security/target/surefire/surefirebooter3567883317485701261.jar
+[INFO] Deleting file /raid/home/thomas/workspace-sec/security/target/surefire/surefire_03114601574512700130tmp
+[INFO] Deleting directory /raid/home/thomas/workspace-sec/security/target/surefire
+[INFO] Deleting file /raid/home/thomas/workspace-sec/security/target/surefire-reports/at.tfr.sec.TestNashornSecurity.txt
+[INFO] Deleting file /raid/home/thomas/workspace-sec/security/target/surefire-reports/TEST-at.tfr.sec.TestNashornSecurityWithWildflySecurityManager.xml
+[INFO] Deleting file /raid/home/thomas/workspace-sec/security/target/surefire-reports/at.tfr.sec.TestNashornSecurityWithWildflySecurityManager.txt
+[INFO] Deleting file /raid/home/thomas/workspace-sec/security/target/surefire-reports/TEST-at.tfr.sec.TestNashornSecurity.xml
+[INFO] Deleting directory /raid/home/thomas/workspace-sec/security/target/surefire-reports
+[INFO] Deleting directory /raid/home/thomas/workspace-sec/security/target/generated-sources/annotations
+[INFO] Deleting directory /raid/home/thomas/workspace-sec/security/target/generated-sources
+[INFO] Deleting file /raid/home/thomas/workspace-sec/security/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst
+[INFO] Deleting file /raid/home/thomas/workspace-sec/security/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst
+[INFO] Deleting directory /raid/home/thomas/workspace-sec/security/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile
+[INFO] Deleting directory /raid/home/thomas/workspace-sec/security/target/maven-status/maven-compiler-plugin/testCompile
+[INFO] Deleting file /raid/home/thomas/workspace-sec/security/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst
+[INFO] Deleting file /raid/home/thomas/workspace-sec/security/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst
+[INFO] Deleting directory /raid/home/thomas/workspace-sec/security/target/maven-status/maven-compiler-plugin/compile/default-compile
+[INFO] Deleting directory /raid/home/thomas/workspace-sec/security/target/maven-status/maven-compiler-plugin/compile
+[INFO] Deleting directory /raid/home/thomas/workspace-sec/security/target/maven-status/maven-compiler-plugin
+[INFO] Deleting directory /raid/home/thomas/workspace-sec/security/target/maven-status
+[INFO] Deleting directory /raid/home/thomas/workspace-sec/security/target/generated-test-sources/test-annotations
+[INFO] Deleting directory /raid/home/thomas/workspace-sec/security/target/generated-test-sources
+[INFO] Deleting directory /raid/home/thomas/workspace-sec/security/target
+[DEBUG] Skipping non-existing directory /raid/home/thomas/workspace-sec/security/target/classes
+[DEBUG] Skipping non-existing directory /raid/home/thomas/workspace-sec/security/target/test-classes
+[DEBUG] Skipping non-existing directory /raid/home/thomas/workspace-sec/security/target/site
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ security ---
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=0, ConflictMarker.markTime=1, ConflictMarker.nodeCount=77, ConflictIdSorter.graphTime=0, ConflictIdSorter.topsortTime=0, ConflictIdSorter.conflictIdCount=26, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=4, ConflictResolver.conflictItemCount=74, DefaultDependencyCollector.collectTime=85, DefaultDependencyCollector.transformTime=5}
+[DEBUG] org.apache.maven.plugins:maven-resources-plugin:jar:2.6:
+[DEBUG]    org.apache.maven:maven-plugin-api:jar:2.0.6:compile
+[DEBUG]    org.apache.maven:maven-project:jar:2.0.6:compile
+[DEBUG]       org.apache.maven:maven-profile:jar:2.0.6:compile
+[DEBUG]       org.apache.maven:maven-artifact-manager:jar:2.0.6:compile
+[DEBUG]       org.apache.maven:maven-plugin-registry:jar:2.0.6:compile
+[DEBUG]    org.apache.maven:maven-core:jar:2.0.6:compile
+[DEBUG]       org.apache.maven:maven-plugin-parameter-documenter:jar:2.0.6:compile
+[DEBUG]       org.apache.maven.reporting:maven-reporting-api:jar:2.0.6:compile
+[DEBUG]          org.apache.maven.doxia:doxia-sink-api:jar:1.0-alpha-7:compile
+[DEBUG]       org.apache.maven:maven-repository-metadata:jar:2.0.6:compile
+[DEBUG]       org.apache.maven:maven-error-diagnostics:jar:2.0.6:compile
+[DEBUG]       commons-cli:commons-cli:jar:1.0:compile
+[DEBUG]       org.apache.maven:maven-plugin-descriptor:jar:2.0.6:compile
+[DEBUG]       org.codehaus.plexus:plexus-interactivity-api:jar:1.0-alpha-4:compile
+[DEBUG]       classworlds:classworlds:jar:1.1:compile
+[DEBUG]    org.apache.maven:maven-artifact:jar:2.0.6:compile
+[DEBUG]    org.apache.maven:maven-settings:jar:2.0.6:compile
+[DEBUG]    org.apache.maven:maven-model:jar:2.0.6:compile
+[DEBUG]    org.apache.maven:maven-monitor:jar:2.0.6:compile
+[DEBUG]    org.codehaus.plexus:plexus-container-default:jar:1.0-alpha-9-stable-1:compile
+[DEBUG]       junit:junit:jar:3.8.1:compile
+[DEBUG]    org.codehaus.plexus:plexus-utils:jar:2.0.5:compile
+[DEBUG]    org.apache.maven.shared:maven-filtering:jar:1.1:compile
+[DEBUG]       org.sonatype.plexus:plexus-build-api:jar:0.0.4:compile
+[DEBUG]    org.codehaus.plexus:plexus-interpolation:jar:1.13:compile
+[DEBUG] Created new class realm plugin>org.apache.maven.plugins:maven-resources-plugin:2.6
+[DEBUG] Importing foreign packages into class realm plugin>org.apache.maven.plugins:maven-resources-plugin:2.6
+[DEBUG]   Imported:  < maven.api
+[DEBUG] Populating class realm plugin>org.apache.maven.plugins:maven-resources-plugin:2.6
+[DEBUG]   Included: org.apache.maven.plugins:maven-resources-plugin:jar:2.6
+[DEBUG]   Included: org.apache.maven.reporting:maven-reporting-api:jar:2.0.6
+[DEBUG]   Included: org.apache.maven.doxia:doxia-sink-api:jar:1.0-alpha-7
+[DEBUG]   Included: commons-cli:commons-cli:jar:1.0
+[DEBUG]   Included: org.codehaus.plexus:plexus-interactivity-api:jar:1.0-alpha-4
+[DEBUG]   Included: junit:junit:jar:3.8.1
+[DEBUG]   Included: org.codehaus.plexus:plexus-utils:jar:2.0.5
+[DEBUG]   Included: org.apache.maven.shared:maven-filtering:jar:1.1
+[DEBUG]   Included: org.sonatype.plexus:plexus-build-api:jar:0.0.4
+[DEBUG]   Included: org.codehaus.plexus:plexus-interpolation:jar:1.13
+[DEBUG] Configuring mojo org.apache.maven.plugins:maven-resources-plugin:2.6:resources from plugin realm ClassRealm[plugin>org.apache.maven.plugins:maven-resources-plugin:2.6, parent: sun.misc.Launcher$AppClassLoader@70dea4e]
+[DEBUG] Configuring mojo 'org.apache.maven.plugins:maven-resources-plugin:2.6:resources' with basic configurator -->
+[DEBUG]   (f) buildFilters = []
+[DEBUG]   (f) encoding = UTF-8
+[DEBUG]   (f) escapeWindowsPaths = true
+[DEBUG]   (s) includeEmptyDirs = false
+[DEBUG]   (s) outputDirectory = /raid/home/thomas/workspace-sec/security/target/classes
+[DEBUG]   (s) overwrite = false
+[DEBUG]   (f) project = MavenProject: at.tfr.sec:security:1.0-SNAPSHOT @ /raid/home/thomas/workspace-sec/security/pom.xml
+[DEBUG]   (s) resources = [Resource {targetPath: null, filtering: false, FileSet {directory: /raid/home/thomas/workspace-sec/security/src/main/resources, PatternSet [includes: {}, excludes: {}]}}]
+[DEBUG]   (f) session = org.apache.maven.execution.MavenSession@591e58fa
+[DEBUG]   (f) supportMultiLineFiltering = false
+[DEBUG]   (f) useBuildFilters = true
+[DEBUG]   (s) useDefaultDelimiters = true
+[DEBUG] -- end configuration --
+[DEBUG] properties used {env.DESKTOP_SESSION=/usr/share/xsessions/kde-plasma, env.OLDPWD=/home/thomas/workspace-sec/security, file.encoding.pkg=sun.io, java.home=/usr/java/jdk1.8.0_71/jre, env.NNTPSERVER=news, env.DISPLAY=:0, env.LS_COLORS=no=00:fi=00:di=01;34:ln=00;36:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=41;33;01:ex=00;32:*.cmd=00;32:*.exe=01;32:*.com=01;32:*.bat=01;32:*.btm=01;32:*.dll=01;32:*.tar=00;31:*.tbz=00;31:*.tgz=00;31:*.rpm=00;31:*.deb=00;31:*.arj=00;31:*.taz=00;31:*.lzh=00;31:*.lzma=00;31:*.zip=00;31:*.zoo=00;31:*.z=00;31:*.Z=00;31:*.gz=00;31:*.bz2=00;31:*.tb2=00;31:*.tz2=00;31:*.tbz2=00;31:*.xz=00;31:*.avi=01;35:*.bmp=01;35:*.fli=01;35:*.gif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mng=01;35:*.mov=01;35:*.mpg=01;35:*.pcx=01;35:*.pbm=01;35:*.pgm=01;35:*.png=01;35:*.ppm=01;35:*.tga=01;35:*.tif=01;35:*.xbm=01;35:*.xpm=01;35:*.dl=01;35:*.gl=01;35:*.wmv=01;35:*.aiff=00;32:*.au=00;32:*.mid=00;32:*.mp3=00;32:*.ogg=00;32:*.voc=00;32:*.wav=00;32:, env.XDG_VTNR=7, env.FORGE_HOME=/usr/share/tools/forge, classworlds.conf=/raid/work/tools/maven/bin/m2.conf, env.XDG_SESSION_COOKIE=4c67ce876ed741679899a09f78226713-1469734325.881175-137335039, java.endorsed.dirs=/usr/java/jdk1.8.0_71/jre/lib/endorsed, env.LOGNAME=thomas, env.GS_LIB=/home/thomas/.fonts, env.G_FILENAME_ENCODING=@locale,UTF-8,ISO-8859-15,CP1252, env.XDG_SEAT=seat0, env.KDE_SESSION_UID=1000, env.SESSION_MANAGER=local/storage:@/tmp/.ICE-unix/1944,unix/storage:/tmp/.ICE-unix/1944, sun.os.patch.level=unknown, java.vendor.url=http://java.oracle.com/, env.XDG_SEAT_PATH=/org/freedesktop/DisplayManager/Seat0, env.G_BROKEN_FILENAMES=1, java.version=1.8.0_71, env.XTERM_VERSION=X.Org 7.7.0(308), env.INPUT_METHOD=ibus, env.HOSTTYPE=x86_64, env.SDL_AUDIODRIVER=pulse, java.vendor.url.bug=http://bugreport.sun.com/bugreport/, env.QEMU_AUDIO_DRV=pa, env.LESS_ADVANCED_PREPROCESSOR=no, env.XDG_DATA_DIRS=/usr/share, user.name=thomas, env.LANG=de_DE.UTF-8, env.CVS_RSH=ssh, sun.io.unicode.encoding=UnicodeLittle, sun.jnu.encoding=UTF-8, env.DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-k8GReRPB78,guid=13ab5a790a43264a3ce6cd95579a5db5, java.runtime.name=Java(TM) SE Runtime Environment, env.MINICOM=-c on, env.SSH_ASKPASS=/usr/lib/ssh/ksshaskpass, env.SDK_HOME=/usr/java/latest, java.specification.name=Java Platform API Specification, user.timezone=Europe/Vienna, env.LESSOPEN=lessopen.sh %s, env.MACHTYPE=x86_64-suse-linux, path.separator=:, env.MAVEN_CMD_LINE_ARGS= -X clean test, env.XTERM_SHELL=/bin/bash, env.XMODIFIERS=@im=ibus, file.encoding=UTF-8, env.XAUTHLOCALHOSTNAME=storage, env.WINDOWMANAGER=/usr/bin/startkde, env.HOME=/home/thomas, sun.java.command=org.codehaus.plexus.classworlds.launcher.Launcher -X clean test, env.MANPATH=/usr/local/man:/usr/share/man, env.PROFILEREAD=true, env.GTK_RC_FILES=/etc/gtk/gtkrc:/home/thomas/.gtkrc:/home/thomas/.config/gtkrc, env.HOSTNAME=storage, env.XSESSION_IS_UP=yes, env.PILOTPORT=usb:, java.io.tmpdir=/tmp, user.language=de, line.separator=
+, env.SSH_AGENT_PID=1864, env.HISTSIZE=1000, java.vm.info=mixed mode, java.vm.specification.name=Java Virtual Machine Specification, env.COLORTERM=1, env.XTERM_LOCALE=de_DE.UTF-8, env.QT_IM_SWITCHER=imsw-multi, env.ALSA_CONFIG_PATH=/etc/alsa-pulse.conf, env.XNLSPATH=/usr/share/X11/nls, env.XDG_SESSION_CLASS=user, env.XDG_SESSION_DESKTOP=KDE, java.awt.printerjob=sun.print.PSPrinterJob, env.XDG_SESSION_TYPE=x11, env.WINDOWID=73400334, env.OSTYPE=linux, env.XDG_SESSION_PATH=/org/freedesktop/DisplayManager/Session1, os.name=Linux, java.specification.vendor=Oracle Corporation, env.QT_SYSTEM_DIR=/usr/share/desktop-data, env.TERM=xterm, java.vm.name=Java HotSpot(TM) 64-Bit Server VM, env.QT_IM_MODULE=ibus, env.KDE_SESSION_VERSION=5, java.library.path=:/usr/share/tools/android-sdk-linux/tools/lib/:/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib, env.PATH=/usr/java/latest/bin:/home/thomas/bin:/usr/local/bin:/usr/bin:/bin:/usr/bin/X11:/usr/games:/usr/local/sbin:/usr/sbin:/sbin:/opt/Citrix/ICAClient/:/usr/local/sbin:/usr/sbin:/sbin, env.JDK_HOME=/usr/java/latest, env.LESSCLOSE=lessclose.sh %s %s, env.FROM_HEADER=, java.class.version=52.0, env.SHLVL=2, maven.multiModuleProjectDirectory=/home/thomas/workspace-sec/security, env.LD_LIBRARY_PATH=:/usr/share/tools/android-sdk-linux/tools/lib/, env.KDE_MULTIHEAD=false, sun.boot.library.path=/usr/java/jdk1.8.0_71/jre/lib/amd64, project.build.sourceEncoding=UTF-8, env.JAVA_BINDIR=/usr/java/latest/bin, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, java.awt.graphicsenv=sun.awt.X11GraphicsEnvironment, env.USER=thomas, env.GTK_IM_MODULE=ibus, env.GTK_MODULES=canberra-gtk-module, env.JRE_HOME=/usr/java/latest/jre, env.CONFIG_SITE=/usr/share/site/x86_64-unknown-linux-gnu, env.XKEYSYMDB=/usr/X11R6/lib/X11/XKeysymDB, env.LESSKEY=/etc/lesskey.bin, env.LESS=-M -I -R, java.vm.specification.version=1.8, env.NLSPATH=/usr/dt/lib/nls/msg/%L/%N.cat, awt.toolkit=sun.awt.X11.XToolkit, env.LS_OPTIONS=-N --color=tty -T 0, sun.cpu.isalist=, env.MAVEN_PROJECTBASEDIR=/home/thomas/workspace-sec/security, env.JAVA_ROOT=/usr/java/latest, java.ext.dirs=/usr/java/jdk1.8.0_71/jre/lib/ext:/usr/java/packages/lib/ext, os.version=4.1.27-27-default, env.HOST=storage, user.home=/home/thomas, env.XDG_CURRENT_DESKTOP=KDE, java.vm.vendor=Oracle Corporation, env.KDE_FULL_SESSION=true, env.JAVA_HOME=/usr/java/latest, env.XDG_SESSION_ID=2, env.INPUTRC=/home/thomas/.inputrc, env.XAUTHORITY=/tmp/xauth-1000-_0, user.dir=/raid/home/thomas/workspace-sec/security, env.CSHEDIT=emacs, env.XFILESEARCHPATH=/usr/dt/app-defaults/%L/Dt, env.MAIL=/var/spool/mail/thomas, env.PWD=/home/thomas/workspace-sec/security, env.OOO_FORCE_DESKTOP=gnome, sun.cpu.endian=little, env.PAGER=less, env.GTK2_RC_FILES=/etc/gtk-2.0/gtkrc:/home/thomas/.gtkrc-2.0:/home/thomas/.config/gtkrc-2.0, env.PYTHONSTARTUP=/etc/pythonstart, java.vm.version=25.71-b15, env.GPG_TTY=/dev/pts/1, java.class.path=/raid/work/tools/maven/boot/plexus-classworlds-2.5.2.jar, org.slf4j.simpleLogger.defaultLogLevel=debug, env.XCURSOR_THEME=breeze_cursors, os.arch=amd64, maven.build.version=Apache Maven 3.3.9 (bb52d8502b132ec0a5a3f4c09453c07478323dc5; 2015-11-10T17:41:47+01:00), env.AUDIODRIVER=pulseaudio, sun.java.launcher=SUN_STANDARD, java.vm.specification.vendor=Oracle Corporation, file.separator=/, java.runtime.version=1.8.0_71-b15, sun.boot.class.path=/usr/java/jdk1.8.0_71/jre/lib/resources.jar:/usr/java/jdk1.8.0_71/jre/lib/rt.jar:/usr/java/jdk1.8.0_71/jre/lib/sunrsasign.jar:/usr/java/jdk1.8.0_71/jre/lib/jsse.jar:/usr/java/jdk1.8.0_71/jre/lib/jce.jar:/usr/java/jdk1.8.0_71/jre/lib/charsets.jar:/usr/java/jdk1.8.0_71/jre/lib/jfr.jar:/usr/java/jdk1.8.0_71/jre/classes, env.SSH_AUTH_SOCK=/tmp/ssh-OKwiN9ILcOOl/agent.1863, env.XDG_CONFIG_DIRS=/etc/xdg, env.XDG_RUNTIME_DIR=/run/user/1000, maven.version=3.3.9, env.CPU=x86_64, user.country=DE, maven.home=/raid/work/tools/maven, env.SHELL=/bin/bash, env.MORE=-sl, maven.compiler.target=1.8, java.vendor=Oracle Corporation, env.GPG_AGENT_INFO=/tmp/gpg-B1bfeY/S.gpg-agent:1867:1, maven.compiler.source=1.8, java.specification.version=1.8, sun.arch.data.model=64}
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[DEBUG] resource with targetPath null
+directory /raid/home/thomas/workspace-sec/security/src/main/resources
+excludes []
+includes []
+[INFO] skip non existing resourceDirectory /raid/home/thomas/workspace-sec/security/src/main/resources
+[DEBUG] no use filter components
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ security ---
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=1, ConflictMarker.markTime=1, ConflictMarker.nodeCount=160, ConflictIdSorter.graphTime=0, ConflictIdSorter.topsortTime=0, ConflictIdSorter.conflictIdCount=43, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=3, ConflictResolver.conflictItemCount=63, DefaultDependencyCollector.collectTime=144, DefaultDependencyCollector.transformTime=5}
+[DEBUG] org.apache.maven.plugins:maven-compiler-plugin:jar:3.1:
+[DEBUG]    org.apache.maven:maven-plugin-api:jar:2.0.9:compile
+[DEBUG]    org.apache.maven:maven-artifact:jar:2.0.9:compile
+[DEBUG]       org.codehaus.plexus:plexus-utils:jar:1.5.1:compile
+[DEBUG]    org.apache.maven:maven-core:jar:2.0.9:compile
+[DEBUG]       org.apache.maven:maven-settings:jar:2.0.9:compile
+[DEBUG]       org.apache.maven:maven-plugin-parameter-documenter:jar:2.0.9:compile
+[DEBUG]       org.apache.maven:maven-profile:jar:2.0.9:compile
+[DEBUG]       org.apache.maven:maven-model:jar:2.0.9:compile
+[DEBUG]       org.apache.maven:maven-repository-metadata:jar:2.0.9:compile
+[DEBUG]       org.apache.maven:maven-error-diagnostics:jar:2.0.9:compile
+[DEBUG]       org.apache.maven:maven-project:jar:2.0.9:compile
+[DEBUG]          org.apache.maven:maven-plugin-registry:jar:2.0.9:compile
+[DEBUG]       org.apache.maven:maven-plugin-descriptor:jar:2.0.9:compile
+[DEBUG]       org.apache.maven:maven-artifact-manager:jar:2.0.9:compile
+[DEBUG]       org.apache.maven:maven-monitor:jar:2.0.9:compile
+[DEBUG]    org.apache.maven:maven-toolchain:jar:1.0:compile
+[DEBUG]    org.apache.maven.shared:maven-shared-utils:jar:0.1:compile
+[DEBUG]       com.google.code.findbugs:jsr305:jar:2.0.1:compile
+[DEBUG]    org.apache.maven.shared:maven-shared-incremental:jar:1.1:compile
+[DEBUG]       org.codehaus.plexus:plexus-component-annotations:jar:1.5.5:compile
+[DEBUG]    org.codehaus.plexus:plexus-compiler-api:jar:2.2:compile
+[DEBUG]    org.codehaus.plexus:plexus-compiler-manager:jar:2.2:compile
+[DEBUG]    org.codehaus.plexus:plexus-compiler-javac:jar:2.2:runtime
+[DEBUG]    org.codehaus.plexus:plexus-container-default:jar:1.5.5:compile
+[DEBUG]       org.codehaus.plexus:plexus-classworlds:jar:2.2.2:compile
+[DEBUG]       org.apache.xbean:xbean-reflect:jar:3.4:compile
+[DEBUG]          log4j:log4j:jar:1.2.12:compile
+[DEBUG]          commons-logging:commons-logging-api:jar:1.1:compile
+[DEBUG]       com.google.collections:google-collections:jar:1.0:compile
+[DEBUG]       junit:junit:jar:3.8.2:compile
+[DEBUG] Created new class realm plugin>org.apache.maven.plugins:maven-compiler-plugin:3.1
+[DEBUG] Importing foreign packages into class realm plugin>org.apache.maven.plugins:maven-compiler-plugin:3.1
+[DEBUG]   Imported:  < maven.api
+[DEBUG] Populating class realm plugin>org.apache.maven.plugins:maven-compiler-plugin:3.1
+[DEBUG]   Included: org.apache.maven.plugins:maven-compiler-plugin:jar:3.1
+[DEBUG]   Included: org.codehaus.plexus:plexus-utils:jar:1.5.1
+[DEBUG]   Included: org.apache.maven.shared:maven-shared-utils:jar:0.1
+[DEBUG]   Included: com.google.code.findbugs:jsr305:jar:2.0.1
+[DEBUG]   Included: org.apache.maven.shared:maven-shared-incremental:jar:1.1
+[DEBUG]   Included: org.codehaus.plexus:plexus-component-annotations:jar:1.5.5
+[DEBUG]   Included: org.codehaus.plexus:plexus-compiler-api:jar:2.2
+[DEBUG]   Included: org.codehaus.plexus:plexus-compiler-manager:jar:2.2
+[DEBUG]   Included: org.codehaus.plexus:plexus-compiler-javac:jar:2.2
+[DEBUG]   Included: org.apache.xbean:xbean-reflect:jar:3.4
+[DEBUG]   Included: log4j:log4j:jar:1.2.12
+[DEBUG]   Included: commons-logging:commons-logging-api:jar:1.1
+[DEBUG]   Included: com.google.collections:google-collections:jar:1.0
+[DEBUG]   Included: junit:junit:jar:3.8.2
+[DEBUG] Configuring mojo org.apache.maven.plugins:maven-compiler-plugin:3.1:compile from plugin realm ClassRealm[plugin>org.apache.maven.plugins:maven-compiler-plugin:3.1, parent: sun.misc.Launcher$AppClassLoader@70dea4e]
+[DEBUG] Configuring mojo 'org.apache.maven.plugins:maven-compiler-plugin:3.1:compile' with basic configurator -->
+[DEBUG]   (f) basedir = /raid/home/thomas/workspace-sec/security
+[DEBUG]   (f) buildDirectory = /raid/home/thomas/workspace-sec/security/target
+[DEBUG]   (f) classpathElements = [/raid/home/thomas/workspace-sec/security/target/classes, /home/thomas/.m2/repository/org/wildfly/security/wildfly-security-manager/1.1.2.Final/wildfly-security-manager-1.1.2.Final.jar, /home/thomas/.m2/repository/org/jboss/modules/jboss-modules/1.3.3.Final/jboss-modules-1.3.3.Final.jar]
+[DEBUG]   (f) compileSourceRoots = [/raid/home/thomas/workspace-sec/security/src/main/java]
+[DEBUG]   (f) compilerId = javac
+[DEBUG]   (f) debug = true
+[DEBUG]   (f) encoding = UTF-8
+[DEBUG]   (f) failOnError = true
+[DEBUG]   (f) forceJavacCompilerUse = false
+[DEBUG]   (f) fork = false
+[DEBUG]   (f) generatedSourcesDirectory = /raid/home/thomas/workspace-sec/security/target/generated-sources/annotations
+[DEBUG]   (f) mojoExecution = org.apache.maven.plugins:maven-compiler-plugin:3.1:compile {execution: default-compile}
+[DEBUG]   (f) optimize = false
+[DEBUG]   (f) outputDirectory = /raid/home/thomas/workspace-sec/security/target/classes
+[DEBUG]   (f) projectArtifact = at.tfr.sec:security:jar:1.0-SNAPSHOT
+[DEBUG]   (f) showDeprecation = false
+[DEBUG]   (f) showWarnings = false
+[DEBUG]   (f) skipMultiThreadWarning = false
+[DEBUG]   (f) source = 1.8
+[DEBUG]   (f) staleMillis = 0
+[DEBUG]   (f) target = 1.8
+[DEBUG]   (f) useIncrementalCompilation = true
+[DEBUG]   (f) verbose = false
+[DEBUG]   (f) mavenSession = org.apache.maven.execution.MavenSession@591e58fa
+[DEBUG]   (f) session = org.apache.maven.execution.MavenSession@591e58fa
+[DEBUG] -- end configuration --
+[DEBUG] Using compiler 'javac'.
+[DEBUG] Source directories: [/raid/home/thomas/workspace-sec/security/src/main/java]
+[DEBUG] Classpath: [/raid/home/thomas/workspace-sec/security/target/classes
+ /home/thomas/.m2/repository/org/wildfly/security/wildfly-security-manager/1.1.2.Final/wildfly-security-manager-1.1.2.Final.jar
+ /home/thomas/.m2/repository/org/jboss/modules/jboss-modules/1.3.3.Final/jboss-modules-1.3.3.Final.jar]
+[DEBUG] Output directory: /raid/home/thomas/workspace-sec/security/target/classes
+[DEBUG] CompilerReuseStrategy: reuseCreated
+[DEBUG] useIncrementalCompilation enabled
+[DEBUG] Stale source detected: /raid/home/thomas/workspace-sec/security/src/main/java/at/tfr/sec/StringHolder.java
+[INFO] Changes detected - recompiling the module!
+[DEBUG] Classpath:
+[DEBUG]  /raid/home/thomas/workspace-sec/security/target/classes
+[DEBUG]  /home/thomas/.m2/repository/org/wildfly/security/wildfly-security-manager/1.1.2.Final/wildfly-security-manager-1.1.2.Final.jar
+[DEBUG]  /home/thomas/.m2/repository/org/jboss/modules/jboss-modules/1.3.3.Final/jboss-modules-1.3.3.Final.jar
+[DEBUG] Source roots:
+[DEBUG]  /raid/home/thomas/workspace-sec/security/src/main/java
+[DEBUG] Command line options:
+[DEBUG] -d /raid/home/thomas/workspace-sec/security/target/classes -classpath /raid/home/thomas/workspace-sec/security/target/classes:/home/thomas/.m2/repository/org/wildfly/security/wildfly-security-manager/1.1.2.Final/wildfly-security-manager-1.1.2.Final.jar:/home/thomas/.m2/repository/org/jboss/modules/jboss-modules/1.3.3.Final/jboss-modules-1.3.3.Final.jar: -sourcepath /raid/home/thomas/workspace-sec/security/src/main/java: -s /raid/home/thomas/workspace-sec/security/target/generated-sources/annotations -g -nowarn -target 1.8 -source 1.8 -encoding UTF-8
+[DEBUG] incrementalBuildHelper#beforeRebuildExecution
+[INFO] Compiling 1 source file to /raid/home/thomas/workspace-sec/security/target/classes
+[DEBUG] incrementalBuildHelper#afterRebuildExecution
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ security ---
+[DEBUG] Configuring mojo org.apache.maven.plugins:maven-resources-plugin:2.6:testResources from plugin realm ClassRealm[plugin>org.apache.maven.plugins:maven-resources-plugin:2.6, parent: sun.misc.Launcher$AppClassLoader@70dea4e]
+[DEBUG] Configuring mojo 'org.apache.maven.plugins:maven-resources-plugin:2.6:testResources' with basic configurator -->
+[DEBUG]   (f) buildFilters = []
+[DEBUG]   (f) encoding = UTF-8
+[DEBUG]   (f) escapeWindowsPaths = true
+[DEBUG]   (s) includeEmptyDirs = false
+[DEBUG]   (s) outputDirectory = /raid/home/thomas/workspace-sec/security/target/test-classes
+[DEBUG]   (s) overwrite = false
+[DEBUG]   (f) project = MavenProject: at.tfr.sec:security:1.0-SNAPSHOT @ /raid/home/thomas/workspace-sec/security/pom.xml
+[DEBUG]   (s) resources = [Resource {targetPath: null, filtering: false, FileSet {directory: /raid/home/thomas/workspace-sec/security/src/test/resources, PatternSet [includes: {}, excludes: {}]}}]
+[DEBUG]   (f) session = org.apache.maven.execution.MavenSession@591e58fa
+[DEBUG]   (f) supportMultiLineFiltering = false
+[DEBUG]   (f) useBuildFilters = true
+[DEBUG]   (s) useDefaultDelimiters = true
+[DEBUG] -- end configuration --
+[DEBUG] properties used {env.DESKTOP_SESSION=/usr/share/xsessions/kde-plasma, env.OLDPWD=/home/thomas/workspace-sec/security, file.encoding.pkg=sun.io, java.home=/usr/java/jdk1.8.0_71/jre, env.NNTPSERVER=news, env.DISPLAY=:0, env.LS_COLORS=no=00:fi=00:di=01;34:ln=00;36:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=41;33;01:ex=00;32:*.cmd=00;32:*.exe=01;32:*.com=01;32:*.bat=01;32:*.btm=01;32:*.dll=01;32:*.tar=00;31:*.tbz=00;31:*.tgz=00;31:*.rpm=00;31:*.deb=00;31:*.arj=00;31:*.taz=00;31:*.lzh=00;31:*.lzma=00;31:*.zip=00;31:*.zoo=00;31:*.z=00;31:*.Z=00;31:*.gz=00;31:*.bz2=00;31:*.tb2=00;31:*.tz2=00;31:*.tbz2=00;31:*.xz=00;31:*.avi=01;35:*.bmp=01;35:*.fli=01;35:*.gif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mng=01;35:*.mov=01;35:*.mpg=01;35:*.pcx=01;35:*.pbm=01;35:*.pgm=01;35:*.png=01;35:*.ppm=01;35:*.tga=01;35:*.tif=01;35:*.xbm=01;35:*.xpm=01;35:*.dl=01;35:*.gl=01;35:*.wmv=01;35:*.aiff=00;32:*.au=00;32:*.mid=00;32:*.mp3=00;32:*.ogg=00;32:*.voc=00;32:*.wav=00;32:, env.XDG_VTNR=7, env.FORGE_HOME=/usr/share/tools/forge, classworlds.conf=/raid/work/tools/maven/bin/m2.conf, env.XDG_SESSION_COOKIE=4c67ce876ed741679899a09f78226713-1469734325.881175-137335039, java.endorsed.dirs=/usr/java/jdk1.8.0_71/jre/lib/endorsed, env.LOGNAME=thomas, env.GS_LIB=/home/thomas/.fonts, env.G_FILENAME_ENCODING=@locale,UTF-8,ISO-8859-15,CP1252, env.XDG_SEAT=seat0, env.KDE_SESSION_UID=1000, env.SESSION_MANAGER=local/storage:@/tmp/.ICE-unix/1944,unix/storage:/tmp/.ICE-unix/1944, sun.os.patch.level=unknown, java.vendor.url=http://java.oracle.com/, env.XDG_SEAT_PATH=/org/freedesktop/DisplayManager/Seat0, env.G_BROKEN_FILENAMES=1, java.version=1.8.0_71, env.XTERM_VERSION=X.Org 7.7.0(308), env.INPUT_METHOD=ibus, env.HOSTTYPE=x86_64, env.SDL_AUDIODRIVER=pulse, java.vendor.url.bug=http://bugreport.sun.com/bugreport/, env.QEMU_AUDIO_DRV=pa, env.LESS_ADVANCED_PREPROCESSOR=no, env.XDG_DATA_DIRS=/usr/share, user.name=thomas, env.LANG=de_DE.UTF-8, env.CVS_RSH=ssh, sun.io.unicode.encoding=UnicodeLittle, sun.jnu.encoding=UTF-8, env.DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-k8GReRPB78,guid=13ab5a790a43264a3ce6cd95579a5db5, java.runtime.name=Java(TM) SE Runtime Environment, env.MINICOM=-c on, env.SSH_ASKPASS=/usr/lib/ssh/ksshaskpass, env.SDK_HOME=/usr/java/latest, java.specification.name=Java Platform API Specification, user.timezone=Europe/Vienna, env.LESSOPEN=lessopen.sh %s, env.MACHTYPE=x86_64-suse-linux, path.separator=:, env.MAVEN_CMD_LINE_ARGS= -X clean test, env.XTERM_SHELL=/bin/bash, env.XMODIFIERS=@im=ibus, file.encoding=UTF-8, env.XAUTHLOCALHOSTNAME=storage, env.WINDOWMANAGER=/usr/bin/startkde, env.HOME=/home/thomas, sun.java.command=org.codehaus.plexus.classworlds.launcher.Launcher -X clean test, env.MANPATH=/usr/local/man:/usr/share/man, env.PROFILEREAD=true, env.GTK_RC_FILES=/etc/gtk/gtkrc:/home/thomas/.gtkrc:/home/thomas/.config/gtkrc, env.HOSTNAME=storage, env.XSESSION_IS_UP=yes, env.PILOTPORT=usb:, java.io.tmpdir=/tmp, user.language=de, line.separator=
+, env.SSH_AGENT_PID=1864, env.HISTSIZE=1000, java.vm.info=mixed mode, java.vm.specification.name=Java Virtual Machine Specification, env.COLORTERM=1, env.XTERM_LOCALE=de_DE.UTF-8, env.QT_IM_SWITCHER=imsw-multi, env.ALSA_CONFIG_PATH=/etc/alsa-pulse.conf, env.XNLSPATH=/usr/share/X11/nls, env.XDG_SESSION_CLASS=user, env.XDG_SESSION_DESKTOP=KDE, java.awt.printerjob=sun.print.PSPrinterJob, env.XDG_SESSION_TYPE=x11, env.WINDOWID=73400334, env.OSTYPE=linux, env.XDG_SESSION_PATH=/org/freedesktop/DisplayManager/Session1, os.name=Linux, java.specification.vendor=Oracle Corporation, env.QT_SYSTEM_DIR=/usr/share/desktop-data, env.TERM=xterm, java.vm.name=Java HotSpot(TM) 64-Bit Server VM, env.QT_IM_MODULE=ibus, env.KDE_SESSION_VERSION=5, java.library.path=:/usr/share/tools/android-sdk-linux/tools/lib/:/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib, env.PATH=/usr/java/latest/bin:/home/thomas/bin:/usr/local/bin:/usr/bin:/bin:/usr/bin/X11:/usr/games:/usr/local/sbin:/usr/sbin:/sbin:/opt/Citrix/ICAClient/:/usr/local/sbin:/usr/sbin:/sbin, env.JDK_HOME=/usr/java/latest, env.LESSCLOSE=lessclose.sh %s %s, env.FROM_HEADER=, java.class.version=52.0, env.SHLVL=2, maven.multiModuleProjectDirectory=/home/thomas/workspace-sec/security, env.LD_LIBRARY_PATH=:/usr/share/tools/android-sdk-linux/tools/lib/, env.KDE_MULTIHEAD=false, sun.boot.library.path=/usr/java/jdk1.8.0_71/jre/lib/amd64, project.build.sourceEncoding=UTF-8, env.JAVA_BINDIR=/usr/java/latest/bin, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, java.awt.graphicsenv=sun.awt.X11GraphicsEnvironment, env.USER=thomas, env.GTK_IM_MODULE=ibus, env.GTK_MODULES=canberra-gtk-module, env.JRE_HOME=/usr/java/latest/jre, env.CONFIG_SITE=/usr/share/site/x86_64-unknown-linux-gnu, env.XKEYSYMDB=/usr/X11R6/lib/X11/XKeysymDB, env.LESSKEY=/etc/lesskey.bin, env.LESS=-M -I -R, java.vm.specification.version=1.8, env.NLSPATH=/usr/dt/lib/nls/msg/%L/%N.cat, awt.toolkit=sun.awt.X11.XToolkit, env.LS_OPTIONS=-N --color=tty -T 0, sun.cpu.isalist=, env.MAVEN_PROJECTBASEDIR=/home/thomas/workspace-sec/security, env.JAVA_ROOT=/usr/java/latest, java.ext.dirs=/usr/java/jdk1.8.0_71/jre/lib/ext:/usr/java/packages/lib/ext, os.version=4.1.27-27-default, env.HOST=storage, user.home=/home/thomas, env.XDG_CURRENT_DESKTOP=KDE, java.vm.vendor=Oracle Corporation, env.KDE_FULL_SESSION=true, env.JAVA_HOME=/usr/java/latest, env.XDG_SESSION_ID=2, env.INPUTRC=/home/thomas/.inputrc, env.XAUTHORITY=/tmp/xauth-1000-_0, user.dir=/raid/home/thomas/workspace-sec/security, env.CSHEDIT=emacs, env.XFILESEARCHPATH=/usr/dt/app-defaults/%L/Dt, env.MAIL=/var/spool/mail/thomas, env.PWD=/home/thomas/workspace-sec/security, env.OOO_FORCE_DESKTOP=gnome, sun.cpu.endian=little, env.PAGER=less, env.GTK2_RC_FILES=/etc/gtk-2.0/gtkrc:/home/thomas/.gtkrc-2.0:/home/thomas/.config/gtkrc-2.0, env.PYTHONSTARTUP=/etc/pythonstart, java.vm.version=25.71-b15, env.GPG_TTY=/dev/pts/1, java.class.path=/raid/work/tools/maven/boot/plexus-classworlds-2.5.2.jar, org.slf4j.simpleLogger.defaultLogLevel=debug, env.XCURSOR_THEME=breeze_cursors, os.arch=amd64, maven.build.version=Apache Maven 3.3.9 (bb52d8502b132ec0a5a3f4c09453c07478323dc5; 2015-11-10T17:41:47+01:00), env.AUDIODRIVER=pulseaudio, sun.java.launcher=SUN_STANDARD, java.vm.specification.vendor=Oracle Corporation, file.separator=/, java.runtime.version=1.8.0_71-b15, sun.boot.class.path=/usr/java/jdk1.8.0_71/jre/lib/resources.jar:/usr/java/jdk1.8.0_71/jre/lib/rt.jar:/usr/java/jdk1.8.0_71/jre/lib/sunrsasign.jar:/usr/java/jdk1.8.0_71/jre/lib/jsse.jar:/usr/java/jdk1.8.0_71/jre/lib/jce.jar:/usr/java/jdk1.8.0_71/jre/lib/charsets.jar:/usr/java/jdk1.8.0_71/jre/lib/jfr.jar:/usr/java/jdk1.8.0_71/jre/classes, env.SSH_AUTH_SOCK=/tmp/ssh-OKwiN9ILcOOl/agent.1863, env.XDG_CONFIG_DIRS=/etc/xdg, env.XDG_RUNTIME_DIR=/run/user/1000, maven.version=3.3.9, env.CPU=x86_64, user.country=DE, maven.home=/raid/work/tools/maven, env.SHELL=/bin/bash, env.MORE=-sl, maven.compiler.target=1.8, java.vendor=Oracle Corporation, env.GPG_AGENT_INFO=/tmp/gpg-B1bfeY/S.gpg-agent:1867:1, maven.compiler.source=1.8, java.specification.version=1.8, sun.arch.data.model=64}
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[DEBUG] resource with targetPath null
+directory /raid/home/thomas/workspace-sec/security/src/test/resources
+excludes []
+includes []
+[DEBUG] ignoreDelta true
+[INFO] Copying 1 resource
+[DEBUG] file read-all-java.policy has a filtered file extension
+[DEBUG] copy /raid/home/thomas/workspace-sec/security/src/test/resources/read-all-java.policy to /raid/home/thomas/workspace-sec/security/target/test-classes/read-all-java.policy
+[DEBUG] no use filter components
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ security ---
+[DEBUG] Configuring mojo org.apache.maven.plugins:maven-compiler-plugin:3.1:testCompile from plugin realm ClassRealm[plugin>org.apache.maven.plugins:maven-compiler-plugin:3.1, parent: sun.misc.Launcher$AppClassLoader@70dea4e]
+[DEBUG] Configuring mojo 'org.apache.maven.plugins:maven-compiler-plugin:3.1:testCompile' with basic configurator -->
+[DEBUG]   (f) basedir = /raid/home/thomas/workspace-sec/security
+[DEBUG]   (f) buildDirectory = /raid/home/thomas/workspace-sec/security/target
+[DEBUG]   (f) classpathElements = [/raid/home/thomas/workspace-sec/security/target/test-classes, /raid/home/thomas/workspace-sec/security/target/classes, /home/thomas/.m2/repository/org/wildfly/security/wildfly-security-manager/1.1.2.Final/wildfly-security-manager-1.1.2.Final.jar, /home/thomas/.m2/repository/org/jboss/modules/jboss-modules/1.3.3.Final/jboss-modules-1.3.3.Final.jar, /home/thomas/.m2/repository/junit/junit/4.12/junit-4.12.jar, /home/thomas/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar]
+[DEBUG]   (f) compileSourceRoots = [/raid/home/thomas/workspace-sec/security/src/test/java]
+[DEBUG]   (f) compilerId = javac
+[DEBUG]   (f) debug = true
+[DEBUG]   (f) encoding = UTF-8
+[DEBUG]   (f) failOnError = true
+[DEBUG]   (f) forceJavacCompilerUse = false
+[DEBUG]   (f) fork = false
+[DEBUG]   (f) generatedTestSourcesDirectory = /raid/home/thomas/workspace-sec/security/target/generated-test-sources/test-annotations
+[DEBUG]   (f) mojoExecution = org.apache.maven.plugins:maven-compiler-plugin:3.1:testCompile {execution: default-testCompile}
+[DEBUG]   (f) optimize = false
+[DEBUG]   (f) outputDirectory = /raid/home/thomas/workspace-sec/security/target/test-classes
+[DEBUG]   (f) showDeprecation = false
+[DEBUG]   (f) showWarnings = false
+[DEBUG]   (f) skipMultiThreadWarning = false
+[DEBUG]   (f) source = 1.8
+[DEBUG]   (f) staleMillis = 0
+[DEBUG]   (f) target = 1.8
+[DEBUG]   (f) useIncrementalCompilation = true
+[DEBUG]   (f) verbose = false
+[DEBUG]   (f) mavenSession = org.apache.maven.execution.MavenSession@591e58fa
+[DEBUG]   (f) session = org.apache.maven.execution.MavenSession@591e58fa
+[DEBUG] -- end configuration --
+[DEBUG] Using compiler 'javac'.
+[DEBUG] Source directories: [/raid/home/thomas/workspace-sec/security/src/test/java]
+[DEBUG] Classpath: [/raid/home/thomas/workspace-sec/security/target/test-classes
+ /raid/home/thomas/workspace-sec/security/target/classes
+ /home/thomas/.m2/repository/org/wildfly/security/wildfly-security-manager/1.1.2.Final/wildfly-security-manager-1.1.2.Final.jar
+ /home/thomas/.m2/repository/org/jboss/modules/jboss-modules/1.3.3.Final/jboss-modules-1.3.3.Final.jar
+ /home/thomas/.m2/repository/junit/junit/4.12/junit-4.12.jar
+ /home/thomas/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar]
+[DEBUG] Output directory: /raid/home/thomas/workspace-sec/security/target/test-classes
+[DEBUG] CompilerReuseStrategy: reuseCreated
+[DEBUG] useIncrementalCompilation enabled
+[DEBUG] Stale source detected: /raid/home/thomas/workspace-sec/security/src/test/java/at/tfr/sec/TestNashornSecurity.java
+[DEBUG] Stale source detected: /raid/home/thomas/workspace-sec/security/src/test/java/at/tfr/sec/TestNashornSecurityWithWildflySecurityManager.java
+[INFO] Changes detected - recompiling the module!
+[DEBUG] Classpath:
+[DEBUG]  /raid/home/thomas/workspace-sec/security/target/test-classes
+[DEBUG]  /raid/home/thomas/workspace-sec/security/target/classes
+[DEBUG]  /home/thomas/.m2/repository/org/wildfly/security/wildfly-security-manager/1.1.2.Final/wildfly-security-manager-1.1.2.Final.jar
+[DEBUG]  /home/thomas/.m2/repository/org/jboss/modules/jboss-modules/1.3.3.Final/jboss-modules-1.3.3.Final.jar
+[DEBUG]  /home/thomas/.m2/repository/junit/junit/4.12/junit-4.12.jar
+[DEBUG]  /home/thomas/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar
+[DEBUG] Source roots:
+[DEBUG]  /raid/home/thomas/workspace-sec/security/src/test/java
+[DEBUG] Command line options:
+[DEBUG] -d /raid/home/thomas/workspace-sec/security/target/test-classes -classpath /raid/home/thomas/workspace-sec/security/target/test-classes:/raid/home/thomas/workspace-sec/security/target/classes:/home/thomas/.m2/repository/org/wildfly/security/wildfly-security-manager/1.1.2.Final/wildfly-security-manager-1.1.2.Final.jar:/home/thomas/.m2/repository/org/jboss/modules/jboss-modules/1.3.3.Final/jboss-modules-1.3.3.Final.jar:/home/thomas/.m2/repository/junit/junit/4.12/junit-4.12.jar:/home/thomas/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar: -sourcepath /raid/home/thomas/workspace-sec/security/src/test/java: -s /raid/home/thomas/workspace-sec/security/target/generated-test-sources/test-annotations -g -nowarn -target 1.8 -source 1.8 -encoding UTF-8
+[DEBUG] incrementalBuildHelper#beforeRebuildExecution
+[INFO] Compiling 2 source files to /raid/home/thomas/workspace-sec/security/target/test-classes
+[DEBUG] incrementalBuildHelper#afterRebuildExecution
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ security ---
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=0, ConflictMarker.markTime=1, ConflictMarker.nodeCount=114, ConflictIdSorter.graphTime=0, ConflictIdSorter.topsortTime=0, ConflictIdSorter.conflictIdCount=34, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=2, ConflictResolver.conflictItemCount=80, DefaultDependencyCollector.collectTime=46, DefaultDependencyCollector.transformTime=3}
+[DEBUG] org.apache.maven.plugins:maven-surefire-plugin:jar:2.19.1:
+[DEBUG]    org.apache.maven:maven-plugin-api:jar:2.2.1:compile
+[DEBUG]    org.apache.maven.surefire:maven-surefire-common:jar:2.19.1:compile
+[DEBUG]       org.apache.maven.surefire:surefire-booter:jar:2.19.1:compile
+[DEBUG]       org.apache.maven:maven-artifact:jar:2.2.1:compile
+[DEBUG]          org.codehaus.plexus:plexus-utils:jar:1.5.15:compile
+[DEBUG]       org.apache.maven:maven-plugin-descriptor:jar:2.2.1:compile
+[DEBUG]          org.codehaus.plexus:plexus-container-default:jar:1.0-alpha-9-stable-1:compile
+[DEBUG]             junit:junit:jar:4.12:compile
+[DEBUG]                org.hamcrest:hamcrest-core:jar:1.3:compile
+[DEBUG]       org.apache.maven:maven-project:jar:2.2.1:compile
+[DEBUG]          org.apache.maven:maven-settings:jar:2.2.1:compile
+[DEBUG]          org.apache.maven:maven-profile:jar:2.2.1:compile
+[DEBUG]          org.apache.maven:maven-artifact-manager:jar:2.2.1:compile
+[DEBUG]             backport-util-concurrent:backport-util-concurrent:jar:3.1:compile
+[DEBUG]          org.apache.maven:maven-plugin-registry:jar:2.2.1:compile
+[DEBUG]          org.codehaus.plexus:plexus-interpolation:jar:1.11:compile
+[DEBUG]       org.apache.maven:maven-model:jar:2.2.1:compile
+[DEBUG]       org.apache.maven:maven-core:jar:2.2.1:compile
+[DEBUG]          org.apache.maven:maven-plugin-parameter-documenter:jar:2.2.1:compile
+[DEBUG]          org.slf4j:slf4j-jdk14:jar:1.5.6:runtime
+[DEBUG]             org.slf4j:slf4j-api:jar:1.5.6:runtime
+[DEBUG]          org.slf4j:jcl-over-slf4j:jar:1.5.6:runtime
+[DEBUG]          org.apache.maven.reporting:maven-reporting-api:jar:3.0:compile
+[DEBUG]          org.apache.maven:maven-repository-metadata:jar:2.2.1:compile
+[DEBUG]          org.apache.maven:maven-error-diagnostics:jar:2.2.1:compile
+[DEBUG]          org.apache.maven:maven-monitor:jar:2.2.1:compile
+[DEBUG]          classworlds:classworlds:jar:1.1:compile
+[DEBUG]          org.sonatype.plexus:plexus-sec-dispatcher:jar:1.3:compile
+[DEBUG]             org.sonatype.plexus:plexus-cipher:jar:1.4:compile
+[DEBUG]       org.apache.commons:commons-lang3:jar:3.1:compile
+[DEBUG]    org.apache.maven.surefire:surefire-api:jar:2.19.1:compile
+[DEBUG]    org.apache.maven:maven-toolchain:jar:2.2.1:compile
+[DEBUG]    org.apache.maven.plugin-tools:maven-plugin-annotations:jar:3.3:compile
+[DEBUG] Created new class realm plugin>org.apache.maven.plugins:maven-surefire-plugin:2.19.1
+[DEBUG] Importing foreign packages into class realm plugin>org.apache.maven.plugins:maven-surefire-plugin:2.19.1
+[DEBUG]   Imported:  < maven.api
+[DEBUG] Populating class realm plugin>org.apache.maven.plugins:maven-surefire-plugin:2.19.1
+[DEBUG]   Included: org.apache.maven.plugins:maven-surefire-plugin:jar:2.19.1
+[DEBUG]   Included: org.apache.maven.surefire:maven-surefire-common:jar:2.19.1
+[DEBUG]   Included: org.apache.maven.surefire:surefire-booter:jar:2.19.1
+[DEBUG]   Included: org.codehaus.plexus:plexus-utils:jar:1.5.15
+[DEBUG]   Included: junit:junit:jar:4.12
+[DEBUG]   Included: org.hamcrest:hamcrest-core:jar:1.3
+[DEBUG]   Included: backport-util-concurrent:backport-util-concurrent:jar:3.1
+[DEBUG]   Included: org.codehaus.plexus:plexus-interpolation:jar:1.11
+[DEBUG]   Included: org.slf4j:slf4j-jdk14:jar:1.5.6
+[DEBUG]   Included: org.slf4j:jcl-over-slf4j:jar:1.5.6
+[DEBUG]   Included: org.apache.maven.reporting:maven-reporting-api:jar:3.0
+[DEBUG]   Included: org.sonatype.plexus:plexus-sec-dispatcher:jar:1.3
+[DEBUG]   Included: org.sonatype.plexus:plexus-cipher:jar:1.4
+[DEBUG]   Included: org.apache.commons:commons-lang3:jar:3.1
+[DEBUG]   Included: org.apache.maven.surefire:surefire-api:jar:2.19.1
+[DEBUG]   Included: org.apache.maven.plugin-tools:maven-plugin-annotations:jar:3.3
+[DEBUG] Configuring mojo org.apache.maven.plugins:maven-surefire-plugin:2.19.1:test from plugin realm ClassRealm[plugin>org.apache.maven.plugins:maven-surefire-plugin:2.19.1, parent: sun.misc.Launcher$AppClassLoader@70dea4e]
+[DEBUG] Configuring mojo 'org.apache.maven.plugins:maven-surefire-plugin:2.19.1:test' with basic configurator -->
+[DEBUG]   (s) additionalClasspathElements = []
+[DEBUG]   (s) argLine = -Djava.security.debug=all -Djava.security.policy=/raid/home/thomas/workspace-sec/security/target/test-classes/read-all-java.policy
+[DEBUG]   (s) basedir = /raid/home/thomas/workspace-sec/security
+[DEBUG]   (s) childDelegation = false
+[DEBUG]   (s) classesDirectory = /raid/home/thomas/workspace-sec/security/target/classes
+[DEBUG]   (s) classpathDependencyExcludes = []
+[DEBUG]   (s) dependenciesToScan = []
+[DEBUG]   (s) disableXmlReport = false
+[DEBUG]   (s) enableAssertions = true
+[DEBUG]   (f) forkCount = 1
+[DEBUG]   (s) forkMode = once
+[DEBUG]   (s) junitArtifactName = junit:junit
+[DEBUG]   (s) localRepository =       id: local
+      url: file:///home/thomas/.m2/repository/
+   layout: default
+snapshots: [enabled => true, update => always]
+ releases: [enabled => true, update => always]
+
+[DEBUG]   (f) parallelMavenExecution = false
+[DEBUG]   (s) parallelOptimized = true
+[DEBUG]   (s) perCoreThreadCount = true
+[DEBUG]   (s) pluginArtifactMap = {org.apache.maven.plugins:maven-surefire-plugin=org.apache.maven.plugins:maven-surefire-plugin:maven-plugin:2.19.1:, org.apache.maven:maven-plugin-api=org.apache.maven:maven-plugin-api:jar:2.2.1:compile, org.apache.maven.surefire:maven-surefire-common=org.apache.maven.surefire:maven-surefire-common:jar:2.19.1:compile, org.apache.maven.surefire:surefire-booter=org.apache.maven.surefire:surefire-booter:jar:2.19.1:compile, org.apache.maven:maven-artifact=org.apache.maven:maven-artifact:jar:2.2.1:compile, org.codehaus.plexus:plexus-utils=org.codehaus.plexus:plexus-utils:jar:1.5.15:compile, org.apache.maven:maven-plugin-descriptor=org.apache.maven:maven-plugin-descriptor:jar:2.2.1:compile, org.codehaus.plexus:plexus-container-default=org.codehaus.plexus:plexus-container-default:jar:1.0-alpha-9-stable-1:compile, junit:junit=junit:junit:jar:4.12:compile, org.hamcrest:hamcrest-core=org.hamcrest:hamcrest-core:jar:1.3:compile, org.apache.maven:maven-project=org.apache.maven:maven-project:jar:2.2.1:compile, org.apache.maven:maven-settings=org.apache.maven:maven-settings:jar:2.2.1:compile, org.apache.maven:maven-profile=org.apache.maven:maven-profile:jar:2.2.1:compile, org.apache.maven:maven-artifact-manager=org.apache.maven:maven-artifact-manager:jar:2.2.1:compile, backport-util-concurrent:backport-util-concurrent=backport-util-concurrent:backport-util-concurrent:jar:3.1:compile, org.apache.maven:maven-plugin-registry=org.apache.maven:maven-plugin-registry:jar:2.2.1:compile, org.codehaus.plexus:plexus-interpolation=org.codehaus.plexus:plexus-interpolation:jar:1.11:compile, org.apache.maven:maven-model=org.apache.maven:maven-model:jar:2.2.1:compile, org.apache.maven:maven-core=org.apache.maven:maven-core:jar:2.2.1:compile, org.apache.maven:maven-plugin-parameter-documenter=org.apache.maven:maven-plugin-parameter-documenter:jar:2.2.1:compile, org.slf4j:slf4j-jdk14=org.slf4j:slf4j-jdk14:jar:1.5.6:runtime, org.slf4j:slf4j-api=org.slf4j:slf4j-api:jar:1.5.6:runtime, org.slf4j:jcl-over-slf4j=org.slf4j:jcl-over-slf4j:jar:1.5.6:runtime, org.apache.maven.reporting:maven-reporting-api=org.apache.maven.reporting:maven-reporting-api:jar:3.0:compile, org.apache.maven:maven-repository-metadata=org.apache.maven:maven-repository-metadata:jar:2.2.1:compile, org.apache.maven:maven-error-diagnostics=org.apache.maven:maven-error-diagnostics:jar:2.2.1:compile, org.apache.maven:maven-monitor=org.apache.maven:maven-monitor:jar:2.2.1:compile, classworlds:classworlds=classworlds:classworlds:jar:1.1:compile, org.sonatype.plexus:plexus-sec-dispatcher=org.sonatype.plexus:plexus-sec-dispatcher:jar:1.3:compile, org.sonatype.plexus:plexus-cipher=org.sonatype.plexus:plexus-cipher:jar:1.4:compile, org.apache.commons:commons-lang3=org.apache.commons:commons-lang3:jar:3.1:compile, org.apache.maven.surefire:surefire-api=org.apache.maven.surefire:surefire-api:jar:2.19.1:compile, org.apache.maven:maven-toolchain=org.apache.maven:maven-toolchain:jar:2.2.1:compile, org.apache.maven.plugin-tools:maven-plugin-annotations=org.apache.maven.plugin-tools:maven-plugin-annotations:jar:3.3:compile}
+[DEBUG]   (f) pluginDescriptor = Component Descriptor: role: 'org.apache.maven.plugin.Mojo', implementation: 'org.apache.maven.plugin.surefire.HelpMojo', role hint: 'org.apache.maven.plugins:maven-surefire-plugin:2.19.1:help'
+role: 'org.apache.maven.plugin.Mojo', implementation: 'org.apache.maven.plugin.surefire.SurefirePlugin', role hint: 'org.apache.maven.plugins:maven-surefire-plugin:2.19.1:test'
+---
+[DEBUG]   (s) printSummary = true
+[DEBUG]   (s) projectArtifactMap = {org.wildfly.security:wildfly-security-manager=org.wildfly.security:wildfly-security-manager:jar:1.1.2.Final:compile, org.jboss.modules:jboss-modules=org.jboss.modules:jboss-modules:jar:1.3.3.Final:compile, junit:junit=junit:junit:jar:4.12:test, org.hamcrest:hamcrest-core=org.hamcrest:hamcrest-core:jar:1.3:test}
+[DEBUG]   (s) redirectTestOutputToFile = false
+[DEBUG]   (s) remoteRepositories = [      id: maven2
+      url: http://repo1.maven.org/maven2/
+   layout: default
+snapshots: [enabled => true, update => daily]
+ releases: [enabled => true, update => daily]
+,       id: jboss-snapshots-repository-group
+      url: https://repository.jboss.org/nexus/content/repositories/snapshots/
+   layout: default
+snapshots: [enabled => true, update => daily]
+ releases: [enabled => false, update => daily]
+,       id: jboss-public-repository-group
+      url: https://repository.jboss.org/nexus/content/groups/public/
+   layout: default
+snapshots: [enabled => false, update => daily]
+ releases: [enabled => true, update => daily]
+,       id: central
+      url: https://repo.maven.apache.org/maven2
+   layout: default
+snapshots: [enabled => false, update => daily]
+ releases: [enabled => true, update => never]
+]
+[DEBUG]   (s) reportFormat = brief
+[DEBUG]   (s) reportsDirectory = /raid/home/thomas/workspace-sec/security/target/surefire-reports
+[DEBUG]   (f) rerunFailingTestsCount = 0
+[DEBUG]   (f) reuseForks = true
+[DEBUG]   (s) runOrder = filesystem
+[DEBUG]   (f) shutdown = testset
+[DEBUG]   (s) skip = false
+[DEBUG]   (f) skipAfterFailureCount = 0
+[DEBUG]   (s) skipTests = false
+[DEBUG]   (s) suiteXmlFiles = []
+[DEBUG]   (s) systemProperties = {java.security.debug=all}
+[DEBUG]   (s) testClassesDirectory = /raid/home/thomas/workspace-sec/security/target/test-classes
+[DEBUG]   (s) testFailureIgnore = false
+[DEBUG]   (s) testNGArtifactName = org.testng:testng
+[DEBUG]   (s) testSourceDirectory = /raid/home/thomas/workspace-sec/security/src/test/java
+[DEBUG]   (s) threadCountClasses = 0
+[DEBUG]   (s) threadCountMethods = 0
+[DEBUG]   (s) threadCountSuites = 0
+[DEBUG]   (s) trimStackTrace = true
+[DEBUG]   (s) useFile = true
+[DEBUG]   (s) useManifestOnlyJar = true
+[DEBUG]   (s) useSystemClassLoader = true
+[DEBUG]   (s) useUnlimitedThreads = false
+[DEBUG]   (s) workingDirectory = /raid/home/thomas/workspace-sec/security
+[DEBUG]   (s) project = MavenProject: at.tfr.sec:security:1.0-SNAPSHOT @ /raid/home/thomas/workspace-sec/security/pom.xml
+[DEBUG]   (s) session = org.apache.maven.execution.MavenSession@591e58fa
+[DEBUG] -- end configuration --
+[DEBUG] Surefire report directory: /raid/home/thomas/workspace-sec/security/target/surefire-reports
+[WARNING] The system property java.security.debug is configured twice! The property appears in <argLine/> and any of <systemPropertyVariables/>, <systemProperties/> or user property.
+[DEBUG] Setting system property [java.security.debug]=[all]
+[DEBUG] Setting system property [user.dir]=[/raid/home/thomas/workspace-sec/security]
+[DEBUG] Setting system property [localRepository]=[/home/thomas/.m2/repository]
+[DEBUG] Setting system property [basedir]=[/raid/home/thomas/workspace-sec/security]
+[DEBUG] dummy:dummy:jar:1.0 (selected for null)
+[DEBUG]   org.apache.maven.surefire:surefire-booter:jar:2.19.1:compile (selected for compile)
+[DEBUG]     org.apache.maven.surefire:surefire-api:jar:2.19.1:compile (selected for compile)
+[DEBUG] Adding to surefire booter test classpath: /home/thomas/.m2/repository/org/apache/maven/surefire/surefire-booter/2.19.1/surefire-booter-2.19.1.jar Scope: compile
+[DEBUG] Adding to surefire booter test classpath: /home/thomas/.m2/repository/org/apache/maven/surefire/surefire-api/2.19.1/surefire-api-2.19.1.jar Scope: compile
+[DEBUG] Using JVM: /usr/java/jdk1.8.0_71/jre/bin/java
+[DEBUG] dummy:dummy:jar:1.0 (selected for null)
+[DEBUG]   org.apache.maven.surefire:surefire-junit4:jar:2.19.1:test (selected for test)
+[DEBUG]     org.apache.maven.surefire:surefire-api:jar:2.19.1:test (selected for test)
+[DEBUG] Adding to surefire test classpath: /home/thomas/.m2/repository/org/apache/maven/surefire/surefire-junit4/2.19.1/surefire-junit4-2.19.1.jar Scope: test
+[DEBUG] Adding to surefire test classpath: /home/thomas/.m2/repository/org/apache/maven/surefire/surefire-api/2.19.1/surefire-api-2.19.1.jar Scope: test
+[DEBUG] test classpath:  /raid/home/thomas/workspace-sec/security/target/test-classes  /raid/home/thomas/workspace-sec/security/target/classes  /home/thomas/.m2/repository/org/wildfly/security/wildfly-security-manager/1.1.2.Final/wildfly-security-manager-1.1.2.Final.jar  /home/thomas/.m2/repository/org/jboss/modules/jboss-modules/1.3.3.Final/jboss-modules-1.3.3.Final.jar  /home/thomas/.m2/repository/junit/junit/4.12/junit-4.12.jar  /home/thomas/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar
+[DEBUG] provider classpath:  /home/thomas/.m2/repository/org/apache/maven/surefire/surefire-junit4/2.19.1/surefire-junit4-2.19.1.jar  /home/thomas/.m2/repository/org/apache/maven/surefire/surefire-api/2.19.1/surefire-api-2.19.1.jar
+[DEBUG] test(compact) classpath:  test-classes  classes  wildfly-security-manager-1.1.2.Final.jar  jboss-modules-1.3.3.Final.jar  junit-4.12.jar  hamcrest-core-1.3.jar
+[DEBUG] provider(compact) classpath:  surefire-junit4-2.19.1.jar  surefire-api-2.19.1.jar
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+[DEBUG] boot classpath:  /home/thomas/.m2/repository/org/apache/maven/surefire/surefire-booter/2.19.1/surefire-booter-2.19.1.jar  /home/thomas/.m2/repository/org/apache/maven/surefire/surefire-api/2.19.1/surefire-api-2.19.1.jar  /raid/home/thomas/workspace-sec/security/target/test-classes  /raid/home/thomas/workspace-sec/security/target/classes  /home/thomas/.m2/repository/org/wildfly/security/wildfly-security-manager/1.1.2.Final/wildfly-security-manager-1.1.2.Final.jar  /home/thomas/.m2/repository/org/jboss/modules/jboss-modules/1.3.3.Final/jboss-modules-1.3.3.Final.jar  /home/thomas/.m2/repository/junit/junit/4.12/junit-4.12.jar  /home/thomas/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar  /home/thomas/.m2/repository/org/apache/maven/surefire/surefire-junit4/2.19.1/surefire-junit4-2.19.1.jar
+[DEBUG] boot(compact) classpath:  surefire-booter-2.19.1.jar  surefire-api-2.19.1.jar  test-classes  classes  wildfly-security-manager-1.1.2.Final.jar  jboss-modules-1.3.3.Final.jar  junit-4.12.jar  hamcrest-core-1.3.jar  surefire-junit4-2.19.1.jar
+Forking command line: /bin/sh -c cd /raid/home/thomas/workspace-sec/security && /usr/java/jdk1.8.0_71/jre/bin/java -Djava.security.debug=all -Djava.security.policy=/raid/home/thomas/workspace-sec/security/target/test-classes/read-all-java.policy -jar /raid/home/thomas/workspace-sec/security/target/surefire/surefirebooter3619540684648429228.jar /raid/home/thomas/workspace-sec/security/target/surefire/surefire562213163790575809tmp /raid/home/thomas/workspace-sec/security/target/surefire/surefire_03109118808866703763tmp
+jar: beginEntry META-INF/MANIFEST.MF
+jar: done with meta!
+jar: nothing to verify!
+scl:  getPermissions ProtectionDomain  (file:/home/thomas/.m2/repository/org/apache/maven/surefire/surefire-booter/2.19.1/surefire-booter-2.19.1.jar <no signer certificates>)
+ sun.misc.Launcher$AppClassLoader@6bc7c054
+ <no principals>
+ java.security.Permissions@232204a1 (
+ ("java.lang.RuntimePermission" "exitVM")
+ ("java.io.FilePermission" "/home/thomas/.m2/repository/org/apache/maven/surefire/surefire-booter/2.19.1/surefire-booter-2.19.1.jar" "read")
+)
+scl: 
+jar: beginEntry META-INF/MANIFEST.MF
+jar: done with meta!
+jar: nothing to verify!
+scl:  getPermissions ProtectionDomain  (file:/home/thomas/.m2/repository/org/apache/maven/surefire/surefire-api/2.19.1/surefire-api-2.19.1.jar <no signer certificates>)
+ sun.misc.Launcher$AppClassLoader@6bc7c054
+ <no principals>
+ java.security.Permissions@7f31245a (
+ ("java.lang.RuntimePermission" "exitVM")
+ ("java.io.FilePermission" "/home/thomas/.m2/repository/org/apache/maven/surefire/surefire-api/2.19.1/surefire-api-2.19.1.jar" "read")
+)
+scl: 
+jar: beginEntry META-INF/MANIFEST.MF
+jar: done with meta!
+jar: nothing to verify!
+scl:  getPermissions ProtectionDomain  (file:/home/thomas/.m2/repository/org/apache/maven/surefire/surefire-junit4/2.19.1/surefire-junit4-2.19.1.jar <no signer certificates>)
+ sun.misc.Launcher$AppClassLoader@6bc7c054
+ <no principals>
+ java.security.Permissions@3941a79c (
+ ("java.lang.RuntimePermission" "exitVM")
+ ("java.io.FilePermission" "/home/thomas/.m2/repository/org/apache/maven/surefire/surefire-junit4/2.19.1/surefire-junit4-2.19.1.jar" "read")
+)
+scl: 
+jar: beginEntry META-INF/MANIFEST.MF
+jar: done with meta!
+jar: nothing to verify!
+scl:  getPermissions ProtectionDomain  (file:/home/thomas/.m2/repository/junit/junit/4.12/junit-4.12.jar <no signer certificates>)
+ sun.misc.Launcher$AppClassLoader@6bc7c054
+ <no principals>
+ java.security.Permissions@70177ecd (
+ ("java.lang.RuntimePermission" "exitVM")
+ ("java.io.FilePermission" "/home/thomas/.m2/repository/junit/junit/4.12/junit-4.12.jar" "read")
+)
+scl: 
+scl:  getPermissions ProtectionDomain  (file:/raid/home/thomas/workspace-sec/security/target/test-classes/ <no signer certificates>)
+ sun.misc.Launcher$AppClassLoader@6bc7c054
+ <no principals>
+ java.security.Permissions@20ad9418 (
+ ("java.lang.RuntimePermission" "exitVM")
+ ("java.io.FilePermission" "/raid/home/thomas/workspace-sec/security/target/test-classes/-" "read")
+)
+
+
+scl: 
+jar: beginEntry META-INF/MANIFEST.MF
+jar: done with meta!
+jar: nothing to verify!
+scl:  getPermissions ProtectionDomain  (file:/usr/java/jdk1.8.0_71/jre/lib/ext/nashorn.jar <no signer certificates>)
+ sun.misc.Launcher$ExtClassLoader@685f4c2e
+ <no principals>
+ java.security.Permissions@7daf6ecc (
+ ("java.io.FilePermission" "/usr/java/jdk1.8.0_71/jre/lib/ext/nashorn.jar" "read")
+)
+
+
+scl: 
+scl:  getPermissions ProtectionDomain  (file:/home/thomas/.m2/repository/org/wildfly/security/wildfly-security-manager/1.1.2.Final/wildfly-security-manager-1.1.2.Final.jar <no signer certificates>)
+ sun.misc.Launcher$AppClassLoader@6bc7c054
+ <no principals>
+ java.security.Permissions@506c589e (
+ ("java.lang.RuntimePermission" "exitVM")
+ ("java.io.FilePermission" "/home/thomas/.m2/repository/org/wildfly/security/wildfly-security-manager/1.1.2.Final/wildfly-security-manager-1.1.2.Final.jar" "read")
+)
+
+
+scl: 
+Running at.tfr.sec.TestNashornSecurity
+jar: beginEntry META-INF/MANIFEST.MF
+jar: done with meta!
+jar: nothing to verify!
+scl:  getPermissions ProtectionDomain  (file:/home/thomas/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar <no signer certificates>)
+ sun.misc.Launcher$AppClassLoader@6bc7c054
+ <no principals>
+ java.security.Permissions@4dcbadb4 (
+ ("java.lang.RuntimePermission" "exitVM")
+ ("java.io.FilePermission" "/home/thomas/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar" "read")
+)
+
+
+scl: 
+jar: beginEntry META-INF/MANIFEST.MF
+jar: done with meta!
+jar: nothing to verify!
+scl:  getPermissions ProtectionDomain  (file:/usr/java/jdk1.8.0_71/jre/lib/ext/localedata.jar <no signer certificates>)
+ sun.misc.Launcher$ExtClassLoader@685f4c2e
+ <no principals>
+ java.security.Permissions@e73f9ac (
+ ("java.io.FilePermission" "/usr/java/jdk1.8.0_71/jre/lib/ext/localedata.jar" "read")
+)
+
+
+scl: 
+scl:  getPermissions ProtectionDomain  (null <no signer certificates>)
+ jdk.nashorn.internal.runtime.ScriptLoader@79b06cab
+ <no principals>
+ java.security.Permissions@3eb7fc54 (
+ ("java.lang.RuntimePermission" "accessClassInPackage.jdk.nashorn.internal.runtime")
+ ("java.lang.RuntimePermission" "accessClassInPackage.jdk.nashorn.internal.scripts")
+ ("java.lang.RuntimePermission" "accessClassInPackage.jdk.nashorn.internal.objects")
+ ("java.lang.RuntimePermission" "accessClassInPackage.jdk.nashorn.internal.runtime.linker")
+ ("java.lang.RuntimePermission" "accessClassInPackage.jdk.nashorn.internal.runtime.arrays")
+)
+
+
+scl: 
+scl:  getPermissions ProtectionDomain  (null <no signer certificates>)
+ jdk.nashorn.internal.runtime.ScriptLoader@1ddf84b8
+ <no principals>
+ java.security.Permissions@1139b2f3 (
+ ("java.lang.RuntimePermission" "accessClassInPackage.jdk.nashorn.internal.runtime")
+ ("java.lang.RuntimePermission" "accessClassInPackage.jdk.nashorn.internal.scripts")
+ ("java.lang.RuntimePermission" "accessClassInPackage.jdk.nashorn.internal.objects")
+ ("java.lang.RuntimePermission" "accessClassInPackage.jdk.nashorn.internal.runtime.linker")
+ ("java.lang.RuntimePermission" "accessClassInPackage.jdk.nashorn.internal.runtime.arrays")
+)
+
+
+scl: 
+properties: reading security properties file: /usr/java/jdk1.8.0_71/jre/lib/security/java.security
+ProviderList: provider configuration: [sun.security.provider.Sun, sun.security.rsa.SunRsaSign, sun.security.ec.SunEC, com.sun.net.ssl.internal.ssl.Provider, com.sun.crypto.provider.SunJCE, sun.security.jgss.SunProvider, com.sun.security.sasl.Provider, org.jcp.xml.dsig.internal.dom.XMLDSigRI, sun.security.smartcardio.SunPCSC]
+ProviderConfig: Loading provider: sun.security.provider.Sun
+provider: NativePRNG egdUrl: file:/dev/random
+provider: NativePRNG.MIXED seedFile: /dev/random nextFile: /dev/urandom
+Provider: Set SUN provider property [SecureRandom.NativePRNG/sun.security.provider.NativePRNG]
+Provider: Set SUN provider property [SecureRandom.SHA1PRNG/sun.security.provider.SecureRandom]
+provider: NativePRNG.BLOCKING seedFile: /dev/random nextFile: /dev/random
+Provider: Set SUN provider property [SecureRandom.NativePRNGBlocking/sun.security.provider.NativePRNG$Blocking]
+provider: NativePRNG.NONBLOCKING seedFile: /dev/urandom nextFile: /dev/urandom
+Provider: Set SUN provider property [SecureRandom.NativePRNGNonBlocking/sun.security.provider.NativePRNG$NonBlocking]
+Provider: Set SUN provider property [Signature.SHA1withDSA/sun.security.provider.DSA$SHA1withDSA]
+Provider: Set SUN provider property [Signature.NONEwithDSA/sun.security.provider.DSA$RawDSA]
+Provider: Set SUN provider property [Alg.Alias.Signature.RawDSA/NONEwithDSA]
+Provider: Set SUN provider property [Signature.SHA224withDSA/sun.security.provider.DSA$SHA224withDSA]
+Provider: Set SUN provider property [Signature.SHA256withDSA/sun.security.provider.DSA$SHA256withDSA]
+Provider: Set SUN provider property [Signature.SHA1withDSA SupportedKeyClasses/java.security.interfaces.DSAPublicKey|java.security.interfaces.DSAPrivateKey]
+Provider: Set SUN provider property [Signature.NONEwithDSA SupportedKeyClasses/java.security.interfaces.DSAPublicKey|java.security.interfaces.DSAPrivateKey]
+Provider: Set SUN provider property [Signature.SHA224withDSA SupportedKeyClasses/java.security.interfaces.DSAPublicKey|java.security.interfaces.DSAPrivateKey]
+Provider: Set SUN provider property [Signature.SHA256withDSA SupportedKeyClasses/java.security.interfaces.DSAPublicKey|java.security.interfaces.DSAPrivateKey]
+Provider: Set SUN provider property [Alg.Alias.Signature.DSA/SHA1withDSA]
+Provider: Set SUN provider property [Alg.Alias.Signature.DSS/SHA1withDSA]
+Provider: Set SUN provider property [Alg.Alias.Signature.SHA/DSA/SHA1withDSA]
+Provider: Set SUN provider property [Alg.Alias.Signature.SHA-1/DSA/SHA1withDSA]
+Provider: Set SUN provider property [Alg.Alias.Signature.SHA1/DSA/SHA1withDSA]
+Provider: Set SUN provider property [Alg.Alias.Signature.SHAwithDSA/SHA1withDSA]
+Provider: Set SUN provider property [Alg.Alias.Signature.DSAWithSHA1/SHA1withDSA]
+Provider: Set SUN provider property [Alg.Alias.Signature.OID.1.2.840.10040.4.3/SHA1withDSA]
+Provider: Set SUN provider property [Alg.Alias.Signature.1.2.840.10040.4.3/SHA1withDSA]
+Provider: Set SUN provider property [Alg.Alias.Signature.1.3.14.3.2.13/SHA1withDSA]
+Provider: Set SUN provider property [Alg.Alias.Signature.1.3.14.3.2.27/SHA1withDSA]
+Provider: Set SUN provider property [Alg.Alias.Signature.OID.2.16.840.1.101.3.4.3.1/SHA224withDSA]
+Provider: Set SUN provider property [Alg.Alias.Signature.2.16.840.1.101.3.4.3.1/SHA224withDSA]
+Provider: Set SUN provider property [Alg.Alias.Signature.OID.2.16.840.1.101.3.4.3.2/SHA256withDSA]
+Provider: Set SUN provider property [Alg.Alias.Signature.2.16.840.1.101.3.4.3.2/SHA256withDSA]
+Provider: Set SUN provider property [KeyPairGenerator.DSA/sun.security.provider.DSAKeyPairGenerator]
+Provider: Set SUN provider property [Alg.Alias.KeyPairGenerator.OID.1.2.840.10040.4.1/DSA]
+Provider: Set SUN provider property [Alg.Alias.KeyPairGenerator.1.2.840.10040.4.1/DSA]
+Provider: Set SUN provider property [Alg.Alias.KeyPairGenerator.1.3.14.3.2.12/DSA]
+Provider: Set SUN provider property [MessageDigest.MD2/sun.security.provider.MD2]
+Provider: Set SUN provider property [MessageDigest.MD5/sun.security.provider.MD5]
+Provider: Set SUN provider property [MessageDigest.SHA/sun.security.provider.SHA]
+Provider: Set SUN provider property [Alg.Alias.MessageDigest.SHA-1/SHA]
+Provider: Set SUN provider property [Alg.Alias.MessageDigest.SHA1/SHA]
+Provider: Set SUN provider property [Alg.Alias.MessageDigest.1.3.14.3.2.26/SHA]
+Provider: Set SUN provider property [Alg.Alias.MessageDigest.OID.1.3.14.3.2.26/SHA]
+Provider: Set SUN provider property [MessageDigest.SHA-224/sun.security.provider.SHA2$SHA224]
+Provider: Set SUN provider property [Alg.Alias.MessageDigest.2.16.840.1.101.3.4.2.4/SHA-224]
+Provider: Set SUN provider property [Alg.Alias.MessageDigest.OID.2.16.840.1.101.3.4.2.4/SHA-224]
+Provider: Set SUN provider property [MessageDigest.SHA-256/sun.security.provider.SHA2$SHA256]
+Provider: Set SUN provider property [Alg.Alias.MessageDigest.2.16.840.1.101.3.4.2.1/SHA-256]
+Provider: Set SUN provider property [Alg.Alias.MessageDigest.OID.2.16.840.1.101.3.4.2.1/SHA-256]
+Provider: Set SUN provider property [MessageDigest.SHA-384/sun.security.provider.SHA5$SHA384]
+Provider: Set SUN provider property [Alg.Alias.MessageDigest.2.16.840.1.101.3.4.2.2/SHA-384]
+Provider: Set SUN provider property [Alg.Alias.MessageDigest.OID.2.16.840.1.101.3.4.2.2/SHA-384]
+Provider: Set SUN provider property [MessageDigest.SHA-512/sun.security.provider.SHA5$SHA512]
+Provider: Set SUN provider property [Alg.Alias.MessageDigest.2.16.840.1.101.3.4.2.3/SHA-512]
+Provider: Set SUN provider property [Alg.Alias.MessageDigest.OID.2.16.840.1.101.3.4.2.3/SHA-512]
+Provider: Set SUN provider property [AlgorithmParameterGenerator.DSA/sun.security.provider.DSAParameterGenerator]
+Provider: Set SUN provider property [AlgorithmParameters.DSA/sun.security.provider.DSAParameters]
+Provider: Set SUN provider property [Alg.Alias.AlgorithmParameters.OID.1.2.840.10040.4.1/DSA]
+Provider: Set SUN provider property [Alg.Alias.AlgorithmParameters.1.2.840.10040.4.1/DSA]
+Provider: Set SUN provider property [Alg.Alias.AlgorithmParameters.1.3.14.3.2.12/DSA]
+Provider: Set SUN provider property [KeyFactory.DSA/sun.security.provider.DSAKeyFactory]
+Provider: Set SUN provider property [Alg.Alias.KeyFactory.OID.1.2.840.10040.4.1/DSA]
+Provider: Set SUN provider property [Alg.Alias.KeyFactory.1.2.840.10040.4.1/DSA]
+Provider: Set SUN provider property [Alg.Alias.KeyFactory.1.3.14.3.2.12/DSA]
+Provider: Set SUN provider property [CertificateFactory.X.509/sun.security.provider.X509Factory]
+Provider: Set SUN provider property [Alg.Alias.CertificateFactory.X509/X.509]
+Provider: Set SUN provider property [KeyStore.JKS/sun.security.provider.JavaKeyStore$DualFormatJKS]
+Provider: Set SUN provider property [KeyStore.CaseExactJKS/sun.security.provider.JavaKeyStore$CaseExactJKS]
+Provider: Set SUN provider property [KeyStore.DKS/sun.security.provider.DomainKeyStore$DKS]
+Provider: Set SUN provider property [Policy.JavaPolicy/sun.security.provider.PolicySpiFile]
+Provider: Set SUN provider property [Configuration.JavaLoginConfig/sun.security.provider.ConfigFile$Spi]
+Provider: Set SUN provider property [CertPathBuilder.PKIX/sun.security.provider.certpath.SunCertPathBuilder]
+Provider: Set SUN provider property [CertPathBuilder.PKIX ValidationAlgorithm/RFC3280]
+Provider: Set SUN provider property [CertPathValidator.PKIX/sun.security.provider.certpath.PKIXCertPathValidator]
+Provider: Set SUN provider property [CertPathValidator.PKIX ValidationAlgorithm/RFC3280]
+Provider: Set SUN provider property [CertStore.LDAP/sun.security.provider.certpath.ldap.LDAPCertStore]
+Provider: Set SUN provider property [CertStore.LDAP LDAPSchema/RFC2587]
+Provider: Set SUN provider property [CertStore.Collection/sun.security.provider.certpath.CollectionCertStore]
+Provider: Set SUN provider property [CertStore.com.sun.security.IndexedCollection/sun.security.provider.certpath.IndexedCollectionCertStore]
+Provider: Set SUN provider property [Signature.NONEwithDSA KeySize/1024]
+Provider: Set SUN provider property [Signature.SHA1withDSA KeySize/1024]
+Provider: Set SUN provider property [Signature.SHA224withDSA KeySize/2048]
+Provider: Set SUN provider property [Signature.SHA256withDSA KeySize/2048]
+Provider: Set SUN provider property [KeyPairGenerator.DSA KeySize/2048]
+Provider: Set SUN provider property [AlgorithmParameterGenerator.DSA KeySize/2048]
+Provider: Set SUN provider property [Signature.SHA1withDSA ImplementedIn/Software]
+Provider: Set SUN provider property [KeyPairGenerator.DSA ImplementedIn/Software]
+Provider: Set SUN provider property [MessageDigest.MD5 ImplementedIn/Software]
+Provider: Set SUN provider property [MessageDigest.SHA ImplementedIn/Software]
+Provider: Set SUN provider property [AlgorithmParameterGenerator.DSA ImplementedIn/Software]
+Provider: Set SUN provider property [AlgorithmParameters.DSA ImplementedIn/Software]
+Provider: Set SUN provider property [KeyFactory.DSA ImplementedIn/Software]
+Provider: Set SUN provider property [SecureRandom.SHA1PRNG ImplementedIn/Software]
+Provider: Set SUN provider property [CertificateFactory.X.509 ImplementedIn/Software]
+Provider: Set SUN provider property [KeyStore.JKS ImplementedIn/Software]
+Provider: Set SUN provider property [CertPathValidator.PKIX ImplementedIn/Software]
+Provider: Set SUN provider property [CertPathBuilder.PKIX ImplementedIn/Software]
+Provider: Set SUN provider property [CertStore.LDAP ImplementedIn/Software]
+Provider: Set SUN provider property [CertStore.Collection ImplementedIn/Software]
+Provider: Set SUN provider property [CertStore.com.sun.security.IndexedCollection ImplementedIn/Software]
+ProviderConfig: Loaded provider SUN version 1.8
+Provider: SecureRandom.NativePRNG algorithm from: SUN
+created TempDir: /tmp/script313591348652541424
+I could write: [very bad text] from file:/tmp/script313591348652541424/veryBadFile.txt
+scl:  getPermissions ProtectionDomain  (null <no signer certificates>)
+ jdk.nashorn.internal.runtime.ScriptLoader@4e08711f
+ <no principals>
+ java.security.Permissions@bcec361 (
+ ("java.lang.RuntimePermission" "accessClassInPackage.jdk.nashorn.internal.runtime")
+ ("java.lang.RuntimePermission" "accessClassInPackage.jdk.nashorn.internal.scripts")
+ ("java.lang.RuntimePermission" "accessClassInPackage.jdk.nashorn.internal.objects")
+ ("java.lang.RuntimePermission" "accessClassInPackage.jdk.nashorn.internal.runtime.linker")
+ ("java.lang.RuntimePermission" "accessClassInPackage.jdk.nashorn.internal.runtime.arrays")
+)
+
+
+scl: 
+scl:  getPermissions ProtectionDomain  (file:/raid/home/thomas/workspace-sec/security/target/classes/ <no signer certificates>)
+ sun.misc.Launcher$AppClassLoader@6bc7c054
+ <no principals>
+ java.security.Permissions@24aed80c (
+ ("java.lang.RuntimePermission" "exitVM")
+ ("java.io.FilePermission" "/raid/home/thomas/workspace-sec/security/target/classes/-" "read")
+)
+
+
+scl: 
+I was not filtered: StringHolder{string=BLA}
+scl:  getPermissions ProtectionDomain  (null <no signer certificates>)
+ jdk.nashorn.internal.runtime.ScriptLoader@3d34d211
+ <no principals>
+ java.security.Permissions@7dc0f706 (
+ ("java.lang.RuntimePermission" "accessClassInPackage.jdk.nashorn.internal.runtime")
+ ("java.lang.RuntimePermission" "accessClassInPackage.jdk.nashorn.internal.scripts")
+ ("java.lang.RuntimePermission" "accessClassInPackage.jdk.nashorn.internal.objects")
+ ("java.lang.RuntimePermission" "accessClassInPackage.jdk.nashorn.internal.runtime.linker")
+ ("java.lang.RuntimePermission" "accessClassInPackage.jdk.nashorn.internal.runtime.arrays")
+)
+
+
+scl: 
+created TempDir: /tmp/script2175447898329836942
+I could write: [very bad text] from file:/tmp/script2175447898329836942/veryBadFile.txt
+scl:  getPermissions ProtectionDomain  (null <no signer certificates>)
+ jdk.nashorn.internal.runtime.ScriptLoader@75db5df9
+ <no principals>
+ java.security.Permissions@707194ba (
+ ("java.lang.RuntimePermission" "accessClassInPackage.jdk.nashorn.internal.runtime")
+ ("java.lang.RuntimePermission" "accessClassInPackage.jdk.nashorn.internal.scripts")
+ ("java.lang.RuntimePermission" "accessClassInPackage.jdk.nashorn.internal.objects")
+ ("java.lang.RuntimePermission" "accessClassInPackage.jdk.nashorn.internal.runtime.linker")
+ ("java.lang.RuntimePermission" "accessClassInPackage.jdk.nashorn.internal.runtime.arrays")
+)
+
+
+scl: 
+I was not filtered: StringHolder{string=BLA}
+scl:  getPermissions ProtectionDomain  (null <no signer certificates>)
+ jdk.nashorn.internal.runtime.ScriptLoader@10aa41f2
+ <no principals>
+ java.security.Permissions@3af9c5b7 (
+ ("java.lang.RuntimePermission" "accessClassInPackage.jdk.nashorn.internal.runtime")
+ ("java.lang.RuntimePermission" "accessClassInPackage.jdk.nashorn.internal.scripts")
+ ("java.lang.RuntimePermission" "accessClassInPackage.jdk.nashorn.internal.objects")
+ ("java.lang.RuntimePermission" "accessClassInPackage.jdk.nashorn.internal.runtime.linker")
+ ("java.lang.RuntimePermission" "accessClassInPackage.jdk.nashorn.internal.runtime.arrays")
+)
+
+
+scl: 
+I was not filtered: BLA
+scl:  getPermissions ProtectionDomain  (null <no signer certificates>)
+ jdk.nashorn.internal.runtime.ScriptLoader@574b560f
+ <no principals>
+ java.security.Permissions@ba54932 (
+ ("java.lang.RuntimePermission" "accessClassInPackage.jdk.nashorn.internal.runtime")
+ ("java.lang.RuntimePermission" "accessClassInPackage.jdk.nashorn.internal.scripts")
+ ("java.lang.RuntimePermission" "accessClassInPackage.jdk.nashorn.internal.objects")
+ ("java.lang.RuntimePermission" "accessClassInPackage.jdk.nashorn.internal.runtime.linker")
+ ("java.lang.RuntimePermission" "accessClassInPackage.jdk.nashorn.internal.runtime.arrays")
+)
+
+
+scl: 
+created TempDir: /tmp/script3243294445621727129
+I could write: [very bad text] from file:/tmp/script3243294445621727129/veryBadFile.txt
+Tests run: 7, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 0.858 sec <<< FAILURE! - in at.tfr.sec.TestNashornSecurity
+testClassFilterFileSystemAccess(at.tfr.sec.TestNashornSecurity)  Time elapsed: 0.152 sec  <<< FAILURE!
+java.lang.AssertionError: 
+
+Expected: (is an instance of java.lang.RuntimeException and exception with cause is an instance of java.lang.ClassNotFoundException)
+     but: is an instance of java.lang.RuntimeException <java.lang.AssertionError: ClassFilter failed on indirect access to java.io.File> is a java.lang.AssertionError
+Stacktrace was: java.lang.AssertionError: ClassFilter failed on indirect access to java.io.File
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at at.tfr.sec.TestNashornSecurity.testClassFilterFileSystemAccess(TestNashornSecurity.java:196)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.rules.ExpectedException$ExpectedExceptionStatement.evaluate(ExpectedException.java:239)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:367)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:274)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:161)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+
+
+testClassFilterImplicitAccess(at.tfr.sec.TestNashornSecurity)  Time elapsed: 0.023 sec  <<< FAILURE!
+java.lang.AssertionError: 
+
+Expected: (is an instance of java.lang.RuntimeException and exception with cause is an instance of java.lang.ClassNotFoundException)
+     but: is an instance of java.lang.RuntimeException <java.lang.AssertionError: ClassFilter failed on indirect access to java.lang.String> is a java.lang.AssertionError
+Stacktrace was: java.lang.AssertionError: ClassFilter failed on indirect access to java.lang.String
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at at.tfr.sec.TestNashornSecurity.testClassFilterImplicitAccess(TestNashornSecurity.java:133)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.rules.ExpectedException$ExpectedExceptionStatement.evaluate(ExpectedException.java:239)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:367)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:274)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:161)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+
+
+Running at.tfr.sec.TestNashornSecurityWithWildflySecurityManager
+policy: reading file:/raid/home/thomas/workspace-sec/security/target/test-classes/read-all-java.policy
+java.lang.IllegalArgumentException: null KeyStore name
+	at sun.security.util.PolicyUtil.getKeyStore(PolicyUtil.java:82)
+	at sun.security.provider.PolicyFile.init(PolicyFile.java:610)
+	at sun.security.provider.PolicyFile.access$400(PolicyFile.java:258)
+	at sun.security.provider.PolicyFile$3.run(PolicyFile.java:521)
+	at sun.security.provider.PolicyFile$3.run(PolicyFile.java:495)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at sun.security.provider.PolicyFile.initPolicyFile(PolicyFile.java:495)
+	at sun.security.provider.PolicyFile.initPolicyFile(PolicyFile.java:480)
+	at sun.security.provider.PolicyFile.init(PolicyFile.java:439)
+	at sun.security.provider.PolicyFile.<init>(PolicyFile.java:297)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+	at java.lang.Class.newInstance(Class.java:442)
+	at java.security.Policy.getPolicyNoCheck(Policy.java:184)
+	at java.security.ProtectionDomain.implies(ProtectionDomain.java:281)
+	at java.lang.System$1.run(System.java:316)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.lang.System.setSecurityManager0(System.java:313)
+	at java.lang.System.setSecurityManager(System.java:291)
+	at at.tfr.sec.TestNashornSecurityWithWildflySecurityManager.testSecurityManager(TestNashornSecurityWithWildflySecurityManager.java:72)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.rules.ExpectedException$ExpectedExceptionStatement.evaluate(ExpectedException.java:239)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:367)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:274)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:161)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+policy: Adding policy entry: 
+policy:   signedBy null
+policy:   codeBase file:/*
+policy:   ("java.io.FilePermission" "*" "read")
+policy:
+policy: Adding policy entry: 
+policy:   signedBy null
+policy:   codeBase file:/raid/home/thomas/.m2/repository/org/wildfly/security/wildfly-security-manager/1.1.2.Final/*
+policy:   ("java.security.AllPermission" "<all permissions>" "<all actions>")
+policy:
+policy: reading file:/usr/java/jdk1.8.0_71/jre/lib/security/java.policy
+	[Policy Parser]: creating policy entry for expanded java.ext.dirs path:
+		file:/usr/java/jdk1.8.0_71/jre/lib/ext/*
+	[Policy Parser]: creating policy entry for expanded java.ext.dirs path:
+		file:/usr/java/packages/lib/ext/*
+java.lang.IllegalArgumentException: null KeyStore name
+	at sun.security.util.PolicyUtil.getKeyStore(PolicyUtil.java:82)
+	at sun.security.provider.PolicyFile.init(PolicyFile.java:610)
+	at sun.security.provider.PolicyFile.access$400(PolicyFile.java:258)
+	at sun.security.provider.PolicyFile$3.run(PolicyFile.java:562)
+	at sun.security.provider.PolicyFile$3.run(PolicyFile.java:495)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at sun.security.provider.PolicyFile.initPolicyFile(PolicyFile.java:495)
+	at sun.security.provider.PolicyFile.initPolicyFile(PolicyFile.java:480)
+	at sun.security.provider.PolicyFile.init(PolicyFile.java:439)
+	at sun.security.provider.PolicyFile.<init>(PolicyFile.java:297)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+	at java.lang.Class.newInstance(Class.java:442)
+	at java.security.Policy.getPolicyNoCheck(Policy.java:184)
+	at java.security.ProtectionDomain.implies(ProtectionDomain.java:281)
+	at java.lang.System$1.run(System.java:316)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.lang.System.setSecurityManager0(System.java:313)
+	at java.lang.System.setSecurityManager(System.java:291)
+	at at.tfr.sec.TestNashornSecurityWithWildflySecurityManager.testSecurityManager(TestNashornSecurityWithWildflySecurityManager.java:72)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.rules.ExpectedException$ExpectedExceptionStatement.evaluate(ExpectedException.java:239)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:367)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:274)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:161)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+policy: Adding policy entry: 
+policy:   signedBy null
+policy:   codeBase file:/usr/java/jdk1.8.0_71/jre/lib/ext/*
+policy:   ("java.security.AllPermission" "<all permissions>" "<all actions>")
+policy:
+policy: Adding policy entry: 
+policy:   signedBy null
+policy:   codeBase file:/usr/java/packages/lib/ext/*
+policy:   ("java.security.AllPermission" "<all permissions>" "<all actions>")
+policy:
+policy: Adding policy entry: 
+policy:   signedBy null
+policy:   codeBase null
+policy:   ("java.lang.RuntimePermission" "stopThread")
+policy:   ("java.net.SocketPermission" "localhost:0" "listen,resolve")
+policy:   ("java.util.PropertyPermission" "java.version" "read")
+policy:   ("java.util.PropertyPermission" "java.vendor" "read")
+policy:   ("java.util.PropertyPermission" "java.vendor.url" "read")
+policy:   ("java.util.PropertyPermission" "java.class.version" "read")
+policy:   ("java.util.PropertyPermission" "os.name" "read")
+policy:   ("java.util.PropertyPermission" "os.version" "read")
+policy:   ("java.util.PropertyPermission" "os.arch" "read")
+policy:   ("java.util.PropertyPermission" "file.separator" "read")
+policy:   ("java.util.PropertyPermission" "path.separator" "read")
+policy:   ("java.util.PropertyPermission" "line.separator" "read")
+policy:   ("java.util.PropertyPermission" "java.specification.version" "read")
+policy:   ("java.util.PropertyPermission" "java.specification.vendor" "read")
+policy:   ("java.util.PropertyPermission" "java.specification.name" "read")
+policy:   ("java.util.PropertyPermission" "java.vm.specification.version" "read")
+policy:   ("java.util.PropertyPermission" "java.vm.specification.vendor" "read")
+policy:   ("java.util.PropertyPermission" "java.vm.specification.name" "read")
+policy:   ("java.util.PropertyPermission" "java.vm.version" "read")
+policy:   ("java.util.PropertyPermission" "java.vm.vendor" "read")
+policy:   ("java.util.PropertyPermission" "java.vm.name" "read")
+policy:
+policy: reading file:/home/thomas/.java.policy
+policy: error parsing file:/home/thomas/.java.policy
+policy: java.io.FileNotFoundException: /home/thomas/.java.policy (Datei oder Verzeichnis nicht gefunden)
+java.io.FileNotFoundException: /home/thomas/.java.policy (Datei oder Verzeichnis nicht gefunden)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at java.io.FileInputStream.<init>(FileInputStream.java:93)
+	at sun.security.util.PolicyUtil.getInputStream(PolicyUtil.java:60)
+	at sun.security.provider.PolicyFile.init(PolicyFile.java:602)
+	at sun.security.provider.PolicyFile.access$400(PolicyFile.java:258)
+	at sun.security.provider.PolicyFile$3.run(PolicyFile.java:562)
+	at sun.security.provider.PolicyFile$3.run(PolicyFile.java:495)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at sun.security.provider.PolicyFile.initPolicyFile(PolicyFile.java:495)
+	at sun.security.provider.PolicyFile.initPolicyFile(PolicyFile.java:480)
+	at sun.security.provider.PolicyFile.init(PolicyFile.java:439)
+	at sun.security.provider.PolicyFile.<init>(PolicyFile.java:297)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+	at java.lang.Class.newInstance(Class.java:442)
+	at java.security.Policy.getPolicyNoCheck(Policy.java:184)
+	at java.security.ProtectionDomain.implies(ProtectionDomain.java:281)
+	at java.lang.System$1.run(System.java:316)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.lang.System.setSecurityManager0(System.java:313)
+	at java.lang.System.setSecurityManager(System.java:291)
+	at at.tfr.sec.TestNashornSecurityWithWildflySecurityManager.testSecurityManager(TestNashornSecurityWithWildflySecurityManager.java:72)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.rules.ExpectedException$ExpectedExceptionStatement.evaluate(ExpectedException.java:239)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:367)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:274)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:161)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+policy: getPermissions:
+	PD CodeSource: (file:/home/thomas/.m2/repository/org/wildfly/security/wildfly-security-manager/1.1.2.Final/wildfly-security-manager-1.1.2.Final.jar <no signer certificates>)
+	PD ClassLoader: sun.misc.Launcher$AppClassLoader@6bc7c054
+	PD Principals: <no principals>
+policy: evaluate codesources:
+	Policy CodeSource: (file:/* <no signer certificates>)
+	Active CodeSource: (file:/raid/home/thomas/.m2/repository/org/wildfly/security/wildfly-security-manager/1.1.2.Final/wildfly-security-manager-1.1.2.Final.jar <no signer certificates>)
+policy: evaluation (codesource) failed
+policy: evaluate codesources:
+	Policy CodeSource: (file:/raid/home/thomas/.m2/repository/org/wildfly/security/wildfly-security-manager/1.1.2.Final/* <no signer certificates>)
+	Active CodeSource: (file:/raid/home/thomas/.m2/repository/org/wildfly/security/wildfly-security-manager/1.1.2.Final/wildfly-security-manager-1.1.2.Final.jar <no signer certificates>)
+policy: evaluate principals:
+	Policy Principals: []
+	Active Principals: []
+policy:   granting ("java.security.AllPermission" "<all permissions>" "<all actions>")
+policy: evaluation (codesource/principals) passed
+policy: evaluate codesources:
+	Policy CodeSource: (file:/usr/java/jdk1.8.0_71/jre/lib/ext/* <no signer certificates>)
+	Active CodeSource: (file:/raid/home/thomas/.m2/repository/org/wildfly/security/wildfly-security-manager/1.1.2.Final/wildfly-security-manager-1.1.2.Final.jar <no signer certificates>)
+policy: evaluation (codesource) failed
+policy: evaluate codesources:
+	Policy CodeSource: (file:/usr/java/packages/lib/ext/* <no signer certificates>)
+	Active CodeSource: (file:/raid/home/thomas/.m2/repository/org/wildfly/security/wildfly-security-manager/1.1.2.Final/wildfly-security-manager-1.1.2.Final.jar <no signer certificates>)
+policy: evaluation (codesource) failed
+policy: evaluate codesources:
+	Policy CodeSource: (null <no signer certificates>)
+	Active CodeSource: (file:/raid/home/thomas/.m2/repository/org/wildfly/security/wildfly-security-manager/1.1.2.Final/wildfly-security-manager-1.1.2.Final.jar <no signer certificates>)
+policy: evaluate principals:
+	Policy Principals: []
+	Active Principals: []
+policy:   granting ("java.lang.RuntimePermission" "stopThread")
+policy:   granting ("java.net.SocketPermission" "localhost:0" "listen,resolve")
+policy:   granting ("java.util.PropertyPermission" "java.version" "read")
+policy:   granting ("java.util.PropertyPermission" "java.vendor" "read")
+policy:   granting ("java.util.PropertyPermission" "java.vendor.url" "read")
+policy:   granting ("java.util.PropertyPermission" "java.class.version" "read")
+policy:   granting ("java.util.PropertyPermission" "os.name" "read")
+policy:   granting ("java.util.PropertyPermission" "os.version" "read")
+policy:   granting ("java.util.PropertyPermission" "os.arch" "read")
+policy:   granting ("java.util.PropertyPermission" "file.separator" "read")
+policy:   granting ("java.util.PropertyPermission" "path.separator" "read")
+policy:   granting ("java.util.PropertyPermission" "line.separator" "read")
+policy:   granting ("java.util.PropertyPermission" "java.specification.version" "read")
+policy:   granting ("java.util.PropertyPermission" "java.specification.vendor" "read")
+policy:   granting ("java.util.PropertyPermission" "java.specification.name" "read")
+policy:   granting ("java.util.PropertyPermission" "java.vm.specification.version" "read")
+policy:   granting ("java.util.PropertyPermission" "java.vm.specification.vendor" "read")
+policy:   granting ("java.util.PropertyPermission" "java.vm.specification.name" "read")
+policy:   granting ("java.util.PropertyPermission" "java.vm.version" "read")
+policy:   granting ("java.util.PropertyPermission" "java.vm.vendor" "read")
+policy:   granting ("java.util.PropertyPermission" "java.vm.name" "read")
+policy: evaluation (codesource/principals) passed
+policy: getPermissions:
+	PD CodeSource: (file:/usr/java/jdk1.8.0_71/jre/lib/ext/nashorn.jar <no signer certificates>)
+	PD ClassLoader: sun.misc.Launcher$ExtClassLoader@685f4c2e
+	PD Principals: <no principals>
+policy: evaluate codesources:
+	Policy CodeSource: (file:/* <no signer certificates>)
+	Active CodeSource: (file:/usr/java/jdk1.8.0_71/jre/lib/ext/nashorn.jar <no signer certificates>)
+policy: evaluation (codesource) failed
+policy: evaluate codesources:
+	Policy CodeSource: (file:/raid/home/thomas/.m2/repository/org/wildfly/security/wildfly-security-manager/1.1.2.Final/* <no signer certificates>)
+	Active CodeSource: (file:/usr/java/jdk1.8.0_71/jre/lib/ext/nashorn.jar <no signer certificates>)
+policy: evaluation (codesource) failed
+policy: evaluate codesources:
+	Policy CodeSource: (file:/usr/java/jdk1.8.0_71/jre/lib/ext/* <no signer certificates>)
+	Active CodeSource: (file:/usr/java/jdk1.8.0_71/jre/lib/ext/nashorn.jar <no signer certificates>)
+policy: evaluate principals:
+	Policy Principals: []
+	Active Principals: []
+policy:   granting ("java.security.AllPermission" "<all permissions>" "<all actions>")
+policy: evaluation (codesource/principals) passed
+policy: evaluate codesources:
+	Policy CodeSource: (file:/usr/java/packages/lib/ext/* <no signer certificates>)
+	Active CodeSource: (file:/usr/java/jdk1.8.0_71/jre/lib/ext/nashorn.jar <no signer certificates>)
+policy: evaluation (codesource) failed
+policy: evaluate codesources:
+	Policy CodeSource: (null <no signer certificates>)
+	Active CodeSource: (file:/usr/java/jdk1.8.0_71/jre/lib/ext/nashorn.jar <no signer certificates>)
+policy: evaluate principals:
+	Policy Principals: []
+	Active Principals: []
+policy:   granting ("java.lang.RuntimePermission" "stopThread")
+policy:   granting ("java.net.SocketPermission" "localhost:0" "listen,resolve")
+policy:   granting ("java.util.PropertyPermission" "java.version" "read")
+policy:   granting ("java.util.PropertyPermission" "java.vendor" "read")
+policy:   granting ("java.util.PropertyPermission" "java.vendor.url" "read")
+policy:   granting ("java.util.PropertyPermission" "java.class.version" "read")
+policy:   granting ("java.util.PropertyPermission" "os.name" "read")
+policy:   granting ("java.util.PropertyPermission" "os.version" "read")
+policy:   granting ("java.util.PropertyPermission" "os.arch" "read")
+policy:   granting ("java.util.PropertyPermission" "file.separator" "read")
+policy:   granting ("java.util.PropertyPermission" "path.separator" "read")
+policy:   granting ("java.util.PropertyPermission" "line.separator" "read")
+policy:   granting ("java.util.PropertyPermission" "java.specification.version" "read")
+policy:   granting ("java.util.PropertyPermission" "java.specification.vendor" "read")
+policy:   granting ("java.util.PropertyPermission" "java.specification.name" "read")
+policy:   granting ("java.util.PropertyPermission" "java.vm.specification.version" "read")
+policy:   granting ("java.util.PropertyPermission" "java.vm.specification.vendor" "read")
+policy:   granting ("java.util.PropertyPermission" "java.vm.specification.name" "read")
+policy:   granting ("java.util.PropertyPermission" "java.vm.version" "read")
+policy:   granting ("java.util.PropertyPermission" "java.vm.vendor" "read")
+policy:   granting ("java.util.PropertyPermission" "java.vm.name" "read")
+policy: evaluation (codesource/principals) passed
+scl:  getPermissions ProtectionDomain  (null <no signer certificates>)
+ jdk.nashorn.internal.runtime.ScriptLoader@3541cb24
+ <no principals>
+ java.security.Permissions@2177849e (
+ ("java.lang.RuntimePermission" "accessClassInPackage.jdk.nashorn.internal.runtime")
+ ("java.lang.RuntimePermission" "accessClassInPackage.jdk.nashorn.internal.scripts")
+ ("java.lang.RuntimePermission" "accessClassInPackage.jdk.nashorn.internal.objects")
+ ("java.lang.RuntimePermission" "accessClassInPackage.jdk.nashorn.internal.runtime.linker")
+ ("java.lang.RuntimePermission" "accessClassInPackage.jdk.nashorn.internal.runtime.arrays")
+)
+
+
+scl: 
+policy: getPermissions:
+	PD CodeSource: (null <no signer certificates>)
+	PD ClassLoader: jdk.nashorn.internal.runtime.ScriptLoader@3541cb24
+	PD Principals: <no principals>
+policy: evaluate codesources:
+	Policy CodeSource: (file:/* <no signer certificates>)
+	Active CodeSource: (null <no signer certificates>)
+policy: evaluation (codesource) failed
+policy: evaluate codesources:
+	Policy CodeSource: (file:/raid/home/thomas/.m2/repository/org/wildfly/security/wildfly-security-manager/1.1.2.Final/* <no signer certificates>)
+	Active CodeSource: (null <no signer certificates>)
+policy: evaluation (codesource) failed
+policy: evaluate codesources:
+	Policy CodeSource: (file:/usr/java/jdk1.8.0_71/jre/lib/ext/* <no signer certificates>)
+	Active CodeSource: (null <no signer certificates>)
+policy: evaluation (codesource) failed
+policy: evaluate codesources:
+	Policy CodeSource: (file:/usr/java/packages/lib/ext/* <no signer certificates>)
+	Active CodeSource: (null <no signer certificates>)
+policy: evaluation (codesource) failed
+policy: evaluate codesources:
+	Policy CodeSource: (null <no signer certificates>)
+	Active CodeSource: (null <no signer certificates>)
+policy: evaluate principals:
+	Policy Principals: []
+	Active Principals: []
+policy:   granting ("java.lang.RuntimePermission" "stopThread")
+policy:   granting ("java.net.SocketPermission" "localhost:0" "listen,resolve")
+policy:   granting ("java.util.PropertyPermission" "java.version" "read")
+policy:   granting ("java.util.PropertyPermission" "java.vendor" "read")
+policy:   granting ("java.util.PropertyPermission" "java.vendor.url" "read")
+policy:   granting ("java.util.PropertyPermission" "java.class.version" "read")
+policy:   granting ("java.util.PropertyPermission" "os.name" "read")
+policy:   granting ("java.util.PropertyPermission" "os.version" "read")
+policy:   granting ("java.util.PropertyPermission" "os.arch" "read")
+policy:   granting ("java.util.PropertyPermission" "file.separator" "read")
+policy:   granting ("java.util.PropertyPermission" "path.separator" "read")
+policy:   granting ("java.util.PropertyPermission" "line.separator" "read")
+policy:   granting ("java.util.PropertyPermission" "java.specification.version" "read")
+policy:   granting ("java.util.PropertyPermission" "java.specification.vendor" "read")
+policy:   granting ("java.util.PropertyPermission" "java.specification.name" "read")
+policy:   granting ("java.util.PropertyPermission" "java.vm.specification.version" "read")
+policy:   granting ("java.util.PropertyPermission" "java.vm.specification.vendor" "read")
+policy:   granting ("java.util.PropertyPermission" "java.vm.specification.name" "read")
+policy:   granting ("java.util.PropertyPermission" "java.vm.version" "read")
+policy:   granting ("java.util.PropertyPermission" "java.vm.vendor" "read")
+policy:   granting ("java.util.PropertyPermission" "java.vm.name" "read")
+policy: evaluation (codesource/principals) passed
+scl:  getPermissions ProtectionDomain  (null <no signer certificates>)
+ jdk.nashorn.internal.runtime.ScriptLoader@7671cb68
+ <no principals>
+ java.security.Permissions@49dc7102 (
+ ("java.lang.RuntimePermission" "accessClassInPackage.jdk.nashorn.internal.runtime")
+ ("java.lang.RuntimePermission" "accessClassInPackage.jdk.nashorn.internal.scripts")
+ ("java.lang.RuntimePermission" "accessClassInPackage.jdk.nashorn.internal.objects")
+ ("java.lang.RuntimePermission" "accessClassInPackage.jdk.nashorn.internal.runtime.linker")
+ ("java.lang.RuntimePermission" "accessClassInPackage.jdk.nashorn.internal.runtime.arrays")
+)
+
+
+scl: 
+policy: getPermissions:
+	PD CodeSource: (null <no signer certificates>)
+	PD ClassLoader: jdk.nashorn.internal.runtime.ScriptLoader@7671cb68
+	PD Principals: <no principals>
+policy: evaluate codesources:
+	Policy CodeSource: (file:/* <no signer certificates>)
+	Active CodeSource: (null <no signer certificates>)
+policy: evaluation (codesource) failed
+policy: evaluate codesources:
+	Policy CodeSource: (file:/raid/home/thomas/.m2/repository/org/wildfly/security/wildfly-security-manager/1.1.2.Final/* <no signer certificates>)
+	Active CodeSource: (null <no signer certificates>)
+policy: evaluation (codesource) failed
+policy: evaluate codesources:
+	Policy CodeSource: (file:/usr/java/jdk1.8.0_71/jre/lib/ext/* <no signer certificates>)
+	Active CodeSource: (null <no signer certificates>)
+policy: evaluation (codesource) failed
+policy: evaluate codesources:
+	Policy CodeSource: (file:/usr/java/packages/lib/ext/* <no signer certificates>)
+	Active CodeSource: (null <no signer certificates>)
+policy: evaluation (codesource) failed
+policy: evaluate codesources:
+	Policy CodeSource: (null <no signer certificates>)
+	Active CodeSource: (null <no signer certificates>)
+policy: evaluate principals:
+	Policy Principals: []
+	Active Principals: []
+policy:   granting ("java.lang.RuntimePermission" "stopThread")
+policy:   granting ("java.net.SocketPermission" "localhost:0" "listen,resolve")
+policy:   granting ("java.util.PropertyPermission" "java.version" "read")
+policy:   granting ("java.util.PropertyPermission" "java.vendor" "read")
+policy:   granting ("java.util.PropertyPermission" "java.vendor.url" "read")
+policy:   granting ("java.util.PropertyPermission" "java.class.version" "read")
+policy:   granting ("java.util.PropertyPermission" "os.name" "read")
+policy:   granting ("java.util.PropertyPermission" "os.version" "read")
+policy:   granting ("java.util.PropertyPermission" "os.arch" "read")
+policy:   granting ("java.util.PropertyPermission" "file.separator" "read")
+policy:   granting ("java.util.PropertyPermission" "path.separator" "read")
+policy:   granting ("java.util.PropertyPermission" "line.separator" "read")
+policy:   granting ("java.util.PropertyPermission" "java.specification.version" "read")
+policy:   granting ("java.util.PropertyPermission" "java.specification.vendor" "read")
+policy:   granting ("java.util.PropertyPermission" "java.specification.name" "read")
+policy:   granting ("java.util.PropertyPermission" "java.vm.specification.version" "read")
+policy:   granting ("java.util.PropertyPermission" "java.vm.specification.vendor" "read")
+policy:   granting ("java.util.PropertyPermission" "java.vm.specification.name" "read")
+policy:   granting ("java.util.PropertyPermission" "java.vm.version" "read")
+policy:   granting ("java.util.PropertyPermission" "java.vm.vendor" "read")
+policy:   granting ("java.util.PropertyPermission" "java.vm.name" "read")
+policy: evaluation (codesource/principals) passed
+Tests run: 2, Failures: 1, Errors: 1, Skipped: 0, Time elapsed: 0.054 sec <<< FAILURE! - in at.tfr.sec.TestNashornSecurityWithWildflySecurityManager
+testSecurityManager(at.tfr.sec.TestNashornSecurityWithWildflySecurityManager)  Time elapsed: 0.023 sec  <<< FAILURE!
+java.lang.AssertionError: 
+
+Expected: (an instance of java.lang.RuntimeException and exception with cause is an instance of java.lang.Exception)
+     but: an instance of java.lang.RuntimeException <java.lang.NoClassDefFoundError: org/jboss/logging/Logger> is a java.lang.NoClassDefFoundError
+Stacktrace was: java.lang.NoClassDefFoundError: org/jboss/logging/Logger
+	at org.wildfly.security.manager._private.SecurityMessages.<clinit>(SecurityMessages.java:42)
+	at org.wildfly.security.manager.WildFlySecurityManager.checkPermission(WildFlySecurityManager.java:266)
+	at org.wildfly.security.manager.WildFlySecurityManager.checkPermission(WildFlySecurityManager.java:172)
+	at java.lang.SecurityManager.checkWrite(SecurityManager.java:979)
+	at org.wildfly.security.manager.WildFlySecurityManager.checkWrite(WildFlySecurityManager.java:392)
+	at sun.nio.fs.UnixPath.checkWrite(UnixPath.java:801)
+	at sun.nio.fs.UnixFileSystemProvider.createDirectory(UnixFileSystemProvider.java:376)
+	at java.nio.file.Files.createDirectory(Files.java:674)
+	at java.nio.file.TempFileHelper.create(TempFileHelper.java:136)
+	at java.nio.file.TempFileHelper.createTempDirectory(TempFileHelper.java:173)
+	at java.nio.file.Files.createTempDirectory(Files.java:991)
+	at jdk.nashorn.internal.scripts.Script$7$\^eval\_.:program(<eval>:3)
+	at jdk.nashorn.internal.runtime.ScriptFunctionData.invoke(ScriptFunctionData.java:640)
+	at jdk.nashorn.internal.runtime.ScriptFunction.invoke(ScriptFunction.java:228)
+	at jdk.nashorn.internal.runtime.ScriptRuntime.apply(ScriptRuntime.java:393)
+	at jdk.nashorn.api.scripting.NashornScriptEngine.evalImpl(NashornScriptEngine.java:446)
+	at jdk.nashorn.api.scripting.NashornScriptEngine.evalImpl(NashornScriptEngine.java:403)
+	at jdk.nashorn.api.scripting.NashornScriptEngine.evalImpl(NashornScriptEngine.java:399)
+	at jdk.nashorn.api.scripting.NashornScriptEngine.eval(NashornScriptEngine.java:155)
+	at javax.script.AbstractScriptEngine.eval(AbstractScriptEngine.java:264)
+	at at.tfr.sec.TestNashornSecurityWithWildflySecurityManager.testSecurityManager(TestNashornSecurityWithWildflySecurityManager.java:76)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.rules.ExpectedException$ExpectedExceptionStatement.evaluate(ExpectedException.java:239)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:367)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:274)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:161)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+Caused by: java.lang.ClassNotFoundException: org.jboss.logging.Logger
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 48 more
+
+
+testNoClassFilter(at.tfr.sec.TestNashornSecurityWithWildflySecurityManager)  Time elapsed: 0.031 sec  <<< ERROR!
+java.lang.NoClassDefFoundError: Could not initialize class org.wildfly.security.manager._private.SecurityMessages
+	at at.tfr.sec.TestNashornSecurityWithWildflySecurityManager.testNoClassFilter(TestNashornSecurityWithWildflySecurityManager.java:53)
+
+policy: getPermissions:
+	PD CodeSource: (file:/home/thomas/.m2/repository/org/apache/maven/surefire/surefire-booter/2.19.1/surefire-booter-2.19.1.jar <no signer certificates>)
+	PD ClassLoader: sun.misc.Launcher$AppClassLoader@6bc7c054
+	PD Principals: <no principals>
+policy: evaluate codesources:
+	Policy CodeSource: (file:/* <no signer certificates>)
+	Active CodeSource: (file:/raid/home/thomas/.m2/repository/org/apache/maven/surefire/surefire-booter/2.19.1/surefire-booter-2.19.1.jar <no signer certificates>)
+policy: evaluation (codesource) failed
+policy: evaluate codesources:
+	Policy CodeSource: (file:/raid/home/thomas/.m2/repository/org/wildfly/security/wildfly-security-manager/1.1.2.Final/* <no signer certificates>)
+	Active CodeSource: (file:/raid/home/thomas/.m2/repository/org/apache/maven/surefire/surefire-booter/2.19.1/surefire-booter-2.19.1.jar <no signer certificates>)
+policy: evaluation (codesource) failed
+policy: evaluate codesources:
+	Policy CodeSource: (file:/usr/java/jdk1.8.0_71/jre/lib/ext/* <no signer certificates>)
+	Active CodeSource: (file:/raid/home/thomas/.m2/repository/org/apache/maven/surefire/surefire-booter/2.19.1/surefire-booter-2.19.1.jar <no signer certificates>)
+policy: evaluation (codesource) failed
+policy: evaluate codesources:
+	Policy CodeSource: (file:/usr/java/packages/lib/ext/* <no signer certificates>)
+	Active CodeSource: (file:/raid/home/thomas/.m2/repository/org/apache/maven/surefire/surefire-booter/2.19.1/surefire-booter-2.19.1.jar <no signer certificates>)
+policy: evaluation (codesource) failed
+policy: evaluate codesources:
+	Policy CodeSource: (null <no signer certificates>)
+	Active CodeSource: (file:/raid/home/thomas/.m2/repository/org/apache/maven/surefire/surefire-booter/2.19.1/surefire-booter-2.19.1.jar <no signer certificates>)
+policy: evaluate principals:
+	Policy Principals: []
+	Active Principals: []
+policy:   granting ("java.lang.RuntimePermission" "stopThread")
+policy:   granting ("java.net.SocketPermission" "localhost:0" "listen,resolve")
+policy:   granting ("java.util.PropertyPermission" "java.version" "read")
+policy:   granting ("java.util.PropertyPermission" "java.vendor" "read")
+policy:   granting ("java.util.PropertyPermission" "java.vendor.url" "read")
+policy:   granting ("java.util.PropertyPermission" "java.class.version" "read")
+policy:   granting ("java.util.PropertyPermission" "os.name" "read")
+policy:   granting ("java.util.PropertyPermission" "os.version" "read")
+policy:   granting ("java.util.PropertyPermission" "os.arch" "read")
+policy:   granting ("java.util.PropertyPermission" "file.separator" "read")
+policy:   granting ("java.util.PropertyPermission" "path.separator" "read")
+policy:   granting ("java.util.PropertyPermission" "line.separator" "read")
+policy:   granting ("java.util.PropertyPermission" "java.specification.version" "read")
+policy:   granting ("java.util.PropertyPermission" "java.specification.vendor" "read")
+policy:   granting ("java.util.PropertyPermission" "java.specification.name" "read")
+policy:   granting ("java.util.PropertyPermission" "java.vm.specification.version" "read")
+policy:   granting ("java.util.PropertyPermission" "java.vm.specification.vendor" "read")
+policy:   granting ("java.util.PropertyPermission" "java.vm.specification.name" "read")
+policy:   granting ("java.util.PropertyPermission" "java.vm.version" "read")
+policy:   granting ("java.util.PropertyPermission" "java.vm.vendor" "read")
+policy:   granting ("java.util.PropertyPermission" "java.vm.name" "read")
+policy: evaluation (codesource/principals) passed
+
+Results :
+
+Failed tests: 
+  TestNashornSecurity.testClassFilterFileSystemAccess 
+Expected: (is an instance of java.lang.RuntimeException and exception with cause is an instance of java.lang.ClassNotFoundException)
+     but: is an instance of java.lang.RuntimeException <java.lang.AssertionError: ClassFilter failed on indirect access to java.io.File> is a java.lang.AssertionError
+Stacktrace was: java.lang.AssertionError: ClassFilter failed on indirect access to java.io.File
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at at.tfr.sec.TestNashornSecurity.testClassFilterFileSystemAccess(TestNashornSecurity.java:196)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.rules.ExpectedException$ExpectedExceptionStatement.evaluate(ExpectedException.java:239)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:367)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:274)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:161)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+
+  TestNashornSecurity.testClassFilterImplicitAccess 
+Expected: (is an instance of java.lang.RuntimeException and exception with cause is an instance of java.lang.ClassNotFoundException)
+     but: is an instance of java.lang.RuntimeException <java.lang.AssertionError: ClassFilter failed on indirect access to java.lang.String> is a java.lang.AssertionError
+Stacktrace was: java.lang.AssertionError: ClassFilter failed on indirect access to java.lang.String
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at at.tfr.sec.TestNashornSecurity.testClassFilterImplicitAccess(TestNashornSecurity.java:133)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.rules.ExpectedException$ExpectedExceptionStatement.evaluate(ExpectedException.java:239)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:367)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:274)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:161)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+
+  TestNashornSecurityWithWildflySecurityManager.testSecurityManager 
+Expected: (an instance of java.lang.RuntimeException and exception with cause is an instance of java.lang.Exception)
+     but: an instance of java.lang.RuntimeException <java.lang.NoClassDefFoundError: org/jboss/logging/Logger> is a java.lang.NoClassDefFoundError
+Stacktrace was: java.lang.NoClassDefFoundError: org/jboss/logging/Logger
+	at org.wildfly.security.manager._private.SecurityMessages.<clinit>(SecurityMessages.java:42)
+	at org.wildfly.security.manager.WildFlySecurityManager.checkPermission(WildFlySecurityManager.java:266)
+	at org.wildfly.security.manager.WildFlySecurityManager.checkPermission(WildFlySecurityManager.java:172)
+	at java.lang.SecurityManager.checkWrite(SecurityManager.java:979)
+	at org.wildfly.security.manager.WildFlySecurityManager.checkWrite(WildFlySecurityManager.java:392)
+	at sun.nio.fs.UnixPath.checkWrite(UnixPath.java:801)
+	at sun.nio.fs.UnixFileSystemProvider.createDirectory(UnixFileSystemProvider.java:376)
+	at java.nio.file.Files.createDirectory(Files.java:674)
+	at java.nio.file.TempFileHelper.create(TempFileHelper.java:136)
+	at java.nio.file.TempFileHelper.createTempDirectory(TempFileHelper.java:173)
+	at java.nio.file.Files.createTempDirectory(Files.java:991)
+	at jdk.nashorn.internal.scripts.Script$7$\^eval\_.:program(<eval>:3)
+	at jdk.nashorn.internal.runtime.ScriptFunctionData.invoke(ScriptFunctionData.java:640)
+	at jdk.nashorn.internal.runtime.ScriptFunction.invoke(ScriptFunction.java:228)
+	at jdk.nashorn.internal.runtime.ScriptRuntime.apply(ScriptRuntime.java:393)
+	at jdk.nashorn.api.scripting.NashornScriptEngine.evalImpl(NashornScriptEngine.java:446)
+	at jdk.nashorn.api.scripting.NashornScriptEngine.evalImpl(NashornScriptEngine.java:403)
+	at jdk.nashorn.api.scripting.NashornScriptEngine.evalImpl(NashornScriptEngine.java:399)
+	at jdk.nashorn.api.scripting.NashornScriptEngine.eval(NashornScriptEngine.java:155)
+	at javax.script.AbstractScriptEngine.eval(AbstractScriptEngine.java:264)
+	at at.tfr.sec.TestNashornSecurityWithWildflySecurityManager.testSecurityManager(TestNashornSecurityWithWildflySecurityManager.java:76)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.rules.ExpectedException$ExpectedExceptionStatement.evaluate(ExpectedException.java:239)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:367)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:274)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:161)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+Caused by: java.lang.ClassNotFoundException: org.jboss.logging.Logger
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 48 more
+
+Tests in error: 
+  TestNashornSecurityWithWildflySecurityManager.testNoClassFilter:53 » NoClassDefFound
+
+Tests run: 9, Failures: 3, Errors: 1, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 3.535 s
+[INFO] Finished at: 2016-07-31T22:43:52+02:00
+[INFO] Final Memory: 20M/390M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.19.1:test (default-test) on project security: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /raid/home/thomas/workspace-sec/security/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+org.apache.maven.lifecycle.LifecycleExecutionException: Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.19.1:test (default-test) on project security: There are test failures.
+
+Please refer to /raid/home/thomas/workspace-sec/security/target/surefire-reports for the individual test results.
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:212)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:153)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:145)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:116)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:80)
+	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:51)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:307)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:193)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:106)
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:863)
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:288)
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:199)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:289)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:229)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
+Caused by: org.apache.maven.plugin.MojoFailureException: There are test failures.
+
+Please refer to /raid/home/thomas/workspace-sec/security/target/surefire-reports for the individual test results.
+	at org.apache.maven.plugin.surefire.SurefireHelper.reportExecution(SurefireHelper.java:91)
+	at org.apache.maven.plugin.surefire.SurefirePlugin.handleSummary(SurefirePlugin.java:320)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.executeAfterPreconditionsChecked(AbstractSurefireMojo.java:892)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.execute(AbstractSurefireMojo.java:755)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:134)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:207)
+	... 20 more
+[ERROR] 
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

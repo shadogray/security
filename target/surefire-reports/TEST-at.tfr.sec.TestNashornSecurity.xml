@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="at.tfr.sec.TestNashornSecurity" time="0.858" tests="7" errors="0" skipped="0" failures="2">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="/usr/java/jdk1.8.0_71/jre/lib/amd64"/>
+    <property name="java.vm.version" value="25.71-b15"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="maven.multiModuleProjectDirectory" value="/home/thomas/workspace-sec/security"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=":"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.country" value="DE"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/raid/home/thomas/workspace-sec/security"/>
+    <property name="java.runtime.version" value="1.8.0_71-b15"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="/usr/java/jdk1.8.0_71/jre/lib/endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="os.name" value="Linux"/>
+    <property name="classworlds.conf" value="/raid/work/tools/maven/bin/m2.conf"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value=":/usr/share/tools/android-sdk-linux/tools/lib/:/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="4.1.27-27-default"/>
+    <property name="user.home" value="/home/thomas"/>
+    <property name="user.timezone" value="Europe/Vienna"/>
+    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="user.name" value="thomas"/>
+    <property name="java.class.path" value="/raid/work/tools/maven/boot/plexus-classworlds-2.5.2.jar"/>
+    <property name="org.slf4j.simpleLogger.defaultLogLevel" value="debug"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="/usr/java/jdk1.8.0_71/jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -X clean test"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="de"/>
+    <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_71"/>
+    <property name="java.ext.dirs" value="/usr/java/jdk1.8.0_71/jre/lib/ext:/usr/java/packages/lib/ext"/>
+    <property name="securerandom.source" value="file:/dev/./urandom"/>
+    <property name="sun.boot.class.path" value="/usr/java/jdk1.8.0_71/jre/lib/resources.jar:/usr/java/jdk1.8.0_71/jre/lib/rt.jar:/usr/java/jdk1.8.0_71/jre/lib/sunrsasign.jar:/usr/java/jdk1.8.0_71/jre/lib/jsse.jar:/usr/java/jdk1.8.0_71/jre/lib/jce.jar:/usr/java/jdk1.8.0_71/jre/lib/charsets.jar:/usr/java/jdk1.8.0_71/jre/lib/jfr.jar:/usr/java/jdk1.8.0_71/jre/classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="/raid/work/tools/maven"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.cpu.isalist" value=""/>
+  </properties>
+  <testcase name="testClassFilter" classname="at.tfr.sec.TestNashornSecurity" time="0.51"/>
+  <testcase name="testClassFilterFileSystemAccess" classname="at.tfr.sec.TestNashornSecurity" time="0.152">
+    <failure message="&#10;Expected: (is an instance of java.lang.RuntimeException and exception with cause is an instance of java.lang.ClassNotFoundException)&#10;     but: is an instance of java.lang.RuntimeException &lt;java.lang.AssertionError: ClassFilter failed on indirect access to java.io.File&gt; is a java.lang.AssertionError&#10;Stacktrace was: java.lang.AssertionError: ClassFilter failed on indirect access to java.io.File&#10;	at org.junit.Assert.fail(Assert.java:88)&#10;	at org.junit.Assert.assertTrue(Assert.java:41)&#10;	at at.tfr.sec.TestNashornSecurity.testClassFilterFileSystemAccess(TestNashornSecurity.java:196)&#10;	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#10;	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)&#10;	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#10;	at java.lang.reflect.Method.invoke(Method.java:497)&#10;	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)&#10;	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)&#10;	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)&#10;	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)&#10;	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)&#10;	at org.junit.rules.ExpectedException$ExpectedExceptionStatement.evaluate(ExpectedException.java:239)&#10;	at org.junit.rules.RunRules.evaluate(RunRules.java:20)&#10;	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)&#10;	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)&#10;	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)&#10;	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)&#10;	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)&#10;	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)&#10;	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)&#10;	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)&#10;	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)&#10;	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:367)&#10;	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:274)&#10;	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)&#10;	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:161)&#10;	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)&#10;	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)&#10;	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)&#10;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: 
+
+Expected: (is an instance of java.lang.RuntimeException and exception with cause is an instance of java.lang.ClassNotFoundException)
+     but: is an instance of java.lang.RuntimeException <java.lang.AssertionError: ClassFilter failed on indirect access to java.io.File> is a java.lang.AssertionError
+Stacktrace was: java.lang.AssertionError: ClassFilter failed on indirect access to java.io.File
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at at.tfr.sec.TestNashornSecurity.testClassFilterFileSystemAccess(TestNashornSecurity.java:196)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.rules.ExpectedException$ExpectedExceptionStatement.evaluate(ExpectedException.java:239)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:367)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:274)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:161)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+
+]]></failure>
+    <system-out><![CDATA[created TempDir: /tmp/script313591348652541424
+I could write: [very bad text] from file:/tmp/script313591348652541424/veryBadFile.txt
+]]></system-out>
+    <system-err><![CDATA[scl:  getPermissions ProtectionDomain  (null <no signer certificates>)
+ jdk.nashorn.internal.runtime.ScriptLoader@1ddf84b8
+ <no principals>
+ java.security.Permissions@1139b2f3 (
+ ("java.lang.RuntimePermission" "accessClassInPackage.jdk.nashorn.internal.runtime")
+ ("java.lang.RuntimePermission" "accessClassInPackage.jdk.nashorn.internal.scripts")
+ ("java.lang.RuntimePermission" "accessClassInPackage.jdk.nashorn.internal.objects")
+ ("java.lang.RuntimePermission" "accessClassInPackage.jdk.nashorn.internal.runtime.linker")
+ ("java.lang.RuntimePermission" "accessClassInPackage.jdk.nashorn.internal.runtime.arrays")
+)
+
+
+scl: 
+properties: reading security properties file: /usr/java/jdk1.8.0_71/jre/lib/security/java.security
+ProviderList: provider configuration: [sun.security.provider.Sun, sun.security.rsa.SunRsaSign, sun.security.ec.SunEC, com.sun.net.ssl.internal.ssl.Provider, com.sun.crypto.provider.SunJCE, sun.security.jgss.SunProvider, com.sun.security.sasl.Provider, org.jcp.xml.dsig.internal.dom.XMLDSigRI, sun.security.smartcardio.SunPCSC]
+ProviderConfig: Loading provider: sun.security.provider.Sun
+provider: NativePRNG egdUrl: file:/dev/random
+provider: NativePRNG.MIXED seedFile: /dev/random nextFile: /dev/urandom
+Provider: Set SUN provider property [SecureRandom.NativePRNG/sun.security.provider.NativePRNG]
+Provider: Set SUN provider property [SecureRandom.SHA1PRNG/sun.security.provider.SecureRandom]
+provider: NativePRNG.BLOCKING seedFile: /dev/random nextFile: /dev/random
+Provider: Set SUN provider property [SecureRandom.NativePRNGBlocking/sun.security.provider.NativePRNG$Blocking]
+provider: NativePRNG.NONBLOCKING seedFile: /dev/urandom nextFile: /dev/urandom
+Provider: Set SUN provider property [SecureRandom.NativePRNGNonBlocking/sun.security.provider.NativePRNG$NonBlocking]
+Provider: Set SUN provider property [Signature.SHA1withDSA/sun.security.provider.DSA$SHA1withDSA]
+Provider: Set SUN provider property [Signature.NONEwithDSA/sun.security.provider.DSA$RawDSA]
+Provider: Set SUN provider property [Alg.Alias.Signature.RawDSA/NONEwithDSA]
+Provider: Set SUN provider property [Signature.SHA224withDSA/sun.security.provider.DSA$SHA224withDSA]
+Provider: Set SUN provider property [Signature.SHA256withDSA/sun.security.provider.DSA$SHA256withDSA]
+Provider: Set SUN provider property [Signature.SHA1withDSA SupportedKeyClasses/java.security.interfaces.DSAPublicKey|java.security.interfaces.DSAPrivateKey]
+Provider: Set SUN provider property [Signature.NONEwithDSA SupportedKeyClasses/java.security.interfaces.DSAPublicKey|java.security.interfaces.DSAPrivateKey]
+Provider: Set SUN provider property [Signature.SHA224withDSA SupportedKeyClasses/java.security.interfaces.DSAPublicKey|java.security.interfaces.DSAPrivateKey]
+Provider: Set SUN provider property [Signature.SHA256withDSA SupportedKeyClasses/java.security.interfaces.DSAPublicKey|java.security.interfaces.DSAPrivateKey]
+Provider: Set SUN provider property [Alg.Alias.Signature.DSA/SHA1withDSA]
+Provider: Set SUN provider property [Alg.Alias.Signature.DSS/SHA1withDSA]
+Provider: Set SUN provider property [Alg.Alias.Signature.SHA/DSA/SHA1withDSA]
+Provider: Set SUN provider property [Alg.Alias.Signature.SHA-1/DSA/SHA1withDSA]
+Provider: Set SUN provider property [Alg.Alias.Signature.SHA1/DSA/SHA1withDSA]
+Provider: Set SUN provider property [Alg.Alias.Signature.SHAwithDSA/SHA1withDSA]
+Provider: Set SUN provider property [Alg.Alias.Signature.DSAWithSHA1/SHA1withDSA]
+Provider: Set SUN provider property [Alg.Alias.Signature.OID.1.2.840.10040.4.3/SHA1withDSA]
+Provider: Set SUN provider property [Alg.Alias.Signature.1.2.840.10040.4.3/SHA1withDSA]
+Provider: Set SUN provider property [Alg.Alias.Signature.1.3.14.3.2.13/SHA1withDSA]
+Provider: Set SUN provider property [Alg.Alias.Signature.1.3.14.3.2.27/SHA1withDSA]
+Provider: Set SUN provider property [Alg.Alias.Signature.OID.2.16.840.1.101.3.4.3.1/SHA224withDSA]
+Provider: Set SUN provider property [Alg.Alias.Signature.2.16.840.1.101.3.4.3.1/SHA224withDSA]
+Provider: Set SUN provider property [Alg.Alias.Signature.OID.2.16.840.1.101.3.4.3.2/SHA256withDSA]
+Provider: Set SUN provider property [Alg.Alias.Signature.2.16.840.1.101.3.4.3.2/SHA256withDSA]
+Provider: Set SUN provider property [KeyPairGenerator.DSA/sun.security.provider.DSAKeyPairGenerator]
+Provider: Set SUN provider property [Alg.Alias.KeyPairGenerator.OID.1.2.840.10040.4.1/DSA]
+Provider: Set SUN provider property [Alg.Alias.KeyPairGenerator.1.2.840.10040.4.1/DSA]
+Provider: Set SUN provider property [Alg.Alias.KeyPairGenerator.1.3.14.3.2.12/DSA]
+Provider: Set SUN provider property [MessageDigest.MD2/sun.security.provider.MD2]
+Provider: Set SUN provider property [MessageDigest.MD5/sun.security.provider.MD5]
+Provider: Set SUN provider property [MessageDigest.SHA/sun.security.provider.SHA]
+Provider: Set SUN provider property [Alg.Alias.MessageDigest.SHA-1/SHA]
+Provider: Set SUN provider property [Alg.Alias.MessageDigest.SHA1/SHA]
+Provider: Set SUN provider property [Alg.Alias.MessageDigest.1.3.14.3.2.26/SHA]
+Provider: Set SUN provider property [Alg.Alias.MessageDigest.OID.1.3.14.3.2.26/SHA]
+Provider: Set SUN provider property [MessageDigest.SHA-224/sun.security.provider.SHA2$SHA224]
+Provider: Set SUN provider property [Alg.Alias.MessageDigest.2.16.840.1.101.3.4.2.4/SHA-224]
+Provider: Set SUN provider property [Alg.Alias.MessageDigest.OID.2.16.840.1.101.3.4.2.4/SHA-224]
+Provider: Set SUN provider property [MessageDigest.SHA-256/sun.security.provider.SHA2$SHA256]
+Provider: Set SUN provider property [Alg.Alias.MessageDigest.2.16.840.1.101.3.4.2.1/SHA-256]
+Provider: Set SUN provider property [Alg.Alias.MessageDigest.OID.2.16.840.1.101.3.4.2.1/SHA-256]
+Provider: Set SUN provider property [MessageDigest.SHA-384/sun.security.provider.SHA5$SHA384]
+Provider: Set SUN provider property [Alg.Alias.MessageDigest.2.16.840.1.101.3.4.2.2/SHA-384]
+Provider: Set SUN provider property [Alg.Alias.MessageDigest.OID.2.16.840.1.101.3.4.2.2/SHA-384]
+Provider: Set SUN provider property [MessageDigest.SHA-512/sun.security.provider.SHA5$SHA512]
+Provider: Set SUN provider property [Alg.Alias.MessageDigest.2.16.840.1.101.3.4.2.3/SHA-512]
+Provider: Set SUN provider property [Alg.Alias.MessageDigest.OID.2.16.840.1.101.3.4.2.3/SHA-512]
+Provider: Set SUN provider property [AlgorithmParameterGenerator.DSA/sun.security.provider.DSAParameterGenerator]
+Provider: Set SUN provider property [AlgorithmParameters.DSA/sun.security.provider.DSAParameters]
+Provider: Set SUN provider property [Alg.Alias.AlgorithmParameters.OID.1.2.840.10040.4.1/DSA]
+Provider: Set SUN provider property [Alg.Alias.AlgorithmParameters.1.2.840.10040.4.1/DSA]
+Provider: Set SUN provider property [Alg.Alias.AlgorithmParameters.1.3.14.3.2.12/DSA]
+Provider: Set SUN provider property [KeyFactory.DSA/sun.security.provider.DSAKeyFactory]
+Provider: Set SUN provider property [Alg.Alias.KeyFactory.OID.1.2.840.10040.4.1/DSA]
+Provider: Set SUN provider property [Alg.Alias.KeyFactory.1.2.840.10040.4.1/DSA]
+Provider: Set SUN provider property [Alg.Alias.KeyFactory.1.3.14.3.2.12/DSA]
+Provider: Set SUN provider property [CertificateFactory.X.509/sun.security.provider.X509Factory]
+Provider: Set SUN provider property [Alg.Alias.CertificateFactory.X509/X.509]
+Provider: Set SUN provider property [KeyStore.JKS/sun.security.provider.JavaKeyStore$DualFormatJKS]
+Provider: Set SUN provider property [KeyStore.CaseExactJKS/sun.security.provider.JavaKeyStore$CaseExactJKS]
+Provider: Set SUN provider property [KeyStore.DKS/sun.security.provider.DomainKeyStore$DKS]
+Provider: Set SUN provider property [Policy.JavaPolicy/sun.security.provider.PolicySpiFile]
+Provider: Set SUN provider property [Configuration.JavaLoginConfig/sun.security.provider.ConfigFile$Spi]
+Provider: Set SUN provider property [CertPathBuilder.PKIX/sun.security.provider.certpath.SunCertPathBuilder]
+Provider: Set SUN provider property [CertPathBuilder.PKIX ValidationAlgorithm/RFC3280]
+Provider: Set SUN provider property [CertPathValidator.PKIX/sun.security.provider.certpath.PKIXCertPathValidator]
+Provider: Set SUN provider property [CertPathValidator.PKIX ValidationAlgorithm/RFC3280]
+Provider: Set SUN provider property [CertStore.LDAP/sun.security.provider.certpath.ldap.LDAPCertStore]
+Provider: Set SUN provider property [CertStore.LDAP LDAPSchema/RFC2587]
+Provider: Set SUN provider property [CertStore.Collection/sun.security.provider.certpath.CollectionCertStore]
+Provider: Set SUN provider property [CertStore.com.sun.security.IndexedCollection/sun.security.provider.certpath.IndexedCollectionCertStore]
+Provider: Set SUN provider property [Signature.NONEwithDSA KeySize/1024]
+Provider: Set SUN provider property [Signature.SHA1withDSA KeySize/1024]
+Provider: Set SUN provider property [Signature.SHA224withDSA KeySize/2048]
+Provider: Set SUN provider property [Signature.SHA256withDSA KeySize/2048]
+Provider: Set SUN provider property [KeyPairGenerator.DSA KeySize/2048]
+Provider: Set SUN provider property [AlgorithmParameterGenerator.DSA KeySize/2048]
+Provider: Set SUN provider property [Signature.SHA1withDSA ImplementedIn/Software]
+Provider: Set SUN provider property [KeyPairGenerator.DSA ImplementedIn/Software]
+Provider: Set SUN provider property [MessageDigest.MD5 ImplementedIn/Software]
+Provider: Set SUN provider property [MessageDigest.SHA ImplementedIn/Software]
+Provider: Set SUN provider property [AlgorithmParameterGenerator.DSA ImplementedIn/Software]
+Provider: Set SUN provider property [AlgorithmParameters.DSA ImplementedIn/Software]
+Provider: Set SUN provider property [KeyFactory.DSA ImplementedIn/Software]
+Provider: Set SUN provider property [SecureRandom.SHA1PRNG ImplementedIn/Software]
+Provider: Set SUN provider property [CertificateFactory.X.509 ImplementedIn/Software]
+Provider: Set SUN provider property [KeyStore.JKS ImplementedIn/Software]
+Provider: Set SUN provider property [CertPathValidator.PKIX ImplementedIn/Software]
+Provider: Set SUN provider property [CertPathBuilder.PKIX ImplementedIn/Software]
+Provider: Set SUN provider property [CertStore.LDAP ImplementedIn/Software]
+Provider: Set SUN provider property [CertStore.Collection ImplementedIn/Software]
+Provider: Set SUN provider property [CertStore.com.sun.security.IndexedCollection ImplementedIn/Software]
+ProviderConfig: Loaded provider SUN version 1.8
+Provider: SecureRandom.NativePRNG algorithm from: SUN
+]]></system-err>
+  </testcase>
+  <testcase name="testClassFilterImplicitAccessNoFilter" classname="at.tfr.sec.TestNashornSecurity" time="0.03"/>
+  <testcase name="testClassFilterFileSystemAccessForJavaNio" classname="at.tfr.sec.TestNashornSecurity" time="0.029"/>
+  <testcase name="testClassFilterImplicitAccess" classname="at.tfr.sec.TestNashornSecurity" time="0.023">
+    <failure message="&#10;Expected: (is an instance of java.lang.RuntimeException and exception with cause is an instance of java.lang.ClassNotFoundException)&#10;     but: is an instance of java.lang.RuntimeException &lt;java.lang.AssertionError: ClassFilter failed on indirect access to java.lang.String&gt; is a java.lang.AssertionError&#10;Stacktrace was: java.lang.AssertionError: ClassFilter failed on indirect access to java.lang.String&#10;	at org.junit.Assert.fail(Assert.java:88)&#10;	at org.junit.Assert.assertTrue(Assert.java:41)&#10;	at at.tfr.sec.TestNashornSecurity.testClassFilterImplicitAccess(TestNashornSecurity.java:133)&#10;	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#10;	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)&#10;	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#10;	at java.lang.reflect.Method.invoke(Method.java:497)&#10;	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)&#10;	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)&#10;	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)&#10;	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)&#10;	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)&#10;	at org.junit.rules.ExpectedException$ExpectedExceptionStatement.evaluate(ExpectedException.java:239)&#10;	at org.junit.rules.RunRules.evaluate(RunRules.java:20)&#10;	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)&#10;	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)&#10;	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)&#10;	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)&#10;	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)&#10;	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)&#10;	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)&#10;	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)&#10;	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)&#10;	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:367)&#10;	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:274)&#10;	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)&#10;	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:161)&#10;	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)&#10;	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)&#10;	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)&#10;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: 
+
+Expected: (is an instance of java.lang.RuntimeException and exception with cause is an instance of java.lang.ClassNotFoundException)
+     but: is an instance of java.lang.RuntimeException <java.lang.AssertionError: ClassFilter failed on indirect access to java.lang.String> is a java.lang.AssertionError
+Stacktrace was: java.lang.AssertionError: ClassFilter failed on indirect access to java.lang.String
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at at.tfr.sec.TestNashornSecurity.testClassFilterImplicitAccess(TestNashornSecurity.java:133)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.rules.ExpectedException$ExpectedExceptionStatement.evaluate(ExpectedException.java:239)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:367)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:274)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:161)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+
+]]></failure>
+    <system-out><![CDATA[I was not filtered: StringHolder{string=BLA}
+]]></system-out>
+    <system-err><![CDATA[scl:  getPermissions ProtectionDomain  (null <no signer certificates>)
+ jdk.nashorn.internal.runtime.ScriptLoader@75db5df9
+ <no principals>
+ java.security.Permissions@707194ba (
+ ("java.lang.RuntimePermission" "accessClassInPackage.jdk.nashorn.internal.runtime")
+ ("java.lang.RuntimePermission" "accessClassInPackage.jdk.nashorn.internal.scripts")
+ ("java.lang.RuntimePermission" "accessClassInPackage.jdk.nashorn.internal.objects")
+ ("java.lang.RuntimePermission" "accessClassInPackage.jdk.nashorn.internal.runtime.linker")
+ ("java.lang.RuntimePermission" "accessClassInPackage.jdk.nashorn.internal.runtime.arrays")
+)
+
+
+scl: 
+]]></system-err>
+  </testcase>
+  <testcase name="testNoClassFilter" classname="at.tfr.sec.TestNashornSecurity" time="0.03"/>
+  <testcase name="testClassFilterFileSystemAccessNoFilter" classname="at.tfr.sec.TestNashornSecurity" time="0.023"/>
+</testsuite>

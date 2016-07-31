@@ -1,0 +1,70 @@
+-------------------------------------------------------------------------------
+Test set: at.tfr.sec.TestNashornSecurityWithWildflySecurityManager
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 1, Errors: 1, Skipped: 0, Time elapsed: 0.054 sec <<< FAILURE! - in at.tfr.sec.TestNashornSecurityWithWildflySecurityManager
+testSecurityManager(at.tfr.sec.TestNashornSecurityWithWildflySecurityManager)  Time elapsed: 0.023 sec  <<< FAILURE!
+java.lang.AssertionError: 
+
+Expected: (an instance of java.lang.RuntimeException and exception with cause is an instance of java.lang.Exception)
+     but: an instance of java.lang.RuntimeException <java.lang.NoClassDefFoundError: org/jboss/logging/Logger> is a java.lang.NoClassDefFoundError
+Stacktrace was: java.lang.NoClassDefFoundError: org/jboss/logging/Logger
+	at org.wildfly.security.manager._private.SecurityMessages.<clinit>(SecurityMessages.java:42)
+	at org.wildfly.security.manager.WildFlySecurityManager.checkPermission(WildFlySecurityManager.java:266)
+	at org.wildfly.security.manager.WildFlySecurityManager.checkPermission(WildFlySecurityManager.java:172)
+	at java.lang.SecurityManager.checkWrite(SecurityManager.java:979)
+	at org.wildfly.security.manager.WildFlySecurityManager.checkWrite(WildFlySecurityManager.java:392)
+	at sun.nio.fs.UnixPath.checkWrite(UnixPath.java:801)
+	at sun.nio.fs.UnixFileSystemProvider.createDirectory(UnixFileSystemProvider.java:376)
+	at java.nio.file.Files.createDirectory(Files.java:674)
+	at java.nio.file.TempFileHelper.create(TempFileHelper.java:136)
+	at java.nio.file.TempFileHelper.createTempDirectory(TempFileHelper.java:173)
+	at java.nio.file.Files.createTempDirectory(Files.java:991)
+	at jdk.nashorn.internal.scripts.Script$7$\^eval\_.:program(<eval>:3)
+	at jdk.nashorn.internal.runtime.ScriptFunctionData.invoke(ScriptFunctionData.java:640)
+	at jdk.nashorn.internal.runtime.ScriptFunction.invoke(ScriptFunction.java:228)
+	at jdk.nashorn.internal.runtime.ScriptRuntime.apply(ScriptRuntime.java:393)
+	at jdk.nashorn.api.scripting.NashornScriptEngine.evalImpl(NashornScriptEngine.java:446)
+	at jdk.nashorn.api.scripting.NashornScriptEngine.evalImpl(NashornScriptEngine.java:403)
+	at jdk.nashorn.api.scripting.NashornScriptEngine.evalImpl(NashornScriptEngine.java:399)
+	at jdk.nashorn.api.scripting.NashornScriptEngine.eval(NashornScriptEngine.java:155)
+	at javax.script.AbstractScriptEngine.eval(AbstractScriptEngine.java:264)
+	at at.tfr.sec.TestNashornSecurityWithWildflySecurityManager.testSecurityManager(TestNashornSecurityWithWildflySecurityManager.java:76)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.rules.ExpectedException$ExpectedExceptionStatement.evaluate(ExpectedException.java:239)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:367)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:274)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:161)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+Caused by: java.lang.ClassNotFoundException: org.jboss.logging.Logger
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 48 more
+
+
+testNoClassFilter(at.tfr.sec.TestNashornSecurityWithWildflySecurityManager)  Time elapsed: 0.031 sec  <<< ERROR!
+java.lang.NoClassDefFoundError: Could not initialize class org.wildfly.security.manager._private.SecurityMessages
+	at at.tfr.sec.TestNashornSecurityWithWildflySecurityManager.testNoClassFilter(TestNashornSecurityWithWildflySecurityManager.java:53)
+

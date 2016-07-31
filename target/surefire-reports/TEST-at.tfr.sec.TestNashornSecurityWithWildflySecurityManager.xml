@@ -1,0 +1,566 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="at.tfr.sec.TestNashornSecurityWithWildflySecurityManager" time="0.054" tests="2" errors="1" skipped="0" failures="1">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="/usr/java/jdk1.8.0_71/jre/lib/amd64"/>
+    <property name="java.vm.version" value="25.71-b15"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="maven.multiModuleProjectDirectory" value="/home/thomas/workspace-sec/security"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=":"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.country" value="DE"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/raid/home/thomas/workspace-sec/security"/>
+    <property name="java.runtime.version" value="1.8.0_71-b15"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="/usr/java/jdk1.8.0_71/jre/lib/endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="os.name" value="Linux"/>
+    <property name="classworlds.conf" value="/raid/work/tools/maven/bin/m2.conf"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value=":/usr/share/tools/android-sdk-linux/tools/lib/:/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="4.1.27-27-default"/>
+    <property name="user.home" value="/home/thomas"/>
+    <property name="user.timezone" value="Europe/Vienna"/>
+    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="user.name" value="thomas"/>
+    <property name="java.class.path" value="/raid/work/tools/maven/boot/plexus-classworlds-2.5.2.jar"/>
+    <property name="org.slf4j.simpleLogger.defaultLogLevel" value="debug"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="/usr/java/jdk1.8.0_71/jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -X clean test"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="de"/>
+    <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_71"/>
+    <property name="java.ext.dirs" value="/usr/java/jdk1.8.0_71/jre/lib/ext:/usr/java/packages/lib/ext"/>
+    <property name="securerandom.source" value="file:/dev/./urandom"/>
+    <property name="sun.boot.class.path" value="/usr/java/jdk1.8.0_71/jre/lib/resources.jar:/usr/java/jdk1.8.0_71/jre/lib/rt.jar:/usr/java/jdk1.8.0_71/jre/lib/sunrsasign.jar:/usr/java/jdk1.8.0_71/jre/lib/jsse.jar:/usr/java/jdk1.8.0_71/jre/lib/jce.jar:/usr/java/jdk1.8.0_71/jre/lib/charsets.jar:/usr/java/jdk1.8.0_71/jre/lib/jfr.jar:/usr/java/jdk1.8.0_71/jre/classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="/raid/work/tools/maven"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.cpu.isalist" value=""/>
+  </properties>
+  <testcase name="testSecurityManager" classname="at.tfr.sec.TestNashornSecurityWithWildflySecurityManager" time="0.023">
+    <failure message="&#10;Expected: (an instance of java.lang.RuntimeException and exception with cause is an instance of java.lang.Exception)&#10;     but: an instance of java.lang.RuntimeException &lt;java.lang.NoClassDefFoundError: org/jboss/logging/Logger&gt; is a java.lang.NoClassDefFoundError&#10;Stacktrace was: java.lang.NoClassDefFoundError: org/jboss/logging/Logger&#10;	at org.wildfly.security.manager._private.SecurityMessages.&lt;clinit&gt;(SecurityMessages.java:42)&#10;	at org.wildfly.security.manager.WildFlySecurityManager.checkPermission(WildFlySecurityManager.java:266)&#10;	at org.wildfly.security.manager.WildFlySecurityManager.checkPermission(WildFlySecurityManager.java:172)&#10;	at java.lang.SecurityManager.checkWrite(SecurityManager.java:979)&#10;	at org.wildfly.security.manager.WildFlySecurityManager.checkWrite(WildFlySecurityManager.java:392)&#10;	at sun.nio.fs.UnixPath.checkWrite(UnixPath.java:801)&#10;	at sun.nio.fs.UnixFileSystemProvider.createDirectory(UnixFileSystemProvider.java:376)&#10;	at java.nio.file.Files.createDirectory(Files.java:674)&#10;	at java.nio.file.TempFileHelper.create(TempFileHelper.java:136)&#10;	at java.nio.file.TempFileHelper.createTempDirectory(TempFileHelper.java:173)&#10;	at java.nio.file.Files.createTempDirectory(Files.java:991)&#10;	at jdk.nashorn.internal.scripts.Script$7$\^eval\_.:program(&lt;eval&gt;:3)&#10;	at jdk.nashorn.internal.runtime.ScriptFunctionData.invoke(ScriptFunctionData.java:640)&#10;	at jdk.nashorn.internal.runtime.ScriptFunction.invoke(ScriptFunction.java:228)&#10;	at jdk.nashorn.internal.runtime.ScriptRuntime.apply(ScriptRuntime.java:393)&#10;	at jdk.nashorn.api.scripting.NashornScriptEngine.evalImpl(NashornScriptEngine.java:446)&#10;	at jdk.nashorn.api.scripting.NashornScriptEngine.evalImpl(NashornScriptEngine.java:403)&#10;	at jdk.nashorn.api.scripting.NashornScriptEngine.evalImpl(NashornScriptEngine.java:399)&#10;	at jdk.nashorn.api.scripting.NashornScriptEngine.eval(NashornScriptEngine.java:155)&#10;	at javax.script.AbstractScriptEngine.eval(AbstractScriptEngine.java:264)&#10;	at at.tfr.sec.TestNashornSecurityWithWildflySecurityManager.testSecurityManager(TestNashornSecurityWithWildflySecurityManager.java:76)&#10;	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#10;	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)&#10;	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#10;	at java.lang.reflect.Method.invoke(Method.java:497)&#10;	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)&#10;	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)&#10;	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)&#10;	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)&#10;	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)&#10;	at org.junit.rules.ExpectedException$ExpectedExceptionStatement.evaluate(ExpectedException.java:239)&#10;	at org.junit.rules.RunRules.evaluate(RunRules.java:20)&#10;	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)&#10;	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)&#10;	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)&#10;	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)&#10;	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)&#10;	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)&#10;	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)&#10;	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)&#10;	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)&#10;	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:367)&#10;	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:274)&#10;	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)&#10;	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:161)&#10;	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)&#10;	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)&#10;	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)&#10;Caused by: java.lang.ClassNotFoundException: org.jboss.logging.Logger&#10;	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)&#10;	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)&#10;	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)&#10;	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)&#10;	... 48 more&#10;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: 
+
+Expected: (an instance of java.lang.RuntimeException and exception with cause is an instance of java.lang.Exception)
+     but: an instance of java.lang.RuntimeException <java.lang.NoClassDefFoundError: org/jboss/logging/Logger> is a java.lang.NoClassDefFoundError
+Stacktrace was: java.lang.NoClassDefFoundError: org/jboss/logging/Logger
+	at org.wildfly.security.manager._private.SecurityMessages.<clinit>(SecurityMessages.java:42)
+	at org.wildfly.security.manager.WildFlySecurityManager.checkPermission(WildFlySecurityManager.java:266)
+	at org.wildfly.security.manager.WildFlySecurityManager.checkPermission(WildFlySecurityManager.java:172)
+	at java.lang.SecurityManager.checkWrite(SecurityManager.java:979)
+	at org.wildfly.security.manager.WildFlySecurityManager.checkWrite(WildFlySecurityManager.java:392)
+	at sun.nio.fs.UnixPath.checkWrite(UnixPath.java:801)
+	at sun.nio.fs.UnixFileSystemProvider.createDirectory(UnixFileSystemProvider.java:376)
+	at java.nio.file.Files.createDirectory(Files.java:674)
+	at java.nio.file.TempFileHelper.create(TempFileHelper.java:136)
+	at java.nio.file.TempFileHelper.createTempDirectory(TempFileHelper.java:173)
+	at java.nio.file.Files.createTempDirectory(Files.java:991)
+	at jdk.nashorn.internal.scripts.Script$7$\^eval\_.:program(<eval>:3)
+	at jdk.nashorn.internal.runtime.ScriptFunctionData.invoke(ScriptFunctionData.java:640)
+	at jdk.nashorn.internal.runtime.ScriptFunction.invoke(ScriptFunction.java:228)
+	at jdk.nashorn.internal.runtime.ScriptRuntime.apply(ScriptRuntime.java:393)
+	at jdk.nashorn.api.scripting.NashornScriptEngine.evalImpl(NashornScriptEngine.java:446)
+	at jdk.nashorn.api.scripting.NashornScriptEngine.evalImpl(NashornScriptEngine.java:403)
+	at jdk.nashorn.api.scripting.NashornScriptEngine.evalImpl(NashornScriptEngine.java:399)
+	at jdk.nashorn.api.scripting.NashornScriptEngine.eval(NashornScriptEngine.java:155)
+	at javax.script.AbstractScriptEngine.eval(AbstractScriptEngine.java:264)
+	at at.tfr.sec.TestNashornSecurityWithWildflySecurityManager.testSecurityManager(TestNashornSecurityWithWildflySecurityManager.java:76)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.rules.ExpectedException$ExpectedExceptionStatement.evaluate(ExpectedException.java:239)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:367)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:274)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:161)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+Caused by: java.lang.ClassNotFoundException: org.jboss.logging.Logger
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 48 more
+
+]]></failure>
+    <system-err><![CDATA[policy: reading file:/raid/home/thomas/workspace-sec/security/target/test-classes/read-all-java.policy
+java.lang.IllegalArgumentException: null KeyStore name
+	at sun.security.util.PolicyUtil.getKeyStore(PolicyUtil.java:82)
+	at sun.security.provider.PolicyFile.init(PolicyFile.java:610)
+	at sun.security.provider.PolicyFile.access$400(PolicyFile.java:258)
+	at sun.security.provider.PolicyFile$3.run(PolicyFile.java:521)
+	at sun.security.provider.PolicyFile$3.run(PolicyFile.java:495)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at sun.security.provider.PolicyFile.initPolicyFile(PolicyFile.java:495)
+	at sun.security.provider.PolicyFile.initPolicyFile(PolicyFile.java:480)
+	at sun.security.provider.PolicyFile.init(PolicyFile.java:439)
+	at sun.security.provider.PolicyFile.<init>(PolicyFile.java:297)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+	at java.lang.Class.newInstance(Class.java:442)
+	at java.security.Policy.getPolicyNoCheck(Policy.java:184)
+	at java.security.ProtectionDomain.implies(ProtectionDomain.java:281)
+	at java.lang.System$1.run(System.java:316)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.lang.System.setSecurityManager0(System.java:313)
+	at java.lang.System.setSecurityManager(System.java:291)
+	at at.tfr.sec.TestNashornSecurityWithWildflySecurityManager.testSecurityManager(TestNashornSecurityWithWildflySecurityManager.java:72)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.rules.ExpectedException$ExpectedExceptionStatement.evaluate(ExpectedException.java:239)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:367)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:274)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:161)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+policy: Adding policy entry: 
+policy:   signedBy null
+policy:   codeBase file:/*
+policy:   ("java.io.FilePermission" "*" "read")
+policy:
+policy: Adding policy entry: 
+policy:   signedBy null
+policy:   codeBase file:/raid/home/thomas/.m2/repository/org/wildfly/security/wildfly-security-manager/1.1.2.Final/*
+policy:   ("java.security.AllPermission" "<all permissions>" "<all actions>")
+policy:
+policy: reading file:/usr/java/jdk1.8.0_71/jre/lib/security/java.policy
+	[Policy Parser]: creating policy entry for expanded java.ext.dirs path:
+		file:/usr/java/jdk1.8.0_71/jre/lib/ext/*
+	[Policy Parser]: creating policy entry for expanded java.ext.dirs path:
+		file:/usr/java/packages/lib/ext/*
+java.lang.IllegalArgumentException: null KeyStore name
+	at sun.security.util.PolicyUtil.getKeyStore(PolicyUtil.java:82)
+	at sun.security.provider.PolicyFile.init(PolicyFile.java:610)
+	at sun.security.provider.PolicyFile.access$400(PolicyFile.java:258)
+	at sun.security.provider.PolicyFile$3.run(PolicyFile.java:562)
+	at sun.security.provider.PolicyFile$3.run(PolicyFile.java:495)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at sun.security.provider.PolicyFile.initPolicyFile(PolicyFile.java:495)
+	at sun.security.provider.PolicyFile.initPolicyFile(PolicyFile.java:480)
+	at sun.security.provider.PolicyFile.init(PolicyFile.java:439)
+	at sun.security.provider.PolicyFile.<init>(PolicyFile.java:297)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+	at java.lang.Class.newInstance(Class.java:442)
+	at java.security.Policy.getPolicyNoCheck(Policy.java:184)
+	at java.security.ProtectionDomain.implies(ProtectionDomain.java:281)
+	at java.lang.System$1.run(System.java:316)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.lang.System.setSecurityManager0(System.java:313)
+	at java.lang.System.setSecurityManager(System.java:291)
+	at at.tfr.sec.TestNashornSecurityWithWildflySecurityManager.testSecurityManager(TestNashornSecurityWithWildflySecurityManager.java:72)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.rules.ExpectedException$ExpectedExceptionStatement.evaluate(ExpectedException.java:239)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:367)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:274)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:161)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+policy: Adding policy entry: 
+policy:   signedBy null
+policy:   codeBase file:/usr/java/jdk1.8.0_71/jre/lib/ext/*
+policy:   ("java.security.AllPermission" "<all permissions>" "<all actions>")
+policy:
+policy: Adding policy entry: 
+policy:   signedBy null
+policy:   codeBase file:/usr/java/packages/lib/ext/*
+policy:   ("java.security.AllPermission" "<all permissions>" "<all actions>")
+policy:
+policy: Adding policy entry: 
+policy:   signedBy null
+policy:   codeBase null
+policy:   ("java.lang.RuntimePermission" "stopThread")
+policy:   ("java.net.SocketPermission" "localhost:0" "listen,resolve")
+policy:   ("java.util.PropertyPermission" "java.version" "read")
+policy:   ("java.util.PropertyPermission" "java.vendor" "read")
+policy:   ("java.util.PropertyPermission" "java.vendor.url" "read")
+policy:   ("java.util.PropertyPermission" "java.class.version" "read")
+policy:   ("java.util.PropertyPermission" "os.name" "read")
+policy:   ("java.util.PropertyPermission" "os.version" "read")
+policy:   ("java.util.PropertyPermission" "os.arch" "read")
+policy:   ("java.util.PropertyPermission" "file.separator" "read")
+policy:   ("java.util.PropertyPermission" "path.separator" "read")
+policy:   ("java.util.PropertyPermission" "line.separator" "read")
+policy:   ("java.util.PropertyPermission" "java.specification.version" "read")
+policy:   ("java.util.PropertyPermission" "java.specification.vendor" "read")
+policy:   ("java.util.PropertyPermission" "java.specification.name" "read")
+policy:   ("java.util.PropertyPermission" "java.vm.specification.version" "read")
+policy:   ("java.util.PropertyPermission" "java.vm.specification.vendor" "read")
+policy:   ("java.util.PropertyPermission" "java.vm.specification.name" "read")
+policy:   ("java.util.PropertyPermission" "java.vm.version" "read")
+policy:   ("java.util.PropertyPermission" "java.vm.vendor" "read")
+policy:   ("java.util.PropertyPermission" "java.vm.name" "read")
+policy:
+policy: reading file:/home/thomas/.java.policy
+policy: error parsing file:/home/thomas/.java.policy
+policy: java.io.FileNotFoundException: /home/thomas/.java.policy (Datei oder Verzeichnis nicht gefunden)
+java.io.FileNotFoundException: /home/thomas/.java.policy (Datei oder Verzeichnis nicht gefunden)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at java.io.FileInputStream.<init>(FileInputStream.java:93)
+	at sun.security.util.PolicyUtil.getInputStream(PolicyUtil.java:60)
+	at sun.security.provider.PolicyFile.init(PolicyFile.java:602)
+	at sun.security.provider.PolicyFile.access$400(PolicyFile.java:258)
+	at sun.security.provider.PolicyFile$3.run(PolicyFile.java:562)
+	at sun.security.provider.PolicyFile$3.run(PolicyFile.java:495)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at sun.security.provider.PolicyFile.initPolicyFile(PolicyFile.java:495)
+	at sun.security.provider.PolicyFile.initPolicyFile(PolicyFile.java:480)
+	at sun.security.provider.PolicyFile.init(PolicyFile.java:439)
+	at sun.security.provider.PolicyFile.<init>(PolicyFile.java:297)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+	at java.lang.Class.newInstance(Class.java:442)
+	at java.security.Policy.getPolicyNoCheck(Policy.java:184)
+	at java.security.ProtectionDomain.implies(ProtectionDomain.java:281)
+	at java.lang.System$1.run(System.java:316)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.lang.System.setSecurityManager0(System.java:313)
+	at java.lang.System.setSecurityManager(System.java:291)
+	at at.tfr.sec.TestNashornSecurityWithWildflySecurityManager.testSecurityManager(TestNashornSecurityWithWildflySecurityManager.java:72)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.rules.ExpectedException$ExpectedExceptionStatement.evaluate(ExpectedException.java:239)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:367)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:274)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:161)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+policy: getPermissions:
+	PD CodeSource: (file:/home/thomas/.m2/repository/org/wildfly/security/wildfly-security-manager/1.1.2.Final/wildfly-security-manager-1.1.2.Final.jar <no signer certificates>)
+	PD ClassLoader: sun.misc.Launcher$AppClassLoader@6bc7c054
+	PD Principals: <no principals>
+policy: evaluate codesources:
+	Policy CodeSource: (file:/* <no signer certificates>)
+	Active CodeSource: (file:/raid/home/thomas/.m2/repository/org/wildfly/security/wildfly-security-manager/1.1.2.Final/wildfly-security-manager-1.1.2.Final.jar <no signer certificates>)
+policy: evaluation (codesource) failed
+policy: evaluate codesources:
+	Policy CodeSource: (file:/raid/home/thomas/.m2/repository/org/wildfly/security/wildfly-security-manager/1.1.2.Final/* <no signer certificates>)
+	Active CodeSource: (file:/raid/home/thomas/.m2/repository/org/wildfly/security/wildfly-security-manager/1.1.2.Final/wildfly-security-manager-1.1.2.Final.jar <no signer certificates>)
+policy: evaluate principals:
+	Policy Principals: []
+	Active Principals: []
+policy:   granting ("java.security.AllPermission" "<all permissions>" "<all actions>")
+policy: evaluation (codesource/principals) passed
+policy: evaluate codesources:
+	Policy CodeSource: (file:/usr/java/jdk1.8.0_71/jre/lib/ext/* <no signer certificates>)
+	Active CodeSource: (file:/raid/home/thomas/.m2/repository/org/wildfly/security/wildfly-security-manager/1.1.2.Final/wildfly-security-manager-1.1.2.Final.jar <no signer certificates>)
+policy: evaluation (codesource) failed
+policy: evaluate codesources:
+	Policy CodeSource: (file:/usr/java/packages/lib/ext/* <no signer certificates>)
+	Active CodeSource: (file:/raid/home/thomas/.m2/repository/org/wildfly/security/wildfly-security-manager/1.1.2.Final/wildfly-security-manager-1.1.2.Final.jar <no signer certificates>)
+policy: evaluation (codesource) failed
+policy: evaluate codesources:
+	Policy CodeSource: (null <no signer certificates>)
+	Active CodeSource: (file:/raid/home/thomas/.m2/repository/org/wildfly/security/wildfly-security-manager/1.1.2.Final/wildfly-security-manager-1.1.2.Final.jar <no signer certificates>)
+policy: evaluate principals:
+	Policy Principals: []
+	Active Principals: []
+policy:   granting ("java.lang.RuntimePermission" "stopThread")
+policy:   granting ("java.net.SocketPermission" "localhost:0" "listen,resolve")
+policy:   granting ("java.util.PropertyPermission" "java.version" "read")
+policy:   granting ("java.util.PropertyPermission" "java.vendor" "read")
+policy:   granting ("java.util.PropertyPermission" "java.vendor.url" "read")
+policy:   granting ("java.util.PropertyPermission" "java.class.version" "read")
+policy:   granting ("java.util.PropertyPermission" "os.name" "read")
+policy:   granting ("java.util.PropertyPermission" "os.version" "read")
+policy:   granting ("java.util.PropertyPermission" "os.arch" "read")
+policy:   granting ("java.util.PropertyPermission" "file.separator" "read")
+policy:   granting ("java.util.PropertyPermission" "path.separator" "read")
+policy:   granting ("java.util.PropertyPermission" "line.separator" "read")
+policy:   granting ("java.util.PropertyPermission" "java.specification.version" "read")
+policy:   granting ("java.util.PropertyPermission" "java.specification.vendor" "read")
+policy:   granting ("java.util.PropertyPermission" "java.specification.name" "read")
+policy:   granting ("java.util.PropertyPermission" "java.vm.specification.version" "read")
+policy:   granting ("java.util.PropertyPermission" "java.vm.specification.vendor" "read")
+policy:   granting ("java.util.PropertyPermission" "java.vm.specification.name" "read")
+policy:   granting ("java.util.PropertyPermission" "java.vm.version" "read")
+policy:   granting ("java.util.PropertyPermission" "java.vm.vendor" "read")
+policy:   granting ("java.util.PropertyPermission" "java.vm.name" "read")
+policy: evaluation (codesource/principals) passed
+policy: getPermissions:
+	PD CodeSource: (file:/usr/java/jdk1.8.0_71/jre/lib/ext/nashorn.jar <no signer certificates>)
+	PD ClassLoader: sun.misc.Launcher$ExtClassLoader@685f4c2e
+	PD Principals: <no principals>
+policy: evaluate codesources:
+	Policy CodeSource: (file:/* <no signer certificates>)
+	Active CodeSource: (file:/usr/java/jdk1.8.0_71/jre/lib/ext/nashorn.jar <no signer certificates>)
+policy: evaluation (codesource) failed
+policy: evaluate codesources:
+	Policy CodeSource: (file:/raid/home/thomas/.m2/repository/org/wildfly/security/wildfly-security-manager/1.1.2.Final/* <no signer certificates>)
+	Active CodeSource: (file:/usr/java/jdk1.8.0_71/jre/lib/ext/nashorn.jar <no signer certificates>)
+policy: evaluation (codesource) failed
+policy: evaluate codesources:
+	Policy CodeSource: (file:/usr/java/jdk1.8.0_71/jre/lib/ext/* <no signer certificates>)
+	Active CodeSource: (file:/usr/java/jdk1.8.0_71/jre/lib/ext/nashorn.jar <no signer certificates>)
+policy: evaluate principals:
+	Policy Principals: []
+	Active Principals: []
+policy:   granting ("java.security.AllPermission" "<all permissions>" "<all actions>")
+policy: evaluation (codesource/principals) passed
+policy: evaluate codesources:
+	Policy CodeSource: (file:/usr/java/packages/lib/ext/* <no signer certificates>)
+	Active CodeSource: (file:/usr/java/jdk1.8.0_71/jre/lib/ext/nashorn.jar <no signer certificates>)
+policy: evaluation (codesource) failed
+policy: evaluate codesources:
+	Policy CodeSource: (null <no signer certificates>)
+	Active CodeSource: (file:/usr/java/jdk1.8.0_71/jre/lib/ext/nashorn.jar <no signer certificates>)
+policy: evaluate principals:
+	Policy Principals: []
+	Active Principals: []
+policy:   granting ("java.lang.RuntimePermission" "stopThread")
+policy:   granting ("java.net.SocketPermission" "localhost:0" "listen,resolve")
+policy:   granting ("java.util.PropertyPermission" "java.version" "read")
+policy:   granting ("java.util.PropertyPermission" "java.vendor" "read")
+policy:   granting ("java.util.PropertyPermission" "java.vendor.url" "read")
+policy:   granting ("java.util.PropertyPermission" "java.class.version" "read")
+policy:   granting ("java.util.PropertyPermission" "os.name" "read")
+policy:   granting ("java.util.PropertyPermission" "os.version" "read")
+policy:   granting ("java.util.PropertyPermission" "os.arch" "read")
+policy:   granting ("java.util.PropertyPermission" "file.separator" "read")
+policy:   granting ("java.util.PropertyPermission" "path.separator" "read")
+policy:   granting ("java.util.PropertyPermission" "line.separator" "read")
+policy:   granting ("java.util.PropertyPermission" "java.specification.version" "read")
+policy:   granting ("java.util.PropertyPermission" "java.specification.vendor" "read")
+policy:   granting ("java.util.PropertyPermission" "java.specification.name" "read")
+policy:   granting ("java.util.PropertyPermission" "java.vm.specification.version" "read")
+policy:   granting ("java.util.PropertyPermission" "java.vm.specification.vendor" "read")
+policy:   granting ("java.util.PropertyPermission" "java.vm.specification.name" "read")
+policy:   granting ("java.util.PropertyPermission" "java.vm.version" "read")
+policy:   granting ("java.util.PropertyPermission" "java.vm.vendor" "read")
+policy:   granting ("java.util.PropertyPermission" "java.vm.name" "read")
+policy: evaluation (codesource/principals) passed
+scl:  getPermissions ProtectionDomain  (null <no signer certificates>)
+ jdk.nashorn.internal.runtime.ScriptLoader@3541cb24
+ <no principals>
+ java.security.Permissions@2177849e (
+ ("java.lang.RuntimePermission" "accessClassInPackage.jdk.nashorn.internal.runtime")
+ ("java.lang.RuntimePermission" "accessClassInPackage.jdk.nashorn.internal.scripts")
+ ("java.lang.RuntimePermission" "accessClassInPackage.jdk.nashorn.internal.objects")
+ ("java.lang.RuntimePermission" "accessClassInPackage.jdk.nashorn.internal.runtime.linker")
+ ("java.lang.RuntimePermission" "accessClassInPackage.jdk.nashorn.internal.runtime.arrays")
+)
+
+
+scl: 
+policy: getPermissions:
+	PD CodeSource: (null <no signer certificates>)
+	PD ClassLoader: jdk.nashorn.internal.runtime.ScriptLoader@3541cb24
+	PD Principals: <no principals>
+policy: evaluate codesources:
+	Policy CodeSource: (file:/* <no signer certificates>)
+	Active CodeSource: (null <no signer certificates>)
+policy: evaluation (codesource) failed
+policy: evaluate codesources:
+	Policy CodeSource: (file:/raid/home/thomas/.m2/repository/org/wildfly/security/wildfly-security-manager/1.1.2.Final/* <no signer certificates>)
+	Active CodeSource: (null <no signer certificates>)
+policy: evaluation (codesource) failed
+policy: evaluate codesources:
+	Policy CodeSource: (file:/usr/java/jdk1.8.0_71/jre/lib/ext/* <no signer certificates>)
+	Active CodeSource: (null <no signer certificates>)
+policy: evaluation (codesource) failed
+policy: evaluate codesources:
+	Policy CodeSource: (file:/usr/java/packages/lib/ext/* <no signer certificates>)
+	Active CodeSource: (null <no signer certificates>)
+policy: evaluation (codesource) failed
+policy: evaluate codesources:
+	Policy CodeSource: (null <no signer certificates>)
+	Active CodeSource: (null <no signer certificates>)
+policy: evaluate principals:
+	Policy Principals: []
+	Active Principals: []
+policy:   granting ("java.lang.RuntimePermission" "stopThread")
+policy:   granting ("java.net.SocketPermission" "localhost:0" "listen,resolve")
+policy:   granting ("java.util.PropertyPermission" "java.version" "read")
+policy:   granting ("java.util.PropertyPermission" "java.vendor" "read")
+policy:   granting ("java.util.PropertyPermission" "java.vendor.url" "read")
+policy:   granting ("java.util.PropertyPermission" "java.class.version" "read")
+policy:   granting ("java.util.PropertyPermission" "os.name" "read")
+policy:   granting ("java.util.PropertyPermission" "os.version" "read")
+policy:   granting ("java.util.PropertyPermission" "os.arch" "read")
+policy:   granting ("java.util.PropertyPermission" "file.separator" "read")
+policy:   granting ("java.util.PropertyPermission" "path.separator" "read")
+policy:   granting ("java.util.PropertyPermission" "line.separator" "read")
+policy:   granting ("java.util.PropertyPermission" "java.specification.version" "read")
+policy:   granting ("java.util.PropertyPermission" "java.specification.vendor" "read")
+policy:   granting ("java.util.PropertyPermission" "java.specification.name" "read")
+policy:   granting ("java.util.PropertyPermission" "java.vm.specification.version" "read")
+policy:   granting ("java.util.PropertyPermission" "java.vm.specification.vendor" "read")
+policy:   granting ("java.util.PropertyPermission" "java.vm.specification.name" "read")
+policy:   granting ("java.util.PropertyPermission" "java.vm.version" "read")
+policy:   granting ("java.util.PropertyPermission" "java.vm.vendor" "read")
+policy:   granting ("java.util.PropertyPermission" "java.vm.name" "read")
+policy: evaluation (codesource/principals) passed
+]]></system-err>
+  </testcase>
+  <testcase name="testNoClassFilter" classname="at.tfr.sec.TestNashornSecurityWithWildflySecurityManager" time="0.031">
+    <error message="Could not initialize class org.wildfly.security.manager._private.SecurityMessages" type="java.lang.NoClassDefFoundError">java.lang.NoClassDefFoundError: Could not initialize class org.wildfly.security.manager._private.SecurityMessages
+	at at.tfr.sec.TestNashornSecurityWithWildflySecurityManager.testNoClassFilter(TestNashornSecurityWithWildflySecurityManager.java:53)
+</error>
+    <system-err><![CDATA[scl:  getPermissions ProtectionDomain  (null <no signer certificates>)
+ jdk.nashorn.internal.runtime.ScriptLoader@7671cb68
+ <no principals>
+ java.security.Permissions@49dc7102 (
+ ("java.lang.RuntimePermission" "accessClassInPackage.jdk.nashorn.internal.runtime")
+ ("java.lang.RuntimePermission" "accessClassInPackage.jdk.nashorn.internal.scripts")
+ ("java.lang.RuntimePermission" "accessClassInPackage.jdk.nashorn.internal.objects")
+ ("java.lang.RuntimePermission" "accessClassInPackage.jdk.nashorn.internal.runtime.linker")
+ ("java.lang.RuntimePermission" "accessClassInPackage.jdk.nashorn.internal.runtime.arrays")
+)
+
+
+scl: 
+policy: getPermissions:
+	PD CodeSource: (null <no signer certificates>)
+	PD ClassLoader: jdk.nashorn.internal.runtime.ScriptLoader@7671cb68
+	PD Principals: <no principals>
+policy: evaluate codesources:
+	Policy CodeSource: (file:/* <no signer certificates>)
+	Active CodeSource: (null <no signer certificates>)
+policy: evaluation (codesource) failed
+policy: evaluate codesources:
+	Policy CodeSource: (file:/raid/home/thomas/.m2/repository/org/wildfly/security/wildfly-security-manager/1.1.2.Final/* <no signer certificates>)
+	Active CodeSource: (null <no signer certificates>)
+policy: evaluation (codesource) failed
+policy: evaluate codesources:
+	Policy CodeSource: (file:/usr/java/jdk1.8.0_71/jre/lib/ext/* <no signer certificates>)
+	Active CodeSource: (null <no signer certificates>)
+policy: evaluation (codesource) failed
+policy: evaluate codesources:
+	Policy CodeSource: (file:/usr/java/packages/lib/ext/* <no signer certificates>)
+	Active CodeSource: (null <no signer certificates>)
+policy: evaluation (codesource) failed
+policy: evaluate codesources:
+	Policy CodeSource: (null <no signer certificates>)
+	Active CodeSource: (null <no signer certificates>)
+policy: evaluate principals:
+	Policy Principals: []
+	Active Principals: []
+policy:   granting ("java.lang.RuntimePermission" "stopThread")
+policy:   granting ("java.net.SocketPermission" "localhost:0" "listen,resolve")
+policy:   granting ("java.util.PropertyPermission" "java.version" "read")
+policy:   granting ("java.util.PropertyPermission" "java.vendor" "read")
+policy:   granting ("java.util.PropertyPermission" "java.vendor.url" "read")
+policy:   granting ("java.util.PropertyPermission" "java.class.version" "read")
+policy:   granting ("java.util.PropertyPermission" "os.name" "read")
+policy:   granting ("java.util.PropertyPermission" "os.version" "read")
+policy:   granting ("java.util.PropertyPermission" "os.arch" "read")
+policy:   granting ("java.util.PropertyPermission" "file.separator" "read")
+policy:   granting ("java.util.PropertyPermission" "path.separator" "read")
+policy:   granting ("java.util.PropertyPermission" "line.separator" "read")
+policy:   granting ("java.util.PropertyPermission" "java.specification.version" "read")
+policy:   granting ("java.util.PropertyPermission" "java.specification.vendor" "read")
+policy:   granting ("java.util.PropertyPermission" "java.specification.name" "read")
+policy:   granting ("java.util.PropertyPermission" "java.vm.specification.version" "read")
+policy:   granting ("java.util.PropertyPermission" "java.vm.specification.vendor" "read")
+policy:   granting ("java.util.PropertyPermission" "java.vm.specification.name" "read")
+policy:   granting ("java.util.PropertyPermission" "java.vm.version" "read")
+policy:   granting ("java.util.PropertyPermission" "java.vm.vendor" "read")
+policy:   granting ("java.util.PropertyPermission" "java.vm.name" "read")
+policy: evaluation (codesource/principals) passed
+]]></system-err>
+  </testcase>
+</testsuite>

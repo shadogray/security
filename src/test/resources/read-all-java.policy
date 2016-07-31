@@ -1,0 +1,8 @@
+grant codeBase "file:/*" {
+   permission java.io.FilePermission "*", "read";
+   //permission java.io.FilePermission "/tmp/*", "read,write";
+ };
+grant codeBase "file:/raid/home/thomas/.m2/repository/org/wildfly/security/wildfly-security-manager/1.1.2.Final/*" {
+   permission java.security.AllPermission;
+   //permission java.io.FilePermission "*", "read";
+};
